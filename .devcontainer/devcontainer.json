@@ -1,0 +1,16 @@
+{
+  "name": "For The People",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+  "hostRequirements": { "cpus": 4, "memory": "16gb" },
+  "containerEnv": { "COREPACK_ENABLE_DOWNLOAD_PROMPT": "0" },
+  "secrets": {
+    "OPENROUTER_API_KEY": {
+      "description": "OpenRouter key for Ask For The People and \"Ask about this bill\". Leave empty for demo answers.",
+      "documentationUrl": "https://openrouter.ai/settings/keys"
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "bash .devcontainer/start.sh",
+  "forwardPorts": [3100],
+  "portsAttributes": { "3100": { "label": "For The People", "onAutoForward": "openBrowser" } }
+}
