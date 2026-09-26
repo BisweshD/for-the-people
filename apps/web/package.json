@@ -14,9 +14,10 @@
   "dependencies": {
     "@ai-sdk/anthropic": "3.0.122",
     "@ai-sdk/react": "3.0.293",
-    "@number-flow/react": "^0.6.2",
     "@for-the-people/core": "workspace:*",
     "@for-the-people/data": "workspace:*",
+    "@number-flow/react": "^0.6.2",
+    "@openrouter/ai-sdk-provider": "2.10.0",
     "ai": "6.0.290",
     "class-variance-authority": "^0.7.1",
     "cmdk": "^1.1.1",

@@ -50,14 +50,21 @@ export interface AskTurn {
 /**
  * Keeps only the text of recent messages. Tool results in the history come from the client and are
  * never trusted, so the model sees prior turns as plain text and re-runs tools for fresh facts.
- * A voter's message that looks like an address is dropped, so no address ever reaches a model.
+ * A voter's message that looks like an address is dropped with the reply to it, so no address ever
+ * reaches a model. The turns always open with a voter's message, as the models require: a history cut
+ * to its newest messages can start on an answer, and that answer is dropped too.
  */
 export function conversationTurns(messages: readonly AskMessage[]): AskTurn[] {
-  return messages
-    .slice(-ASK_LIMITS.maxMessages)
-    .map((message) => ({ role: message.role, text: messageText(message) }))
-    .filter((turn) => turn.text.length > 0)
-    .filter((turn) => turn.role !== "user" || !looksLikeAddress(turn.text));
+  const turns: AskTurn[] = [];
+  let skipping = false;
+  for (const message of messages.slice(-ASK_LIMITS.maxMessages)) {
+    const text = messageText(message);
+    if (message.role === "user") skipping = looksLikeAddress(text);
+    if (skipping || text.length === 0) continue;
+    if (message.role === "assistant" && turns.length === 0) continue;
+    turns.push({ role: message.role, text });
+  }
+  return turns;
 }
 
 /** The question being asked now: the last message's text, if the last message is the voter's. */

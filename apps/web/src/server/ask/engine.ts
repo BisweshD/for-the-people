@@ -7,7 +7,7 @@ import {
   type UIMessageChunk,
 } from "ai";
 import { ToolBudget } from "./budget";
-import { costUsd, type AskModel } from "./model";
+import { costUsd, reportedCostUsd, type AskModel } from "./model";
 import { ASK_SYSTEM_PROMPT, requestContext } from "./prompt";
 import { createAskTools, type AskContext, type AskMetadata } from "./tools";
 
@@ -26,6 +26,8 @@ export const ASK_MAX_OUTPUT_TOKENS = 600;
  * The conversation's tokens and the tool budget are added per request (limits.ts).
  */
 export const ASK_BASE_INPUT_TOKENS = 20_000;
+/** A run that has not finished by now is stopped and answered with the error, inside the route's 30 s. */
+export const ASK_TIMEOUT_MS = 25_000;
 
 const ERROR_TEXT = "Something went wrong while checking the record. Please try again.";
 
@@ -96,6 +98,7 @@ export function runAsk(input: { turns: AskTurn[]; context: AskContext; model: As
     stopWhen: stepCountIs(ASK_STEP_LIMIT),
     maxOutputTokens: ASK_MAX_OUTPUT_TOKENS,
     temperature: 0,
+    timeout: { totalMs: ASK_TIMEOUT_MS },
     // One tool call per step, so a step adds at most one result (or one budget note) to the prompt.
     providerOptions: { anthropic: { disableParallelToolUse: true } },
   });
@@ -126,7 +129,11 @@ export function runAsk(input: { turns: AskTurn[]; context: AskContext; model: As
         }
       };
       const traces = new Map<string, AskToolTrace>();
+      // The answer is the text of the step that ended without calling a tool. Text written in a step
+      // that goes on to call a tool ("Let me look that up.") is a preamble, and is dropped.
       let rawText = "";
+      let stepText = "";
+      let stepCalledTool = false;
       let guard = guardAnswer({ text: "", toolOutputs: [] });
       let failed = false;
       try {
@@ -136,9 +143,21 @@ export function runAsk(input: { turns: AskTurn[]; context: AskContext; model: As
             case "text-end":
               continue;
             case "text-delta":
-              rawText += chunk.delta;
+              stepText += chunk.delta;
               continue;
+            case "start-step":
+              stepText = "";
+              stepCalledTool = false;
+              break;
+            case "finish-step":
+              if (!stepCalledTool) rawText = stepText;
+              break;
+            case "tool-input-start":
+            case "tool-input-error":
+              stepCalledTool = true;
+              break;
             case "tool-input-available":
+              stepCalledTool = true;
               traces.set(chunk.toolCallId, {
                 toolName: chunk.toolName,
                 input: chunk.input,
@@ -173,13 +192,15 @@ export function runAsk(input: { turns: AskTurn[]; context: AskContext; model: As
       }
       if (open) controller.close();
       const usage = await Promise.resolve(result.totalUsage).catch(() => null);
+      const steps = await Promise.resolve(result.steps).catch(() => []);
       settle({
         text: guard.text,
         rawText,
         guard,
         tools: [...traces.values()],
         usage,
-        costUsd: usage ? costUsd(usage, input.model.modelId) : null,
+        // OpenRouter reports what each step cost; otherwise the usage is priced from the table.
+        costUsd: reportedCostUsd(steps) ?? (usage ? costUsd(usage, input.model.modelId) : null),
         chunks,
         latencyMs: Math.round(performance.now() - started),
         failed,

@@ -414,15 +414,33 @@ describe("AskRequest", () => {
     expect(AskRequest.safeParse({ messages: fitted }).success).toBe(true);
   });
 
-  test("an address in an earlier question never reaches the model", () => {
+  test("an address in an earlier question never reaches the model, nor the reply to it", () => {
     const turns = conversationTurns([
       message("Who represents 1234 Oak Ave, Tampa, FL 33606?"),
       message("Ask For The People does not read addresses.", "assistant"),
       message("How did Ted Cruz vote on tariffs?"),
     ]);
-    expect(turns.map((turn) => turn.text)).toEqual([
-      "Ask For The People does not read addresses.",
-      "How did Ted Cruz vote on tariffs?",
+    expect(turns.map((turn) => turn.text)).toEqual(["How did Ted Cruz vote on tariffs?"]);
+    const middle = conversationTurns([
+      message("How did Collins vote?"),
+      message("Collins voted Yea.", "assistant"),
+      message("Who represents 1234 Oak Ave, Tampa, FL 33606?"),
+      message("Ask For The People does not read addresses.", "assistant"),
+      message("And Cruz?"),
     ]);
+    expect(middle.map((turn) => turn.role)).toEqual(["user", "assistant", "user"]);
+    expect(middle.at(-1)?.text).toBe("And Cruz?");
+  });
+
+  test("the turns always open with a question, even when the history is cut on an answer", () => {
+    const history = Array.from({ length: ASK_LIMITS.maxMessages }, (_, index) =>
+      message(`Turn ${index}`, index % 2 ? "assistant" : "user"),
+    );
+    const turns = conversationTurns([...history, message("And Cruz?")]);
+    expect(turns[0]?.role).toBe("user");
+    expect(turns.at(-1)?.text).toBe("And Cruz?");
+    expect(turns.every((turn, index) => index === 0 || turn.role !== turns[index - 1]!.role)).toBe(
+      true,
+    );
   });
 });

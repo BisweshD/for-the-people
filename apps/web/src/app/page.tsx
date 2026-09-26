@@ -6,6 +6,7 @@ import { MILESTONE_ANSWERS } from "@/components/swipe/thresholds";
 import { FetchedMatchData } from "@/components/swipe/match-data";
 import { SwipeDeck } from "@/components/swipe/swipe-deck";
 import { HomeBallot } from "@/components/home/home-ballot";
+import { usesDemoModel } from "@/server/ask/model";
 import { getBallotDistrictOptions } from "@/server/ballot";
 import { getDeckCards, getRollCallTally, getStatus } from "@/server/data";
 import { getCountReceipts } from "@/server/trust";
@@ -69,7 +70,7 @@ export default async function HomePage() {
           {/* A returning voter with enough answers sees their closest match here; only then is the
               ranking data fetched. */}
           <FetchedMatchData minDecided={MILESTONE_ANSWERS}>
-            <SwipeDeck cards={cards} variant="hero" />
+            <SwipeDeck cards={cards} variant="hero" talk={!usesDemoModel()} />
           </FetchedMatchData>
         </section>
       </section>

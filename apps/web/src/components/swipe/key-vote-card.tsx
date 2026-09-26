@@ -1,6 +1,6 @@
 "use client";
 
-import { Info, ShieldCheck } from "lucide-react";
+import { Info, MessageCircleQuestion, ShieldCheck } from "lucide-react";
 import { useState } from "react";
 import { IssueIcon } from "@/components/issue-icon";
 import { CardReceipt } from "@/components/swipe/card-receipt";
@@ -15,6 +15,7 @@ export function KeyVoteCard({
   total,
   compact = false,
   showPosition = compact,
+  onAsk,
 }: {
   card: CardView;
   position: number;
@@ -23,6 +24,8 @@ export function KeyVoteCard({
   compact?: boolean;
   /** "3 of 20" in the header. The home hero drops it once a "continue" line says where you are. */
   showPosition?: boolean;
+  /** Opens "Ask about this bill"; left out when no model is configured. */
+  onAsk?: () => void;
 }) {
   const [expanded, setExpanded] = useState(false);
   const short = compact && !expanded;
@@ -113,6 +116,17 @@ export function KeyVoteCard({
           <Info className="mt-0.5 size-4 shrink-0 text-ink-3" aria-hidden />
           <span>{card.card.context}</span>
         </p>
+      )}
+      {onAsk && (
+        <button
+          type="button"
+          onClick={onAsk}
+          aria-haspopup="dialog"
+          className="-my-2 inline-flex min-h-11 items-center gap-2 self-start rounded-control text-sm font-semibold text-ink underline underline-offset-4"
+        >
+          <MessageCircleQuestion className="size-4 shrink-0" aria-hidden />
+          Not sure? Ask about this bill
+        </button>
       )}
       {/* The home hero keeps its receipt at the foot of the ballot. On /swipe it sits under the title on
           phones (in the first view, above the pinned answers) and in the answer tray from tablets up. */}

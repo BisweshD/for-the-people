@@ -58,6 +58,12 @@ const ClosestStrip = dynamic(
   { ssr: false },
 );
 
+// "Ask about this bill" and its chat code load the first time someone opens it.
+const TalkSheet = dynamic(
+  () => import("@/components/swipe/talk-sheet").then((module) => module.TalkSheet),
+  { ssr: false },
+);
+
 type Moments = typeof import("@/components/swipe/journey-moments");
 /** The pause and completion cards, once loaded (shared by every deck on the page). */
 let loadedMoments: Moments | null = null;
@@ -89,6 +95,8 @@ interface DeckProps {
   cards: CardView[];
   /** "hero" shows one live card on the home page and continues on /swipe after the first answer. */
   variant: "page" | "hero";
+  /** A model is configured, so each vote offers "Ask about this bill" (the server decides). */
+  talk?: boolean;
 }
 
 /** The oval is 95% full at the commit point; the last bit of ink lands when the answer commits. */
@@ -100,7 +108,7 @@ function setLean(deck: HTMLElement | null, lean: number) {
   deck.style.setProperty("--lean-nay", String(Math.max(0, -lean) * FILL_AT_COMMIT));
 }
 
-export function SwipeDeck({ cards, variant }: DeckProps) {
+export function SwipeDeck({ cards, variant, talk = false }: DeckProps) {
   const voter = useVoter();
   const router = useRouter();
   const reduce = useReducedMotion();
@@ -134,6 +142,10 @@ export function SwipeDeck({ cards, variant }: DeckProps) {
   const barRef = useRef<HTMLDivElement>(null);
   const barEndRef = useRef<HTMLDivElement>(null);
   const hasCurrent = current !== null;
+  const [talkOpen, setTalkOpen] = useState(false);
+  const [talkUsed, setTalkUsed] = useState(false);
+  /** An answer chosen in "Ask about this bill", recorded once the sheet has closed. */
+  const chosen = useRef<{ choice: Choice; weight: Weight | null } | null>(null);
 
   // From tablets up the tray is sticky, so a long ballot never pushes the answers below the fold.
   // While it is pinned it floats (full border and a shadow); a marker just under its natural place
@@ -156,14 +168,14 @@ export function SwipeDeck({ cards, variant }: DeckProps) {
   const moments = useMoments(variant === "page" || answered.size > 0);
 
   const commit = useCallback(
-    (choice: Choice) => {
+    (choice: Choice, weightOverride: Weight | null = null) => {
       if (!current || pending) return;
       setPending(choice);
       const card = cardRef.current;
       const under = underRef.current;
       const direction = choice === "Yea" ? 1 : choice === "Nay" ? -1 : 0;
       const finish = () => {
-        voterActions.recordStance(current.id, choice, weight);
+        voterActions.recordStance(current.id, choice, weightOverride ?? weight);
         lastAnswered.current = current.id;
         setPending(null);
         setWeight(DEFAULT_WEIGHT);
@@ -389,8 +401,39 @@ export function SwipeDeck({ cards, variant }: DeckProps) {
               compact={variant === "hero"}
               resuming={answered.size > 0}
               onCommit={commit}
+              onAsk={
+                talk
+                  ? () => {
+                      setTalkUsed(true);
+                      setTalkOpen(true);
+                    }
+                  : undefined
+              }
             />
           </div>
+          {talkUsed && (
+            <TalkSheet
+              open={talkOpen}
+              onOpenChange={setTalkOpen}
+              card={current}
+              onChoose={(choice, suggestedWeight) => {
+                chosen.current = { choice, weight: suggestedWeight };
+                setTalkOpen(false);
+              }}
+              onClosed={(event) => {
+                const answer = chosen.current;
+                if (!answer) return;
+                chosen.current = null;
+                // Focus goes to the answer just given, which stays on the page, then the answer is
+                // recorded exactly as that button records it.
+                event.preventDefault();
+                deckRef.current
+                  ?.querySelector<HTMLElement>(`[data-choice="${answer.choice}"]`)
+                  ?.focus();
+                commit(answer.choice, answer.weight);
+              }}
+            />
+          )}
 
           <div
             ref={barRef}
@@ -477,6 +520,7 @@ interface DraggableCardProps {
   /** The voter has answered before; the hero's "continue" line says where they are. */
   resuming: boolean;
   onCommit: (choice: Choice) => void;
+  onAsk?: () => void;
 }
 
 function DraggableCard({
@@ -491,6 +535,7 @@ function DraggableCard({
   compact,
   resuming,
   onCommit,
+  onAsk,
 }: DraggableCardProps) {
   const width = useRef(360);
   const offset = useRef(0);
@@ -603,6 +648,7 @@ function DraggableCard({
         total={total}
         compact={compact}
         showPosition={compact && !resuming}
+        onAsk={onAsk}
       />
     </div>
   );
@@ -648,6 +694,7 @@ function ChoiceButtons({
   const choice = (side: Side) => (
     <button
       type="button"
+      data-choice={side}
       onClick={() => onChoose(side)}
       // aria-disabled, not disabled: disabling the focused button would drop focus to the page.
       aria-disabled={pending !== null}

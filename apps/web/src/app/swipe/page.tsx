@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ClosestSoFar } from "@/components/swipe/closest-so-far";
 import { MatchDataProvider } from "@/components/swipe/match-data";
 import { SwipeDeck } from "@/components/swipe/swipe-deck";
+import { usesDemoModel } from "@/server/ask/model";
 import { getDeckCards, getKeyVoteRecord, getMemberIndex } from "@/server/data";
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default async function SwipePage() {
     <MatchDataProvider value={{ record, members }}>
       <div className="mx-auto grid w-full max-w-xl gap-8 lg:max-w-none lg:grid-cols-[minmax(0,576px)_320px] lg:justify-center lg:gap-12">
         <h1 className="sr-only">Swipe your stance</h1>
-        <SwipeDeck cards={cards} variant="page" />
+        <SwipeDeck cards={cards} variant="page" talk={!usesDemoModel()} />
         <aside className="hidden lg:block lg:pt-14">
           <div className="sticky top-24">
             <ClosestSoFar cards={cards} />

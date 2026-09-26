@@ -76,8 +76,16 @@ export async function reserveSpend(
   turns: readonly AskTurn[],
   now: Date,
 ): Promise<SpendReservation | null> {
+  return reserveUsd(db, reservationUsd(modelId, turns), now);
+}
+
+/** Reserves a given amount against the same daily cap (Ask and "Ask about this bill" share it). */
+export async function reserveUsd(
+  db: Db,
+  reservedUsd: number,
+  now: Date,
+): Promise<SpendReservation | null> {
   const day = utcDay(now);
-  const reservedUsd = reservationUsd(modelId, turns);
   const total = await addSpend(db, day, reservedUsd, 1);
   if (total > DAILY_SPEND_CAP_USD) {
     await addSpend(db, day, -reservedUsd, -1);

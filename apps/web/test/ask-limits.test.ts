@@ -15,7 +15,16 @@ import {
   settledCostUsd,
   settleSpend,
 } from "../src/server/ask/limits";
-import { DEFAULT_MODEL, getAskModel, PRICES, usesDemoModel } from "../src/server/ask/model";
+import {
+  askProvider,
+  DEFAULT_MODEL,
+  getAskModel,
+  OPENROUTER_DEFAULT_COMPLEX_MODEL,
+  OPENROUTER_DEFAULT_MODEL,
+  PRICES,
+  reportedCostUsd,
+  usesDemoModel,
+} from "../src/server/ask/model";
 import { MOCK_MODEL_ID } from "../src/server/ask/mock-model";
 
 /** The $20/day cap and the paid-model gate. */
@@ -62,6 +71,54 @@ describe("getAskModel in production (H1)", () => {
     });
     expect(model.modelId).toBe(DEFAULT_MODEL);
     expect(model.modelId in PRICES).toBe(true);
+  });
+});
+
+describe("the model provider", () => {
+  const dev = { NODE_ENV: "development" };
+
+  test("OpenRouter comes first, then Anthropic, then the demo", () => {
+    expect(askProvider({ ...dev, OPENROUTER_API_KEY: "or", ANTHROPIC_API_KEY: "sk" })).toBe(
+      "openrouter",
+    );
+    expect(askProvider({ ...dev, ANTHROPIC_API_KEY: "sk" })).toBe("anthropic");
+    expect(askProvider(dev)).toBe("demo");
+    const both = { ...dev, OPENROUTER_API_KEY: "or", ANTHROPIC_API_KEY: "sk" };
+    expect(getAskModel("default", both).modelId).toBe(OPENROUTER_DEFAULT_MODEL);
+    expect(getAskModel("complex", both).modelId).toBe(OPENROUTER_DEFAULT_COMPLEX_MODEL);
+    expect(getAskModel("default", { ...dev, ANTHROPIC_API_KEY: "sk" }).modelId).toBe(DEFAULT_MODEL);
+    expect(usesDemoModel({ ...dev, OPENROUTER_API_KEY: "or" })).toBe(false);
+  });
+
+  test("OpenRouter prices its own model ids, and an id it does not price falls back", () => {
+    expect(PRICES["anthropic/claude-sonnet-5"]).toEqual({ input: 2, output: 10 });
+    expect(PRICES["anthropic/claude-opus-5.5"]).toEqual({ input: 4, output: 20 });
+    expect(PRICES["anthropic/claude-haiku-4.5"]).toEqual({ input: 1, output: 5 });
+    const openrouter = { ...dev, OPENROUTER_API_KEY: "or" };
+    expect(
+      getAskModel("default", { ...openrouter, ASK_MODEL: "anthropic/claude-haiku-4.5" }).modelId,
+    ).toBe("anthropic/claude-haiku-4.5");
+    // An Anthropic id is not an OpenRouter id, and the reverse.
+    expect(getAskModel("default", { ...openrouter, ASK_MODEL: DEFAULT_MODEL }).modelId).toBe(
+      OPENROUTER_DEFAULT_MODEL,
+    );
+    expect(
+      getAskModel("default", {
+        ...dev,
+        ANTHROPIC_API_KEY: "sk",
+        ASK_MODEL: OPENROUTER_DEFAULT_MODEL,
+      }).modelId,
+    ).toBe(DEFAULT_MODEL);
+  });
+
+  test("a run settles to OpenRouter's reported cost only when every step reported one", () => {
+    const step = (cost: unknown) => ({
+      providerMetadata: { openrouter: { usage: { cost } } } as never,
+    });
+    expect(reportedCostUsd([step(0.01), step(0.02)])).toBeCloseTo(0.03, 12);
+    expect(reportedCostUsd([step(0.01), { providerMetadata: undefined }])).toBeNull();
+    expect(reportedCostUsd([step("0.01")])).toBeNull();
+    expect(reportedCostUsd([])).toBeNull();
   });
 });
 
