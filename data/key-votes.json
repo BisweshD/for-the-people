@@ -202,17 +202,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "The body now says the minimums apply only to larger amounts, which matches the headline and the steward's finding. Splitting the sentence in two changes nothing in meaning."
+          "notes": "Approved after replacing \"look-alike\" with \"chemically similar\" and keeping \"stay banned\" and \"larger amounts\"."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Takes the progressive reviewer's body fix, which accurately limits mandatory minimums to larger amounts and matches the headline. It still says dealing brings the same penalties as other fentanyl-like drugs, so the bill's tougher sentencing is not softened."
+          "notes": "Approved: \"chemically similar\" is accurate and keeps \"stay banned\" and \"larger amounts\"."
         },
         {
           "id": "reviewer-owner",
@@ -269,17 +269,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "My fix was taken: 'Medicaid work requirements' is back. Everything else was already even-handed."
+          "notes": "Approved with \"known as\" restored and the border and defense listed beside taxes, Medicaid, and food aid."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Takes the progressive reviewer's 'Medicaid work requirements', which is the law's plain term and not loaded. The tax, border, defense, and debt-limit parts are all still listed evenly."
+          "notes": "Approved: the list now names parts that both supporters and opponents stressed."
         },
         {
           "id": "reviewer-owner",
@@ -337,17 +337,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "This takes the conservative fix ('larger, temporary', and 'on a temporary basis' in the body). It is accurate because the 2021 expansion was temporary and was extended in 2022. The card still says the credits were opened to people with higher incomes and that the original credits continue, so nothing a progressive voter needs was lost."
+          "notes": "Approved: \"temporary\" is accurate and the \"Obamacare\" party cue is gone."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "My fix was adopted: 'tax credits' replaces 'extra help', and the copy now says the larger credits were temporary and already extended once in 2022. Accurate and neutral."
+          "notes": "Approved: keeps \"temporary\" and \"tax credits\", and yes still equals Yea."
         },
         {
           "id": "reviewer-owner",
@@ -472,17 +472,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Unchanged from the version I approved in round 1. It is neutral and accurate."
+          "notes": "Accurate and plain; the \"import taxes\" gloss matches the approved body."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Unchanged from the round-1 copy I approved. The President's stated reasons and the Supreme Court outcome are kept, and the question is neutral."
+          "notes": "Accurate and neutral; yes still means ending the emergency."
         },
         {
           "id": "reviewer-owner",
@@ -529,17 +529,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Unchanged from the version I approved in round 1. It keeps that noncitizen voting is already illegal, the sworn statement people make today, and the opponents' point about access to documents."
+          "notes": "Approved: the passport and birth certificate examples match the approved context."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Unchanged from the round-1 copy I approved. Supporters' enforcement argument and opponents' document-access point carry equal weight."
+          "notes": "Approved with \"birth certificate\" added so the example matches how most people would prove citizenship."
         },
         {
           "id": "reviewer-owner",
@@ -596,17 +596,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Both sources are named again: Congress's research office and the President's own report. It takes the conservative and steward wording 'on-and-off fighting', which matches the CRS 'intermittent' and is fair."
+          "notes": "A fair plain reading of removing forces from hostilities; yes still equals Yea."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "My fix was adopted word for word: the May 4 fighting is credited to Congress's research office as on-and-off, and the June 9 strikes to the President's report. Neither side's claim is stated as unsourced fact."
+          "notes": "Accurate and neutral; it follows the resolution's own hostilities wording."
         },
         {
           "id": "reviewer-owner",
@@ -663,17 +663,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "My fix identifying the GAO as Congress's own watchdog was taken. The steward's question and title replace 'gas-only', which was wrong, with accurate wording that stays neutral."
+          "notes": "\"Electric\" is a fair plain word for zero-emission, and the new Yea and Nay lines match."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Takes the steward's question and title, which describe the 2035 zero-emission/plug-in requirement more accurately than 'gas-only'. Also takes the progressive reviewer's GAO wording; supporters' reason the Review Act applied is still kept."
+          "notes": "Plainer than \"zero-emission\" and still accurate; the direction matches."
         },
         {
           "id": "reviewer-owner",
@@ -720,17 +720,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "The headline now uses my exact fix, which names the March order and says 'used a national security exception' in place of stating a motive. The title's return to the previously approved March 2025 wording also removes the confusion with the August order."
+          "notes": "Approved: \"cited national security\" keeps the order's stated basis in plain words."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Re-confirmed the revised question from the progressive reviewer. It restores \"March\" from my round-1 fix and presents the national security exception as the legal basis the order used, not as its motive. It is accurate and neutral."
+          "notes": "Approved: it credits the national security basis to the order, restoring what the first rewrite dropped."
         },
         {
           "id": "reviewer-owner",
@@ -845,17 +845,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "This combines my fix with the steward's: Russia is named, the condition applies only to sanctions, and 'blocks peace' is included. The body says 'waging war on Ukraine' again."
+          "notes": "Approved: naming Russia twice removes any doubt about who is meant."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Takes the steward's and progressive reviewer's fixes, which remove the ambiguous 'it' and make clear only the sanctions are conditional. 'Waging war' matches the previously approved copy, and the dollar amounts and doubled loan cap remain."
+          "notes": "Approved with the comma restored and Russia named, so only the sanctions depend on Russia's actions."
         },
         {
           "id": "reviewer-owner",
@@ -970,17 +970,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "This takes the conservative's wording. 'Overriding its decision to end it' is accurate because the bill applies no matter what other laws say and DHS did decide to end the status. It describes the action plainly without favoring either side, and the context still keeps both sides' reasons and the July 27, 2026 end date."
+          "notes": "Approved: \"eligible\" and the override clause fix the earlier concerns."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "My fix was adopted word for word: the question now says the bill overrides the government's decision to end the status, which is accurate both at the April 2026 vote and now. The updated context on DHS's reasons, supporters' reasons, and the July 27, 2026 end date is neutral."
+          "notes": "Approved: it keeps \"temporary\" and the override of the government's decision."
         },
         {
           "id": "reviewer-owner",
@@ -1037,17 +1037,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "The steward's 'Do you support the GENIUS Act' question fixes my concern: a no vote no longer reads as being against any rules. 'Approved reserves' replaces 'safe assets', which was the card's own judgment."
+          "notes": "Plain and accurate; $1 matches the body's example."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Takes the steward's question and 'approved reserves'. Both are accurate and neutral, and the Republican objection about a Federal Reserve digital currency is still kept."
+          "notes": "Accurate and plain; it matches the body's redemption for a fixed amount."
         },
         {
           "id": "reviewer-owner",
@@ -1094,17 +1094,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Unchanged from the version I approved in round 1. It keeps the point that wind and solar are left out, both failed votes, and the renewal."
+          "notes": "Drawn from the approved body; \"some other\" shows the list is partial."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Unchanged from the round-1 copy I approved. The order's stated reason, both failed votes, and the renewal are kept."
+          "notes": "Accurate; \"some other\" avoids implying every energy type is covered."
         },
         {
           "id": "reviewer-owner",
@@ -1162,17 +1162,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Unchanged from the version I approved in round 1. It keeps that the money was already approved and went to public radio and TV."
+          "notes": "Accurate; NPR and PBS are fair examples of what the public broadcasting money funds."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Unchanged from the round-1 copy I approved. Plain and accurate about the amounts and where the money was going."
+          "notes": "Foreign aid first fits the amounts; NPR and PBS are fair, plain examples."
         },
         {
           "id": "reviewer-owner",
@@ -1219,17 +1219,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Unchanged from the version I approved in round 1. It keeps the Supreme Court ruling, the replacement charge, and the emergency still being in place."
+          "notes": "Accurate and plain; it fits the 10% baseline tariff."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Unchanged from the round-1 copy I approved. The President's stated reasons and the later 10% charge under another law are kept."
+          "notes": "Accurate and neutral; it reads the same way as the Canada question."
         },
         {
           "id": "reviewer-owner",
@@ -1276,17 +1276,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Unchanged from the version I approved in round 1. It keeps the opponents' point about spotting suspicious gun buying."
+          "notes": "Accurate, and it takes neither side's tracking or fraud argument."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "Unchanged from the round-1 copy I approved. Supporters' tracking concern and the carve-outs are both kept."
+          "notes": "Plain and accurate, with no framing about tracking."
         },
         {
           "id": "reviewer-owner",
@@ -1333,17 +1333,17 @@
           "id": "reviewer-progressive",
           "kind": "ai",
           "leaning": "progressive",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "The headline drops the bargaining deadlines I proposed, but it is accurate: the panel is a 3-person panel whose terms are binding. The title and body keep the deadlines, the mediation step, and the factors that protect workers."
+          "notes": "Approved: \"terms both sides must follow\" spells out that the panel's terms are binding."
         },
         {
           "id": "reviewer-conservative",
           "kind": "ai",
           "leaning": "conservative",
-          "reviewedAt": "2026-09-24T14:19:05Z",
+          "reviewedAt": "2026-09-26T18:04:58Z",
           "verdict": "approved",
-          "notes": "The headline takes 'a 3-person panel' instead of my 'outside panel', which is fair because each side picks a member. It keeps 'binding terms', my main concern, and the body uses my wording that both sides must follow the terms for 2 years."
+          "notes": "Approved: it keeps the binding point in the new sentence shape."
         },
         {
           "id": "reviewer-owner",
