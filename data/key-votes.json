@@ -162,7 +162,7 @@
       "order": 0,
       "issueArea": "crime-and-drugs",
       "card": {
-        "question": "Should fentanyl-related drugs stay in the strictest drug category for good, with mandatory minimum prison time for dealing larger amounts?",
+        "question": "Should fentanyl look-alike drugs be banned for good, with required prison time for dealing large amounts?",
         "title": "Permanently put fentanyl-related drugs in the strictest drug category (S. 331)",
         "whatItDoes": "Fentanyl-related drugs are chemical cousins of fentanyl. This bill puts them in Schedule I, the strictest drug category, for good. Dealing them, including selling, making, or holding them to sell, brings the same penalties as other fentanyl-like drugs. That includes mandatory minimum prison time for larger amounts. It also makes it easier for scientists to get approval to study Schedule I drugs. Fentanyl itself stays in Schedule II, where doctors can use it.",
         "context": "It became law on July 16, 2025. These drugs had been in Schedule I on a temporary basis since 2018.",
@@ -229,7 +229,7 @@
       "order": 1,
       "issueArea": "taxes-and-spending",
       "card": {
-        "question": "Do you support the 2025 tax and spending law known as the One Big Beautiful Bill Act?",
+        "question": "Do you support the One Big Beautiful Bill, the 2025 law that changed taxes, Medicaid, and food aid?",
         "title": "2025 tax and spending law (H.R. 1, known as the One Big Beautiful Bill Act)",
         "whatItDoes": "It makes many 2017 tax cuts permanent and raises the child tax credit. For a few years, it adds tax breaks for tips, overtime, car-loan interest, and seniors, and raises the cap on deducting state and local taxes. It adds Medicaid work requirements and limits a tax states use to help pay for Medicaid. It expands SNAP (food aid) work rules and moves some SNAP costs to states. It ends several clean-energy tax credits, adds money for the border and defense, and raises the debt limit by $5 trillion.",
         "context": "It became law on July 4, 2025. The Vice President broke a 50-50 tie in the Senate. Many of the 2017 tax cuts had been set to end after 2025.",
@@ -296,12 +296,12 @@
       "order": 2,
       "issueArea": "health-care",
       "card": {
-        "question": "Should the larger, temporary tax credits for Affordable Care Act health plans be extended for 3 more years?",
+        "question": "Should the extra help paying for ACA (Obamacare) health plans be extended for 3 more years?",
         "title": "Extend the larger ACA health plan tax credits for 3 years (H.R. 1834)",
         "whatItDoes": "People who buy health insurance through the Affordable Care Act (ACA) marketplace can get tax credits that lower their monthly cost. In 2021 Congress made these credits bigger on a temporary basis and opened them to people with higher incomes. A 2022 law extended the larger credits through 2025. This bill extends them through 2028. The original, smaller credits continue either way.",
         "context": "The House passed it after a majority of members signed a petition to force a vote. In the Senate, a Dec. 11, 2025 vote to move a matching bill (S. 3385) forward got 51 votes, short of the 60 needed. Neither bill has become law.",
-        "yeaMeans": "Support extending the expanded credits",
-        "nayMeans": "Oppose extending the expanded credits"
+        "yeaMeans": "Extend the extra help",
+        "nayMeans": "Do not extend it"
       },
       "measures": [
         "119-hr-1834",
@@ -364,7 +364,7 @@
       "order": 3,
       "issueArea": "immigration",
       "card": {
-        "question": "Should immigrants who entered illegally or lack valid papers be held if arrested for theft, burglary, or some violent crimes, before any conviction?",
+        "question": "Should immigrants in the U.S. illegally be detained if they are arrested for theft or some violent crimes, even without a conviction?",
         "title": "Detain certain immigrants arrested for or charged with some crimes (Laken Riley Act)",
         "whatItDoes": "Federal immigration officers must hold certain immigrants in custody if they are arrested for, charged with, or admit to certain crimes. It covers people who entered illegally, got in by fraud, or lack valid papers. The crimes are burglary, theft, shoplifting, assaulting a police officer, and crimes that kill or badly hurt someone. No conviction is needed. States can also sue over some federal decisions to release or parole immigrants.",
         "context": "It is named for Laken Riley, a Georgia nursing student killed in 2024. Her killer had crossed the border illegally in 2022 and was then released on immigration parole. It was the first law passed by the 119th Congress, signed Jan. 29, 2025.",
@@ -431,7 +431,7 @@
       "order": 4,
       "issueArea": "trade",
       "card": {
-        "question": "Should the national emergency used to put tariffs on goods from Canada end?",
+        "question": "Should Congress end the emergency the President used to put tariffs, or import taxes, on goods from Canada?",
         "title": "End the national emergency behind tariffs on Canada (H.J.Res. 72 and S.J.Res. 37)",
         "whatItDoes": "On Feb. 1, 2025, the President declared a national emergency over illegal drugs and illegal crossings at the Canadian border. He used it to put tariffs, which are taxes on imports, on goods from Canada. This resolution ends that emergency.",
         "context": "The House and the Senate each passed their own version, but neither version has passed both. In February 2026 the Supreme Court ruled that the law used does not allow tariffs. The President ended these tariffs but kept the emergency in place.",
@@ -499,7 +499,7 @@
       "order": 5,
       "issueArea": "elections",
       "card": {
-        "question": "Should people have to show proof of U.S. citizenship to register to vote in federal elections?",
+        "question": "Should people have to show proof of U.S. citizenship, like a passport, to register to vote in federal elections?",
         "title": "Require proof of citizenship to register to vote in federal elections (H.R. 22)",
         "whatItDoes": "People registering to vote in federal elections would have to show a document that proves U.S. citizenship, such as a passport. States must offer another way to prove it for people without such papers. People who register by mail must bring the proof in person to an election official. States must remove noncitizens from voter lists.",
         "context": "It is already illegal for noncitizens to vote in federal elections. Today, people swear they are citizens when they register. Supporters say document checks are needed to enforce the ban. Opponents say many citizens cannot easily get a passport or birth certificate. The Senate has not passed the bill.",
@@ -556,7 +556,7 @@
       "order": 6,
       "issueArea": "war-and-foreign-policy",
       "card": {
-        "question": "Should the President have to pull U.S. forces out of fighting with Iran unless Congress approves it?",
+        "question": "Should the President have to stop U.S. military action against Iran unless Congress approves it?",
         "title": "Direct the President to end U.S. hostilities with Iran (H.Con.Res. 86)",
         "whatItDoes": "It tells the President to remove U.S. forces from fighting with Iran unless Congress approves it. It relies on the War Powers Resolution, a law about the role of Congress in going to war. Forces may still defend the U.S. or an ally or partner from an attack that is about to happen, within that law's time limits.",
         "context": "Fighting began Feb. 28, 2026. After an Apr. 7 ceasefire, the White House said May 1 it had ended. Congress's research office reported on-and-off fighting from May 4, and the President reported new U.S. strikes from June 9. Both chambers passed it. It does not go to the President, and whether it is legally binding is disputed.",
@@ -623,12 +623,12 @@
       "order": 7,
       "issueArea": "climate-and-energy",
       "card": {
-        "question": "Should Congress block California's rule that all new cars sold by 2035 be zero-emission or plug-in hybrids?",
+        "question": "Should Congress block California's rule that all new cars sold there by 2035 be electric or plug-in hybrids?",
         "title": "Cancel California's waiver for its zero-emission car sales rules (H.J.Res. 88)",
         "whatItDoes": "California needs special permission from the EPA, called a waiver, to set its own car pollution rules. This cancels the waiver for its newest rules. They required a growing share of new cars sold to be zero-emission, reaching 100% in 2035, with plug-in hybrids allowed for up to 20%. They also tightened limits for gas cars. States that copied the rules are blocked too.",
         "context": "It became law on June 12, 2025. Congress used a law for overturning agency rules. Congress's own watchdog office, the GAO, said that law did not apply to this waiver. Supporters said it did, because the EPA sent the waiver to Congress as a rule. California and 10 other states sued.",
-        "yeaMeans": "Support canceling the waiver",
-        "nayMeans": "Keep the waiver in place"
+        "yeaMeans": "Block California's rule",
+        "nayMeans": "Keep California's rule"
       },
       "measures": [
         "119-hjres-88"
@@ -690,12 +690,12 @@
       "order": 8,
       "issueArea": "labor",
       "card": {
-        "question": "Should Congress cancel the President's March 2025 order that used a national security exception to end union bargaining at many federal agencies?",
+        "question": "Should Congress undo the President's March 2025 order that ended union bargaining for many federal workers?",
         "title": "Cancel the March 2025 order ending union bargaining at many federal agencies (H.R. 2550)",
         "whatItDoes": "On March 27, 2025, the President signed an order ending union bargaining rights for workers at many federal agencies. It used a national security exception in federal labor law. This bill cancels that order. Union contracts in place the day before the order would last their full terms.",
         "context": "A majority of House members signed a petition to force this vote, and it passed the House. The Senate has not voted on it. A second order in August 2025 covered more agencies; this bill does not undo it.",
-        "yeaMeans": "Support canceling the executive order",
-        "nayMeans": "Keep the executive order in place"
+        "yeaMeans": "Undo the order",
+        "nayMeans": "Keep the order"
       },
       "measures": [
         "119-hr-2550"
@@ -747,7 +747,7 @@
       "order": 9,
       "issueArea": "abortion",
       "card": {
-        "question": "Should federal law set care rules and criminal penalties for health care workers when a baby is born alive after an attempted abortion?",
+        "question": "Should doctors have to care for a baby born alive after an attempted abortion like any other newborn, or face criminal penalties?",
         "title": "Require care for infants born alive after an attempted abortion (H.R. 21 and S. 6)",
         "whatItDoes": "It covers a baby born alive after an attempted abortion. Doctors and other health care workers would have to give that baby the same care as any other newborn at the same stage of pregnancy. They would also have to take the baby to a hospital. The bill adds reporting rules and criminal penalties. The mother cannot be prosecuted under it.",
         "context": "A 2002 federal law already treats any baby born alive as a person. Supporters say that law lacks care rules and penalties. Opponents say current laws already cover this and that the bill overrides doctors' judgment. The House passed it. The Senate version fell short of the 60 votes needed to move forward.",
@@ -815,7 +815,7 @@
       "order": 10,
       "issueArea": "war-and-foreign-policy",
       "card": {
-        "question": "Should the U.S. approve military aid to Ukraine, and require sanctions on Russia if Russia keeps waging war or blocks peace?",
+        "question": "Should Congress approve military aid for Ukraine and require sanctions on Russia if it keeps fighting or blocks peace?",
         "title": "Authorize military aid to Ukraine and conditional sanctions on Russia (H.R. 2913)",
         "whatItDoes": "It allows $300 million a year in military aid to Ukraine for 2026 and 2027. It raises the limit on U.S. military loans to Ukraine and NATO allies from $4 billion to $8 billion. It creates a fund to help rebuild Ukraine. If the President finds Russia is still waging war on Ukraine, refusing peace talks, or breaking a peace deal, sanctions are required. They target Russian banks and oil, gas, and mining companies.",
         "context": "A majority of House members signed a petition to force this vote. The Senate has not voted on it.",
@@ -940,7 +940,7 @@
       "order": 12,
       "issueArea": "immigration",
       "card": {
-        "question": "Should the government have to give Haiti temporary protected status until 2029, overriding its decision to end it?",
+        "question": "Should Haitians already in the U.S. keep their protection from deportation, and the right to work, until 2029?",
         "title": "Require temporary protected status for Haiti until 2029 (H.R. 1689)",
         "whatItDoes": "Temporary protected status (TPS) shields eligible people from certain countries from deportation. They must already be in the U.S., and they can work while it lasts. This bill requires the government to give Haiti this status until April 20, 2029, no matter what other laws say. People convicted of a felony or of two or more misdemeanors in the U.S., among others, cannot get it.",
         "context": "In Nov. 2025, Homeland Security moved to end Haiti's status. It said Haiti no longer met the law's conditions and that letting Haitians stay was against the national interest. Supporters pointed to gang violence and unsafe conditions in Haiti. A petition forced the House vote; the Senate has not voted. After a June 2026 Supreme Court ruling, the status ended July 27, 2026.",
@@ -997,7 +997,7 @@
       "order": 13,
       "issueArea": "tech-and-crypto",
       "card": {
-        "question": "Do you support the GENIUS Act, which sets federal rules for stablecoins, digital tokens meant to keep a fixed value?",
+        "question": "Do you support the GENIUS Act, the 2025 law setting federal rules for stablecoins, a kind of crypto meant to stay worth $1?",
         "title": "Set federal rules for payment stablecoins, a type of digital token (S. 1582)",
         "whatItDoes": "Stablecoins are digital tokens. The company that issues them must trade each one back for a fixed amount of money, such as $1. This law sets federal rules for them. Issuers must back every token with at least that much in approved reserves, like dollars, bank deposits, or short-term U.S. Treasury bills.",
         "context": "It became law on July 18, 2025. Supporters said it gives a growing market clear rules and keeps the dollar central to digital payments. Opponents said its protections for consumers and its ethics limits were too weak. One Republican opponent wanted it to fully block a Federal Reserve digital currency.",
@@ -1064,7 +1064,7 @@
       "order": 14,
       "issueArea": "climate-and-energy",
       "card": {
-        "question": "Should the energy emergency the President declared in January 2025 end?",
+        "question": "Should Congress end the President's 2025 energy emergency, which speeds up oil, gas, coal, and some other energy projects?",
         "title": "End the national energy emergency declared in January 2025 (S.J.Res. 10)",
         "whatItDoes": "On Jan. 20, 2025, the President declared a national energy emergency. His order said U.S. energy supply and infrastructure fall short of the country's needs. It told agencies to use emergency powers to speed up energy projects. It covers oil, gas, coal, uranium, biofuels, geothermal, water power, and critical minerals, but not wind or solar. This resolution ends the emergency.",
         "context": "The Senate rejected it 47-52 on Feb. 26, 2025. A second try failed 47-51 on Oct. 8, 2025. Neither passed the Senate, so the House did not vote. In January 2026 the President renewed the emergency for another year.",
@@ -1121,7 +1121,7 @@
       "order": 15,
       "issueArea": "government-spending",
       "card": {
-        "question": "Should Congress take back about $9 billion it had approved for public broadcasting and foreign aid?",
+        "question": "Should Congress take back about $9 billion it had approved for foreign aid and for public radio and TV, like NPR and PBS?",
         "title": "Cancel about $9 billion already approved for public broadcasting and foreign aid (H.R. 4)",
         "whatItDoes": "It cancels about $9 billion that Congress had already approved. About $1.1 billion was for public radio and TV, through the Corporation for Public Broadcasting, for 2026 and 2027. About $7.9 billion was for foreign aid and dues to international groups.",
         "context": "It became law on July 24, 2025. The House vote shown here, 216-213, agreed to the Senate's version.",
@@ -1189,7 +1189,7 @@
       "order": 16,
       "issueArea": "trade",
       "card": {
-        "question": "Should the national emergency behind the April 2025 tariffs on most imports end?",
+        "question": "Should Congress end the emergency the President used in April 2025 to put tariffs on goods from most countries?",
         "title": "End the national emergency behind the April 2025 global tariffs (S.J.Res. 88)",
         "whatItDoes": "On April 2, 2025, the President declared a national emergency. He cited the U.S. buying far more goods from abroad than it sells, year after year, and unequal trade terms. He used it to add a 10% tariff, a tax on imports, to most goods from abroad, with higher rates for many countries. This resolution ends that emergency.",
         "context": "The Senate passed it 51-47 on Oct. 30, 2025. The House has not voted. In February 2026 the Supreme Court ruled that the law used does not allow tariffs. The President ended these tariffs and set a 10% import charge under another law until July 24, 2026. The emergency is still in place.",
@@ -1246,7 +1246,7 @@
       "order": 17,
       "issueArea": "guns",
       "card": {
-        "question": "Should card companies be barred from using a special sales code for gun sellers?",
+        "question": "Should credit card companies be barred from labeling gun store purchases with a special code?",
         "title": "Bar card networks from using a sales code just for gun sellers (H.R. 1181)",
         "whatItDoes": "Card networks sort the businesses that take their cards by type, using codes. This bill bars card networks and payment processors from using a code just for sellers of guns, ammunition, or gun parts. They may not require or assign one. The Attorney General enforces it, and it overrides state and local laws on such codes.",
         "context": "Supporters say the code singles out legal gun sales for tracking. Opponents say it helps banks spot suspicious gun buying. Card companies may still follow laws on fraud, disputes, suspicious activity, data breaches, and cyber risks. It passed the House on July 14, 2026. The Senate has not voted on it.",
@@ -1303,7 +1303,7 @@
       "order": 18,
       "issueArea": "labor",
       "card": {
-        "question": "Should a 3-person panel set binding terms for a new union's first contract if talks fail?",
+        "question": "If a new union and an employer can't agree on a first contract, should a 3-person panel set the terms?",
         "title": "Set deadlines and a binding panel decision for first union contracts (H.R. 5408)",
         "whatItDoes": "When workers form a new union, both sides must start bargaining within 10 days of a written request. If there is no first contract after 90 days, either side can ask a federal mediator for help. If that fails after 30 more days, a 3-person panel sets terms that both sides must follow for 2 years. Each side picks one member, and the third is neutral. During any bargaining, pay and conditions stay the same until a deal.",
         "context": "The panel must weigh the employer's finances and size, workers' cost of living and ability to support their families, and pay at similar employers. A majority of House members signed a petition to force this vote. The Senate has not voted on it.",
@@ -1360,7 +1360,7 @@
       "order": 19,
       "issueArea": "education-and-culture",
       "card": {
-        "question": "Should colleges lose federal student aid if they join business boycotts of Israel without a valid business reason?",
+        "question": "Should colleges lose federal student aid if they refuse to do business with Israeli companies or schools without a valid business reason?",
         "title": "Tie college student aid to not joining commercial boycotts of Israel (H.R. 4795)",
         "whatItDoes": "To keep federal student aid, colleges must agree not to join business boycotts of Israel without a valid business reason. That includes boycotts of Israeli companies and schools. Colleges in or applying to federal international education programs have a yearly check too. They must confirm their students and teachers can join programs in Israel on the same terms as other countries. People from Israeli colleges must be able to join theirs the same way.",
         "context": "It covers business actions, like refusing to deal, which the bill calls nonexpressive boycotts. Colleges that miss the yearly check lose international education funds. Supporters say it counters bias against Israel. Opponents say it lets the government pressure colleges over their views. The Senate has not voted.",
