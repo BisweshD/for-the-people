@@ -1,0 +1,85 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "measure-s5",
+  "recordedAt": "2026-09-24T14:44:26.143Z",
+  "question": "What is S. 5?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "S. 5, Laken Riley Act, became law. In House roll call 23 on Jan 22, 2025, the result was passed, 263 Yea to 156 Nay.",
+  "tools": [
+    {
+      "toolName": "getMeasure",
+      "input": { "measure": "What is S. 5?" },
+      "modelOutput": {
+        "measures": [
+          {
+            "id": "119-s-5",
+            "label": "S. 5",
+            "title": "Laken Riley Act",
+            "becameLaw": true,
+            "latestAction": "Became Public Law No: 119-1.",
+            "latestActionDate": "2025-01-29",
+            "summary": "Laken Riley Act\nThis act requires the Department of Homeland Security (DHS) to detain certain non-U.S. nationals (aliens under federal law) who have been arrested for burglary, theft, larceny, shoplifting, assault of a law enforcement officer, or any crime that results in death or serious bodily injury to another person. The act also authorizes states to sue the federal government for decisions or alleged failures related to immigration enforcement.\nUnder this act, DHS must detain an individual who (1) is unlawfully present in the United States or did not possess the necessary documents when applying for admission; and (2) has been charged with, arrested for, convicted of, or admits to havin…",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-1",
+                "chamber": "Senate",
+                "number": 1,
+                "date": "2025-01-09",
+                "question": "On Cloture on the Motion to Proceed",
+                "result": "Cloture on the Motion to Proceed Agreed to",
+                "yea": 84,
+                "nay": 9,
+                "measure": "S. 5"
+              },
+              {
+                "id": "senate-119-1-2",
+                "chamber": "Senate",
+                "number": 2,
+                "date": "2025-01-13",
+                "question": "On the Motion to Proceed",
+                "result": "Motion to Proceed Agreed to",
+                "yea": 82,
+                "nay": 10,
+                "measure": "S. 5"
+              },
+              {
+                "id": "senate-119-1-5",
+                "chamber": "Senate",
+                "number": 5,
+                "date": "2025-01-17",
+                "question": "On the Cloture Motion",
+                "result": "Cloture Motion Agreed to",
+                "yea": 61,
+                "nay": 35,
+                "measure": "S. 5"
+              },
+              {
+                "id": "senate-119-1-7",
+                "chamber": "Senate",
+                "number": 7,
+                "date": "2025-01-20",
+                "question": "On Passage of the Bill",
+                "result": "Bill Passed",
+                "yea": 64,
+                "nay": 35,
+                "measure": "S. 5"
+              },
+              {
+                "id": "house-119-1-23",
+                "chamber": "House",
+                "number": 23,
+                "date": "2025-01-22",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 263,
+                "nay": 156,
+                "measure": "S. 5"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 495
+}

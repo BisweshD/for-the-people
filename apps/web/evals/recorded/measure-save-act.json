@@ -1,0 +1,52 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "measure-save-act",
+  "recordedAt": "2026-09-24T14:44:24.241Z",
+  "question": "What did the SAVE Act do?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "H.R. 22, SAVE Act, had its latest action on Apr 10, 2025. In House roll call 102 on Apr 10, 2025, the result was passed, 220 Yea to 208 Nay.",
+  "tools": [
+    {
+      "toolName": "getMeasure",
+      "input": { "measure": "SAVE Act" },
+      "modelOutput": {
+        "measures": [
+          {
+            "id": "119-hr-22",
+            "label": "H.R. 22",
+            "title": "SAVE Act",
+            "becameLaw": false,
+            "latestAction": "Received in the Senate.",
+            "latestActionDate": "2025-04-10",
+            "summary": "Safeguard American Voter Eligibility Act or the SAVE Act\nThis bill requires individuals to provide documentary proof of U.S. citizenship when registering to vote in federal elections.\nSpecifically, the bill prohibits states from accepting and processing an application to register to vote in a federal election unless the applicant presents documentary proof of U.S. citizenship. The bill specifies what documents are considered acceptable proof of U.S. citizenship, such as identification that complies with the REAL ID Act of 2005 that indicates U.S. citizenship.\nFurther, the bill (1) prohibits states from registering an individual to vote in a federal election unless, at the time the individual…",
+            "rollCalls": [
+              {
+                "id": "house-119-1-101",
+                "chamber": "House",
+                "number": 101,
+                "date": "2025-04-10",
+                "question": "On Motion to Recommit",
+                "result": "Failed",
+                "yea": 211,
+                "nay": 215,
+                "measure": "H.R. 22"
+              },
+              {
+                "id": "house-119-1-102",
+                "chamber": "House",
+                "number": 102,
+                "date": "2025-04-10",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 220,
+                "nay": 208,
+                "measure": "H.R. 22"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 553
+}

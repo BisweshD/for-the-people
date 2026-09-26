@@ -1,0 +1,46 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "person-mcconnell",
+  "recordedAt": "2026-09-24T14:44:22.204Z",
+  "question": "Who is Mitch McConnell?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Mitch McConnell is a U.S. Senator from Kentucky. They voted with most of their party on 97% of 715 votes where most Democrats and most Republicans voted opposite ways, and missed 136 of 900 roll calls.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Mitch McConnell", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "M000355",
+            "name": "Mitch McConnell",
+            "party": "R",
+            "office": "U.S. Senator, Kentucky",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getPerson",
+      "input": { "personId": "M000355" },
+      "modelOutput": {
+        "person": {
+          "id": "M000355",
+          "name": "Mitch McConnell",
+          "party": "R",
+          "office": "U.S. Senator, Kentucky",
+          "serving": true
+        },
+        "record": {
+          "votedWithMostOfTheirParty": "97%",
+          "partyLineVotesCounted": 715,
+          "missedVotes": 136,
+          "missedShare": "15%",
+          "rollCallsWhileServing": 900
+        }
+      }
+    }
+  ],
+  "latencyMs": 683
+}

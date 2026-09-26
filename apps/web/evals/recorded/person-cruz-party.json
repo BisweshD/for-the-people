@@ -1,0 +1,46 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "person-cruz-party",
+  "recordedAt": "2026-09-24T14:44:23.680Z",
+  "question": "How often does Ted Cruz vote with his party?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Ted Cruz is a U.S. Senator from Texas. They voted with most of their party on 99.9% of 788 votes where most Democrats and most Republicans voted opposite ways, and missed 47 of 900 roll calls.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Ted Cruz", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "C001098",
+            "name": "Ted Cruz",
+            "party": "R",
+            "office": "U.S. Senator, Texas",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getPerson",
+      "input": { "personId": "C001098" },
+      "modelOutput": {
+        "person": {
+          "id": "C001098",
+          "name": "Ted Cruz",
+          "party": "R",
+          "office": "U.S. Senator, Texas",
+          "serving": true
+        },
+        "record": {
+          "votedWithMostOfTheirParty": "99.9%",
+          "partyLineVotesCounted": 788,
+          "missedVotes": 47,
+          "missedShare": "5%",
+          "rollCallsWhileServing": 900
+        }
+      }
+    }
+  ],
+  "latencyMs": 700
+}

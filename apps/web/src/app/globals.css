@@ -1,0 +1,800 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/*
+ * For The People design tokens. Defined once here;
+ * everything else reads them. Light theme "Paper" on :root, dark theme "Chamber" on .dark (set by
+ * next-themes before paint). Every text and control pair is checked in test/design-tokens.test.ts.
+ */
+
+@custom-variant dark (&:is(.dark *));
+
+/* Radix state variants used by the shadcn components (inlined so the shadcn package is not a runtime dependency). */
+@custom-variant data-open {
+  &:where([data-state="open"]),
+  &:where([data-open]:not([data-open="false"])) {
+    @slot;
+  }
+}
+@custom-variant data-closed {
+  &:where([data-state="closed"]),
+  &:where([data-closed]:not([data-closed="false"])) {
+    @slot;
+  }
+}
+@custom-variant data-checked {
+  &:where([data-state="checked"]),
+  &:where([data-checked]:not([data-checked="false"])) {
+    @slot;
+  }
+}
+@custom-variant data-unchecked {
+  &:where([data-state="unchecked"]),
+  &:where([data-unchecked]:not([data-unchecked="false"])) {
+    @slot;
+  }
+}
+@custom-variant data-selected {
+  &:where([data-selected="true"]) {
+    @slot;
+  }
+}
+@custom-variant data-disabled {
+  &:where([data-disabled="true"]),
+  &:where([data-disabled]:not([data-disabled="false"])) {
+    @slot;
+  }
+}
+@custom-variant data-active {
+  &:where([data-state="active"]),
+  &:where([data-active]:not([data-active="false"])) {
+    @slot;
+  }
+}
+@custom-variant data-horizontal {
+  &:where([data-orientation="horizontal"]) {
+    @slot;
+  }
+}
+@custom-variant data-vertical {
+  &:where([data-orientation="vertical"]) {
+    @slot;
+  }
+}
+/*
+ * Hover only where a pointer can hover, so a tap never leaves a control stuck in its hover color, and
+ * never on a control that is unavailable. Pressed is the same: an unavailable control does not react.
+ */
+@custom-variant can-hover {
+  @media (hover: hover) {
+    &:hover:not(:disabled, [aria-disabled="true"]) {
+      @slot;
+    }
+  }
+}
+@custom-variant pressed {
+  &:active:not(:disabled, [aria-disabled="true"]) {
+    @slot;
+  }
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*
+ * The floor for small text that carries a number or a meaning ("7 of 8 votes", "Rep., CA-11"): 14px,
+ * tabular figures, a comfortable line. Nothing that informs goes below it; 12px is for purely decorative
+ * or repeated text only.
+ */
+@utility type-meta {
+  font-size: var(--text-sm);
+  line-height: 1.45;
+  font-variant-numeric: tabular-nums;
+}
+
+/*
+ * Press feedback for a whole row or card that is one link: it scales to 0.98 while
+ * held. No hover lift. The global reduced-motion rule makes the change instant.
+ */
+@utility press-scale {
+  transition: transform var(--dur-fast) var(--ease-out-soft);
+  &:active:not(:disabled, [aria-disabled="true"]) {
+    transform: scale(0.98);
+  }
+}
+
+:root {
+  /* Paper */
+  --paper: oklch(1 0 0);
+  --canvas: oklch(0.976 0.003 264.5);
+  --hairline: oklch(0.927 0.007 260.7);
+  --ink: oklch(0.222 0.023 265.6);
+  --ink-2: oklch(0.441 0.032 264.2);
+  --ink-3: oklch(0.525 0.034 264);
+  --ink-3-graphic: oklch(0.625 0.028 263.3);
+  --marigold: oklch(0.799 0.159 80.2);
+  /* Outline for hollow "You" markers: 3:1 or better on paper. */
+  --marigold-strong: oklch(0.62 0.13 78);
+  --agree: oklch(0.505 0.13 148.7);
+  --agree-soft: oklch(0.93 0.046 139.2);
+  --split: oklch(0.435 0.156 321.5);
+  --split-soft: oklch(0.891 0.034 324.3);
+  --no-data: oklch(0.789 0 0);
+  --party-r: oklch(0.506 0.13 24);
+  --party-r-soft: oklch(0.955 0.02 24);
+  --party-d: oklch(0.475 0.109 262.6);
+  --party-d-soft: oklch(0.955 0.02 262.6);
+  --party-i: oklch(0.5 0.025 264.4);
+  --party-i-soft: oklch(0.955 0.005 264.4);
+  --danger: oklch(0.52 0.19 27);
+
+  /*
+   * Roles on top of the palette.
+   * - Quiet fill: badges, tags and hover washes. Never solid ink: solid ink with the control radius
+   *   means "button or selected control".
+   * - "You": marigold means the voter. A soft marigold panel behind their own things, and a marigold
+   *   mark with an ink edge (marigold alone is 1.9:1 on paper). The dark mark is a deeper amber so the
+   *   near-white edge still reads against it.
+   * - Primary hover and press: the same ink, mixed, never made translucent.
+   */
+  --badge-bg: oklch(0.948 0.007 264);
+  --you-soft: oklch(0.962 0.05 88);
+  --you-mark: var(--marigold);
+  --you-edge: var(--ink);
+  --ink-hover: color-mix(in oklch, var(--ink) 86%, var(--paper));
+  --ink-press: color-mix(in oklch, var(--ink) 86%, black);
+  --paper-press: color-mix(in oklch, var(--badge-bg) 88%, var(--ink));
+
+  /* Elevation: two layers each, only for things that float. */
+  --shadow-1: 0 1px 2px oklch(0.222 0.023 265.6 / 0.06), 0 1px 3px oklch(0.222 0.023 265.6 / 0.08);
+  --shadow-2: 0 2px 4px oklch(0.222 0.023 265.6 / 0.06), 0 4px 12px oklch(0.222 0.023 265.6 / 0.08);
+  --shadow-3: 0 4px 8px oklch(0.222 0.023 265.6 / 0.06), 0 12px 28px oklch(0.222 0.023 265.6 / 0.1);
+  --shadow-4:
+    0 8px 16px oklch(0.222 0.023 265.6 / 0.07), 0 20px 44px oklch(0.222 0.023 265.6 / 0.12);
+  --shadow-5:
+    0 12px 24px oklch(0.222 0.023 265.6 / 0.08), 0 32px 64px oklch(0.222 0.023 265.6 / 0.16);
+
+  /*
+   * Motion (skill Part 3). fast: press and hover feedback. base: things entering, moving or expanding.
+   * slow: larger moves (sheets, the oval fill). reveal: data drawing itself in (meters, bars, rings),
+   * never longer than 500ms. Use them as duration-(--dur-fast) and so on. The one exception is the home
+   * hero's opening (the fanned ballot sheets, --animate-sheet-*), a single orchestrated sequence.
+   */
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 300ms;
+  --dur-reveal: 480ms;
+
+  /* shadcn roles mapped onto the palette */
+  --background: var(--canvas);
+  --foreground: var(--ink);
+  --card: var(--paper);
+  --card-foreground: var(--ink);
+  --popover: var(--paper);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--paper);
+  --secondary: var(--badge-bg);
+  --secondary-foreground: var(--ink);
+  --muted: var(--canvas);
+  --muted-foreground: var(--ink-3);
+  --accent: var(--badge-bg);
+  --accent-foreground: var(--ink);
+  --destructive: var(--danger);
+  --border: var(--hairline);
+  /* Control borders (fields, outline buttons) reach 3:1 against paper and the page (WCAG 1.4.11). */
+  --input: oklch(0.62 0.022 264);
+  --ring: var(--ink);
+  --chart-1: var(--agree);
+  --chart-2: var(--split);
+  --chart-3: var(--party-d);
+  --chart-4: var(--party-r);
+  --chart-5: var(--ink-3-graphic);
+}
+
+.dark {
+  /* Chamber. Cards sit clearly above the page: lighter surfaces read as closer. */
+  --paper: oklch(0.258 0.022 264);
+  --canvas: oklch(0.168 0.017 264);
+  --hairline: oklch(0.345 0.028 265.2);
+  --ink: oklch(0.957 0.007 260.7);
+  --ink-2: oklch(0.81 0.022 263.2);
+  --ink-3: oklch(0.7 0.028 265.4);
+  --ink-3-graphic: oklch(0.63 0.03 265.4);
+  --marigold: oklch(0.799 0.159 80.2);
+  --marigold-strong: oklch(0.799 0.159 80.2);
+  --agree: oklch(0.72 0.138 145.6);
+  --agree-soft: oklch(0.31 0.044 150);
+  --split: oklch(0.74 0.084 312.4);
+  --split-soft: oklch(0.3 0.043 308.8);
+  --no-data: oklch(0.45 0 0);
+  --party-r: oklch(0.78 0.088 22);
+  --party-r-soft: oklch(0.3 0.04 22);
+  --party-d: oklch(0.79 0.078 265);
+  --party-d-soft: oklch(0.3 0.04 265);
+  --party-i: oklch(0.79 0.02 263);
+  --party-i-soft: oklch(0.3 0.01 263);
+  --danger: oklch(0.74 0.15 25);
+
+  --badge-bg: oklch(0.32 0.024 264);
+  --you-soft: oklch(0.32 0.05 80);
+  --you-mark: oklch(0.62 0.13 78);
+  --ink-press: color-mix(in oklch, var(--ink) 84%, black);
+
+  --shadow-1: 0 1px 2px oklch(0 0 0 / 0.3), 0 1px 3px oklch(0 0 0 / 0.35);
+  --shadow-2: 0 2px 4px oklch(0 0 0 / 0.3), 0 4px 12px oklch(0 0 0 / 0.4);
+  --shadow-3: 0 4px 8px oklch(0 0 0 / 0.3), 0 12px 28px oklch(0 0 0 / 0.45);
+  --shadow-4: 0 8px 16px oklch(0 0 0 / 0.35), 0 20px 44px oklch(0 0 0 / 0.5);
+  --shadow-5: 0 12px 24px oklch(0 0 0 / 0.4), 0 32px 64px oklch(0 0 0 / 0.55);
+
+  --input: oklch(0.64 0.03 265);
+}
+
+/* Fixed scales, emitted as variables on every page so plain CSS (and inline styles) can read them too. */
+@theme static {
+  /*
+   * Two weights (skill Part 6): regular and bold, plus extrabold for display headings only. The older
+   * names still resolve so no screen renders 500 or 600: semibold is bold and medium is regular. New
+   * code uses font-normal and font-bold.
+   */
+  --font-weight-*: initial;
+  --font-weight-normal: 400;
+  --font-weight-medium: 400;
+  --font-weight-semibold: 700;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /*
+   * Radius by role only: 8 fields, 12 controls (buttons, chips, rows), 20 cards,
+   * 28 sheets and dialogs, and rounded-full for badges, ovals and avatars. Tailwind's numbered sizes
+   * are removed so nobody reaches for an off-system corner. Tiny data glyphs (Y/N squares, bars) keep
+   * their own 1 to 4px corners as part of their drawing.
+   */
+  --radius-*: initial;
+  --radius-input: 0.5rem;
+  --radius-control: 0.75rem;
+  --radius-card: 1.25rem;
+  --radius-sheet: 1.75rem;
+
+  /* Ease out when something arrives, ease in when it leaves. */
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-soft: cubic-bezier(0.64, 0, 0.78, 0);
+  /* The oval fill: a quick ink flood with a slight settle. */
+  --ease-oval: cubic-bezier(0.2, 1.1, 0.35, 1);
+}
+
+@theme inline {
+  --font-sans: var(--font-public-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-public-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
+
+  --color-paper: var(--paper);
+  --color-canvas: var(--canvas);
+  --color-hairline: var(--hairline);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-ink-3-graphic: var(--ink-3-graphic);
+  --color-ink-hover: var(--ink-hover);
+  --color-ink-press: var(--ink-press);
+  --color-paper-press: var(--paper-press);
+  --color-marigold: var(--marigold);
+  --color-marigold-strong: var(--marigold-strong);
+  --color-badge: var(--badge-bg);
+  --color-you-soft: var(--you-soft);
+  --color-you-mark: var(--you-mark);
+  --color-you-edge: var(--you-edge);
+  --color-agree: var(--agree);
+  --color-agree-soft: var(--agree-soft);
+  --color-split: var(--split);
+  --color-split-soft: var(--split-soft);
+  --color-no-data: var(--no-data);
+  --color-party-r: var(--party-r);
+  --color-party-r-soft: var(--party-r-soft);
+  --color-party-d: var(--party-d);
+  --color-party-d-soft: var(--party-d-soft);
+  --color-party-i: var(--party-i);
+  --color-party-i-soft: var(--party-i-soft);
+  --color-danger: var(--danger);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --shadow-1: var(--shadow-1);
+  --shadow-2: var(--shadow-2);
+  --shadow-3: var(--shadow-3);
+  --shadow-4: var(--shadow-4);
+  --shadow-5: var(--shadow-5);
+
+  --animate-oval-fill-once: oval-fill-once var(--dur-slow) var(--ease-oval) 150ms both;
+  @keyframes oval-fill-once {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  --animate-outline-old: outline-old var(--dur-reveal) var(--ease-out-soft) 350ms both;
+  @keyframes outline-old {
+    to {
+      opacity: 0.8;
+      transform: scale(0.97);
+    }
+  }
+  --animate-outline-new: outline-new var(--dur-reveal) var(--ease-out-soft) 350ms both;
+  @keyframes outline-new {
+    from {
+      opacity: 0;
+      transform: scale(1.04);
+    }
+  }
+  --animate-meter-in: meter-in var(--dur-reveal) var(--ease-out-soft) 100ms both;
+  @keyframes meter-in {
+    from {
+      transform: scaleX(0);
+    }
+  }
+  /* The hemicycle's "You" ring lands after the seats start to gather (spring.oval, transform and opacity). */
+  --animate-ring-in: ring-in var(--dur-reveal) var(--ease-oval) 240ms both;
+  @keyframes ring-in {
+    from {
+      opacity: 0;
+      transform: scale(0.4);
+    }
+  }
+  /* Vote Duel timeline: each month's bar rises from the baseline with the meter (transform only). */
+  --animate-bar-rise: bar-rise var(--dur-reveal) var(--ease-out-soft) both;
+  @keyframes bar-rise {
+    from {
+      transform: scaleY(0);
+    }
+  }
+  --animate-drop-in: drop-in var(--dur-reveal) var(--ease-oval) both;
+  @keyframes drop-in {
+    from {
+      opacity: 0;
+      transform: translateY(-14px);
+    }
+  }
+  /* The home hero's one orchestrated opening: two ballot sheets fan out behind the first card. */
+  --animate-sheet-left: sheet-left 700ms var(--ease-out-soft) 150ms both;
+  @keyframes sheet-left {
+    from {
+      transform: rotate(0deg);
+    }
+  }
+  --animate-sheet-right: sheet-right 700ms var(--ease-out-soft) 150ms both;
+  @keyframes sheet-right {
+    from {
+      transform: rotate(0deg);
+    }
+  }
+  --animate-card-rise: card-rise var(--dur-slow) var(--ease-out-soft) both;
+  @keyframes card-rise {
+    from {
+      opacity: 0;
+      transform: translateY(10px) scale(0.96);
+    }
+  }
+  /* Explore rows settling into a re-ranked list: opacity and a short rise, 35 ms apart. */
+  --animate-row-in: row-in var(--dur-base) var(--ease-out-soft) both;
+  @keyframes row-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+  }
+  /* A removed answer on You folding away (ease-in, it is leaving); the rows below then glide up (FLIP). */
+  --animate-row-out: row-out var(--dur-base) var(--ease-in-soft) forwards;
+  @keyframes row-out {
+    to {
+      opacity: 0;
+      transform: scaleY(0.4);
+    }
+  }
+  /* One answer in Ask arriving: its sentence, then each result 40 ms apart (set by the delay). */
+  --animate-answer-in: answer-in var(--dur-slow) var(--ease-out-soft) both;
+  @keyframes answer-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+  }
+  --animate-map-in: map-in var(--dur-slow) var(--ease-out-soft) both;
+  @keyframes map-in {
+    from {
+      opacity: 0.35;
+    }
+  }
+  /*
+   * When the races arrive, each row's ballot oval is stamped in, top to bottom (30 ms stagger from --row,
+   * capped). Transform only: the text is there at full contrast from the first frame.
+   */
+  --animate-oval-in: oval-in var(--dur-slow) var(--ease-oval) min(calc(var(--row, 0) * 30ms), 420ms)
+    both;
+  @keyframes oval-in {
+    from {
+      transform: scale(0.35);
+    }
+  }
+  /*
+   * The election countdown's one entrance: the figure settles into place once. Transform only, so the
+   * number is at full contrast from its first frame.
+   */
+  --animate-figure-in: figure-in var(--dur-reveal) var(--ease-out-soft) both;
+  @keyframes figure-in {
+    from {
+      transform: translateY(0.2em) scale(0.94);
+    }
+  }
+  /* A loading indicator, not a transition: the one looping animation, and never the only sign of work. */
+  --animate-oval-breathe: oval-breathe 1.6s ease-in-out infinite;
+  @keyframes oval-breathe {
+    0%,
+    100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+}
+
+@layer base {
+  /* The oval fill scales from the pen point (the circle's center, at the oval's left edge). */
+  .oval-fill,
+  .animate-ring-in {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  .oval-fill {
+    transition: transform var(--dur-slow) var(--ease-oval);
+  }
+  /*
+   * Keep focused elements clear of the sticky answer bar on phones (WCAG 2.4.11). The swipe deck marks
+   * <html> while it is mounted; an attribute costs nothing, where html:has() re-checked the whole page
+   * on every DOM change (the bill page's 1,300 Board and chamber nodes paid for it on each render).
+   */
+  @media (max-width: 767px) {
+    html[data-answer-bar] {
+      scroll-padding-bottom: calc(57px + 190px + env(safe-area-inset-bottom));
+    }
+  }
+  /* Changelog filter and paging (components/trust/changelog-view.tsx). */
+  [data-changelog-show="keyVote"] [data-kind="ingestion"],
+  [data-changelog-show="ingestion"] [data-kind="keyVote"],
+  [data-changelog-older="hidden"] [data-older],
+  [data-changelog-show="keyVote"] [data-day]:not(:has([data-kind="keyVote"])),
+  [data-changelog-show="ingestion"] [data-day]:not(:has([data-kind="ingestion"])),
+  [data-changelog-older="hidden"] [data-day]:not(:has([data-kind]:not([data-older]))) {
+    display: none;
+  }
+  /* Ask's composer sticks to the bottom once a conversation starts; keep focus clear of it and the top bar. */
+  html:has([data-ask-composer="sticky"]) {
+    scroll-padding-top: 5rem;
+    scroll-padding-bottom: 8rem;
+  }
+  @media (max-width: 767px) {
+    html:has([data-ask-composer="sticky"]) {
+      scroll-padding-bottom: calc(57px + 5rem + env(safe-area-inset-bottom));
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .oval-fill {
+      transition: none;
+      animation: none !important;
+    }
+    /* Entrances and reveals settle instantly; state still changes, only the travel is removed. */
+    [class*="animate-"] {
+      animation-duration: 1ms !important;
+      animation-delay: 0ms !important;
+    }
+  }
+  * {
+    @apply border-border outline-ink;
+  }
+  html {
+    @apply font-sans;
+    /* In-page links land below the sticky header. */
+    scroll-padding-top: 5rem;
+    -webkit-tap-highlight-color: transparent;
+    text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    line-height: 1.55;
+    font-feature-settings: "kern";
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  /* The one focus ring: 2px ink with a 2px gap, 3:1 or better on every surface in both themes. */
+  :focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 1ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 1ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* While a swipe card is dragged, its Yea or Nay stamp takes the header's place, so the stamp never
+   sits on top of the issue chip. The lean variables live on the deck (swipe-deck.tsx). */
+[data-deck-card] [data-card-header] {
+  opacity: calc(1 - min(1, max(var(--lean-yea, 0), var(--lean-nay, 0)) * 2.5));
+}
+
+/*
+ * Page changes. A member's portrait glides from a
+ * list row into the profile hero; the rest of the page crossfades quickly; the header and the phone
+ * tab bar hold still, so the eye has a fixed point. Clicks pass through while a transition runs.
+ */
+::view-transition {
+  pointer-events: none;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: var(--dur-base);
+  animation-timing-function: var(--ease-out-soft);
+}
+::view-transition-group(.morph) {
+  animation-duration: var(--dur-slow);
+  animation-timing-function: var(--ease-out-soft);
+}
+::view-transition-group(site-header),
+::view-transition-group(site-tabs) {
+  animation: none;
+  z-index: 100;
+}
+::view-transition-old(site-header),
+::view-transition-old(site-tabs) {
+  display: none;
+}
+::view-transition-new(site-header),
+::view-transition-new(site-tabs) {
+  animation: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
+}
+
+/* Round 10: journey (Home, Swipe, You). Each moment moves without a reduced-motion preference; with
+   one, it is a short fade or an instant change. */
+@keyframes journey-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+@keyframes journey-leave {
+  to {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+@keyframes journey-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes journey-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes journey-pop {
+  50% {
+    transform: scale(1.12);
+  }
+}
+@keyframes journey-assemble {
+  from {
+    opacity: 0;
+    transform: translateX(-10px) scale(0.92);
+  }
+}
+/* The closest-match strip: the new leader slides up 8px as the old one fades (200 ms). */
+.journey-swap-in {
+  animation: journey-rise 200ms var(--ease-out-soft) both;
+}
+.journey-swap-out {
+  animation: journey-leave 160ms var(--ease-in-soft) both;
+}
+/* The progress oval for the answer just given: 1, 1.12, 1 while it inks in (200 ms). */
+.journey-oval-pop {
+  display: inline-flex;
+  animation: journey-pop 200ms var(--ease-out-soft);
+}
+.journey-oval-pop .oval-fill {
+  transition-duration: 200ms;
+}
+/* The fifth-answer pause: the card rises in, then the top portraits assemble 40 ms apart. */
+.journey-card-in {
+  animation: journey-rise 240ms var(--ease-out-soft) both;
+}
+.journey-assemble {
+  animation: journey-assemble 240ms var(--ease-out-soft) both;
+}
+/* An answer's editor on You opens in place: its height grows (200 ms, ease-out) and closes ease-in. */
+.journey-disclose {
+  display: grid;
+  grid-template-rows: 0fr;
+  visibility: hidden;
+  transition:
+    grid-template-rows 160ms var(--ease-in-soft),
+    visibility 0s linear 160ms;
+}
+.journey-disclose[data-open] {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  transition: grid-template-rows 200ms var(--ease-out-soft);
+}
+.journey-disclose > * {
+  min-height: 0;
+  overflow: hidden;
+}
+@media (prefers-reduced-motion: reduce) {
+  .journey-swap-in,
+  .journey-card-in,
+  .journey-assemble {
+    animation-name: journey-fade-in;
+  }
+  .journey-swap-out {
+    animation-name: journey-fade-out;
+  }
+  .journey-oval-pop {
+    animation: none;
+  }
+  .journey-disclose,
+  .journey-disclose[data-open] {
+    transition: none;
+  }
+}
+
+/* Round 10: results */
+/*
+ * The profile's record strip: each check or cross between a member's vote and the voter's answer
+ * settles in once, 25 ms apart, when the strip scrolls into view (11 votes finish in about 450 ms).
+ * Transform and opacity only; with reduced motion the marks are simply there.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .r10-tick {
+    animation: r10-tick-in 200ms var(--ease-out-soft) calc(var(--i, 0) * 25ms) both;
+  }
+}
+@keyframes r10-tick-in {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+/* Round 10: ask and trust */
+
+/* The election timeline's marigold "You are here" dot settles in once (components/election). */
+@keyframes here-in {
+  from {
+    transform: scale(0);
+  }
+}
+
+/*
+ * The changelog folds a day's data updates into one row (components/trust/changelog-view.tsx). The list
+ * opens from its button, and the "Data updates" filter shows every list open with no button to press.
+ */
+[data-updates-list] {
+  display: none;
+}
+/*
+ * The changelog filter and paging, outside any layer: the copy in `@layer base` above loses to the rows'
+ * own `grid` and `flex` utilities, so a filtered-out row stayed on screen.
+ */
+[data-changelog-show="keyVote"] [data-kind="ingestion"],
+[data-changelog-show="ingestion"] [data-kind="keyVote"],
+[data-changelog-older="hidden"] [data-older],
+[data-changelog-show="keyVote"] [data-day]:not(:has([data-kind="keyVote"])),
+[data-changelog-show="ingestion"] [data-day]:not(:has([data-kind="ingestion"])),
+[data-changelog-older="hidden"] [data-day]:not(:has([data-kind]:not([data-older]))) {
+  display: none;
+}
+[data-updates-open] > [data-updates-list],
+[data-changelog-show="ingestion"] [data-updates-list] {
+  display: flex;
+}
+[data-changelog-show="ingestion"] [data-updates-toggle] {
+  display: none;
+}
+
+/* Round 10: record pages (bill, roll call, Vote Duel, ballot). */
+
+/* The result bar's segments grow out from the threshold tick once, on first paint (transform only). */
+.animate-result-grow {
+  animation: result-grow 320ms var(--ease-out-soft) both;
+}
+@keyframes result-grow {
+  from {
+    transform: scaleX(0);
+  }
+}
+/* While The Board replays, each segment follows the running count in 90 ms steps. */
+.result-fill {
+  transition: transform 90ms linear;
+}
+/* The voter's own members on The Board: a marigold ring with an ink edge (marigold alone is 1.9:1). */
+.board-cell[data-you] {
+  z-index: 1;
+  box-shadow:
+    0 0 0 2px var(--you-mark),
+    0 0 0 3.5px var(--you-edge);
+}
+/* A resolved address: the district outline draws in (pathLength 1), then "You vote in" appears. */
+.animate-outline-draw {
+  stroke-dasharray: 1;
+  animation: outline-draw 300ms var(--ease-out-soft) both;
+}
+@keyframes outline-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.animate-after-draw {
+  animation: after-draw 200ms var(--ease-out-soft) 300ms both;
+}
+@keyframes after-draw {
+  from {
+    opacity: 0;
+  }
+}

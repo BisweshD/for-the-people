@@ -1,0 +1,64 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "votes-johnson-save",
+  "recordedAt": "2026-09-24T14:44:17.184Z",
+  "question": "How did Mike Johnson vote on the SAVE Act?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Mike Johnson voted Yea on Require proof of citizenship to register to vote in federal elections (H.R. 22) in House roll call 102 on Apr 10, 2025.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Mike Johnson", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "J000299",
+            "name": "Mike Johnson",
+            "party": "R",
+            "office": "U.S. Representative, LA-4",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getVotes",
+      "input": { "personId": "J000299", "issue": "SAVE Act" },
+      "modelOutput": {
+        "person": {
+          "id": "J000299",
+          "name": "Mike Johnson",
+          "party": "R",
+          "office": "U.S. Representative, LA-4",
+          "serving": true
+        },
+        "issue": "Elections and voting",
+        "counts": {
+          "keyVotes": 1,
+          "heldInTheirChamber": 1,
+          "theirChamber": "House",
+          "votedYea": 1,
+          "votedNay": 0,
+          "votedPresent": 0,
+          "didNotVote": 0,
+          "noRecordedVote": 0,
+          "heldOnlyInOtherChamber": 0,
+          "otherChamber": "Senate"
+        },
+        "votes": [
+          {
+            "keyVote": "Require proof of citizenship to register to vote in federal elections (H.R. 22)",
+            "issue": "Elections and voting",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "House roll call 102",
+              "date": "2025-04-10",
+              "supportedMeasure": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 534
+}

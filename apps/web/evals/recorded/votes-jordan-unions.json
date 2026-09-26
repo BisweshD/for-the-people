@@ -1,0 +1,74 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "votes-jordan-unions",
+  "recordedAt": "2026-09-24T14:44:19.923Z",
+  "question": "How did Jim Jordan vote on the Protect America's Workforce Act?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Jim Jordan voted Nay on Cancel the March 2025 order ending union bargaining at many federal agencies (H.R. 2550) in House roll call 332 on Dec 11, 2025. Jim Jordan voted Nay on Set deadlines and a binding panel decision for first union contracts (H.R. 5408) in House roll call 216 on Jun 9, 2026.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Jim Jordan", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "J000289",
+            "name": "Jim Jordan",
+            "party": "R",
+            "office": "U.S. Representative, OH-4",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getVotes",
+      "input": { "personId": "J000289", "issue": "Protect America's Workforce Act" },
+      "modelOutput": {
+        "person": {
+          "id": "J000289",
+          "name": "Jim Jordan",
+          "party": "R",
+          "office": "U.S. Representative, OH-4",
+          "serving": true
+        },
+        "issue": "Jobs and labor",
+        "counts": {
+          "keyVotes": 2,
+          "heldInTheirChamber": 2,
+          "theirChamber": "House",
+          "votedYea": 0,
+          "votedNay": 2,
+          "votedPresent": 0,
+          "didNotVote": 0,
+          "noRecordedVote": 0,
+          "heldOnlyInOtherChamber": 0,
+          "otherChamber": "Senate"
+        },
+        "votes": [
+          {
+            "keyVote": "Cancel the March 2025 order ending union bargaining at many federal agencies (H.R. 2550)",
+            "issue": "Jobs and labor",
+            "memberVote": {
+              "vote": "Nay",
+              "rollCall": "House roll call 332",
+              "date": "2025-12-11",
+              "supportedMeasure": false
+            }
+          },
+          {
+            "keyVote": "Set deadlines and a binding panel decision for first union contracts (H.R. 5408)",
+            "issue": "Jobs and labor",
+            "memberVote": {
+              "vote": "Nay",
+              "rollCall": "House roll call 216",
+              "date": "2026-06-09",
+              "supportedMeasure": false
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 930
+}

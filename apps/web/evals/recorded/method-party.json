@@ -1,0 +1,19 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "method-party",
+  "recordedAt": "2026-09-24T14:44:37.435Z",
+  "question": "How is voting with their party calculated?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "How we count voting with their party: among roll calls where most Democrats and most Republicans voted opposite ways, the share where the member voted with most of their own party. Independents count with the party they caucus with.",
+  "tools": [
+    {
+      "toolName": "explainMethod",
+      "input": { "topic": "party-unity" },
+      "modelOutput": {
+        "title": "How we count voting with their party",
+        "method": "Among roll calls where most Democrats and most Republicans voted opposite ways, the share where the member voted with most of their own party. Independents count with the party they caucus with."
+      }
+    }
+  ],
+  "latencyMs": 721
+}

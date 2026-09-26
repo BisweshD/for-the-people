@@ -1,0 +1,63 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "measure-hjres88",
+  "recordedAt": "2026-09-24T14:44:27.144Z",
+  "question": "What does H.J.Res. 88 do?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "H.J.Res. 88, Providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"California State Motor Vehicle and Engine Pollution Control Standards; Advanced Clean Cars II; Waiver of Preemption; Notice of Decision\"., became law. In Senate roll call 277 on May 22, 2025, the result was joint resolution passed, 51 Yea to 44 Nay.",
+  "tools": [
+    {
+      "toolName": "getMeasure",
+      "input": { "measure": "What does H.J.Res. 88 do?" },
+      "modelOutput": {
+        "measures": [
+          {
+            "id": "119-hjres-88",
+            "label": "H.J.Res. 88",
+            "title": "Providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"California State Motor Vehicle and Engine Pollution Control Standards; Advanced Clean Cars II; Waiver of Preemption; Notice of Decision\".",
+            "becameLaw": true,
+            "latestAction": "Became Public Law No: 119-16.",
+            "latestActionDate": "2025-06-12",
+            "summary": "This joint resolution revokes the waiver granted to the California Air Resources Board regarding its Advanced Clean Cars II (ACC II) regulations, which include new requirements for low-emission vehicles and zero-emission vehicles. (Under the Clean Air Act, California may seek waivers of the preemption prohibiting states from enacting certain emission standards.)\nSpecifically, the joint resolution nullifies the Environmental Protection Agency notice titled California State Motor Vehicle and Engine Pollution Control Standards; Advanced Clean Cars II; Waiver of Preemption; Notice of Decision.",
+            "rollCalls": [
+              {
+                "id": "house-119-1-114",
+                "chamber": "House",
+                "number": 114,
+                "date": "2025-05-01",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 246,
+                "nay": 164,
+                "measure": "H.J.Res. 88"
+              },
+              {
+                "id": "senate-119-1-276",
+                "chamber": "Senate",
+                "number": 276,
+                "date": "2025-05-21",
+                "question": "On the Motion to Proceed",
+                "result": "Motion to Proceed Agreed to",
+                "yea": 51,
+                "nay": 46,
+                "measure": "H.J.Res. 88"
+              },
+              {
+                "id": "senate-119-1-277",
+                "chamber": "Senate",
+                "number": 277,
+                "date": "2025-05-22",
+                "question": "On the Joint Resolution",
+                "result": "Joint Resolution Passed",
+                "yea": 51,
+                "nay": 44,
+                "measure": "H.J.Res. 88"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 994
+}

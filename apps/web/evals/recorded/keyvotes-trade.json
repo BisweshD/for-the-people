@@ -1,0 +1,69 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "keyvotes-trade",
+  "recordedAt": "2026-09-24T14:44:28.375Z",
+  "question": "What are the key votes on trade?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "These are For The People's key votes on Trade and tariffs, each checked against the official roll call. They include End the national emergency behind tariffs on Canada (H.J.Res. 72 and S.J.Res. 37) and End the national emergency behind the April 2025 global tariffs (S.J.Res. 88).",
+  "tools": [
+    {
+      "toolName": "getKeyVotes",
+      "input": { "issue": "trade" },
+      "modelOutput": {
+        "issue": "Trade and tariffs",
+        "keyVotes": [
+          {
+            "id": "kv-canada-tariffs",
+            "title": "End the national emergency behind tariffs on Canada (H.J.Res. 72 and S.J.Res. 37)",
+            "issue": "Trade and tariffs",
+            "whatItDoes": "On Feb. 1, 2025, the President declared a national emergency over illegal drugs and illegal crossings at the Canadian border. He used it to put tariffs, which are taxes on imports, on goods from Canada. This resolution ends that emergency.",
+            "rollCalls": [
+              {
+                "id": "house-119-2-65",
+                "chamber": "House",
+                "number": 65,
+                "date": "2026-02-11",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 219,
+                "nay": 211,
+                "measure": "H.J.Res. 72"
+              },
+              {
+                "id": "senate-119-1-160",
+                "chamber": "Senate",
+                "number": 160,
+                "date": "2025-04-02",
+                "question": "On the Joint Resolution",
+                "result": "Joint Resolution Passed",
+                "yea": 51,
+                "nay": 48,
+                "measure": "S.J.Res. 37"
+              }
+            ]
+          },
+          {
+            "id": "kv-global-tariffs",
+            "title": "End the national emergency behind the April 2025 global tariffs (S.J.Res. 88)",
+            "issue": "Trade and tariffs",
+            "whatItDoes": "On April 2, 2025, the President declared a national emergency. He cited the U.S. buying far more goods from abroad than it sells, year after year, and unequal trade terms. He used it to add a 10% tariff, a tax on imports, to most goods from abroad, with higher rates for many countries. This resolution ends that emergency.",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-600",
+                "chamber": "Senate",
+                "number": 600,
+                "date": "2025-10-30",
+                "question": "On the Joint Resolution",
+                "result": "Joint Resolution Passed",
+                "yea": 51,
+                "nay": 47,
+                "measure": "S.J.Res. 88"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 691
+}

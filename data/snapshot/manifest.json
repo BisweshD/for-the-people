@@ -1,0 +1,22 @@
+{
+  "tables": {
+    "sources": 3723,
+    "people": 2589,
+    "offices": 156,
+    "districts": 882,
+    "terms": 556,
+    "elections": 3,
+    "races": 475,
+    "candidacies": 2532,
+    "measures": 509,
+    "roll_calls": 1573,
+    "vote_positions": 380937,
+    "issue_areas": 14,
+    "key_votes": 20,
+    "finance_committees": 2525,
+    "finance_summaries": 2562,
+    "member_stats": 555,
+    "ingestion_runs": 30,
+    "event_log": 32981
+  }
+}

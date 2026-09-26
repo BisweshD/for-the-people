@@ -1,0 +1,10 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "predict-house-chances",
+  "recordedAt": "2026-09-24T14:44:40.972Z",
+  "question": "What are the chances that Democrats win the House?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "I can't predict elections or other outcomes. I can show how members voted on the record, and the Swipe page shows who votes like you.",
+  "tools": [],
+  "latencyMs": 358
+}

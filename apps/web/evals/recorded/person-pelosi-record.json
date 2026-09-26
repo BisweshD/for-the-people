@@ -1,0 +1,46 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "person-pelosi-record",
+  "recordedAt": "2026-09-24T14:44:21.517Z",
+  "question": "What is Nancy Pelosi's voting record?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Nancy Pelosi is the U.S. Representative for CA-11. They voted with most of their party on 99% of 445 votes where most Democrats and most Republicans voted opposite ways, and missed 60 of 673 roll calls.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Nancy Pelosi", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "P000197",
+            "name": "Nancy Pelosi",
+            "party": "D",
+            "office": "U.S. Representative, CA-11",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getPerson",
+      "input": { "personId": "P000197" },
+      "modelOutput": {
+        "person": {
+          "id": "P000197",
+          "name": "Nancy Pelosi",
+          "party": "D",
+          "office": "U.S. Representative, CA-11",
+          "serving": true
+        },
+        "record": {
+          "votedWithMostOfTheirParty": "99%",
+          "partyLineVotesCounted": 445,
+          "missedVotes": 60,
+          "missedShare": "9%",
+          "rollCallsWhileServing": 673
+        }
+      }
+    }
+  ],
+  "latencyMs": 821
+}

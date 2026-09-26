@@ -1,0 +1,315 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "compare-cruz-cornyn",
+  "recordedAt": "2026-09-24T14:44:32.612Z",
+  "question": "How do Ted Cruz and John Cornyn differ on the key votes?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Ted Cruz and John Cornyn both voted Yea or Nay on 13 key votes and took the same side on 13 of them. Each vote below links to its receipt.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Ted Cruz", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "C001098",
+            "name": "Ted Cruz",
+            "party": "R",
+            "office": "U.S. Senator, Texas",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "findPeople",
+      "input": { "name": "John Cornyn", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "C001056",
+            "name": "John Cornyn",
+            "party": "R",
+            "office": "U.S. Senator, Texas",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "compare",
+      "input": { "aId": "C001098", "bId": "C001056" },
+      "modelOutput": {
+        "a": {
+          "id": "C001098",
+          "name": "Ted Cruz",
+          "party": "R",
+          "office": "U.S. Senator, Texas",
+          "serving": true
+        },
+        "b": {
+          "id": "C001056",
+          "name": "John Cornyn",
+          "party": "R",
+          "office": "U.S. Senator, Texas",
+          "serving": true
+        },
+        "keyVotesBothVotedOn": 13,
+        "sameSide": 13,
+        "rows": [
+          {
+            "keyVote": "Permanently put fentanyl-related drugs in the strictest drug category (S. 331)",
+            "a": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 127",
+              "date": "2025-03-14",
+              "supportedMeasure": true
+            },
+            "b": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 127",
+              "date": "2025-03-14",
+              "supportedMeasure": true
+            },
+            "sameSide": true
+          },
+          {
+            "keyVote": "2025 tax and spending law (H.R. 1, known as the One Big Beautiful Bill Act)",
+            "a": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 372",
+              "date": "2025-07-01",
+              "supportedMeasure": true
+            },
+            "b": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 372",
+              "date": "2025-07-01",
+              "supportedMeasure": true
+            },
+            "sameSide": true
+          },
+          {
+            "keyVote": "Extend the larger ACA health plan tax credits for 3 years (H.R. 1834)",
+            "a": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 644",
+              "date": "2025-12-11",
+              "supportedMeasure": false
+            },
+            "b": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 644",
+              "date": "2025-12-11",
+              "supportedMeasure": false
+            },
+            "sameSide": true
+          },
+          {
+            "keyVote": "Detain certain immigrants arrested for or charged with some crimes (Laken Riley Act)",
+            "a": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 7",
+              "date": "2025-01-20",
+              "supportedMeasure": true
+            },
+            "b": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 7",
+              "date": "2025-01-20",
+              "supportedMeasure": true
+            },
+            "sameSide": true
+          },
+          {
+            "keyVote": "End the national emergency behind tariffs on Canada (H.J.Res. 72 and S.J.Res. 37)",
+            "a": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 160",
+              "date": "2025-04-02",
+              "supportedMeasure": false
+            },
+            "b": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 160",
+              "date": "2025-04-02",
+              "supportedMeasure": false
+            },
+            "sameSide": true
+          },
+          {
+            "keyVote": "Require proof of citizenship to register to vote in federal elections (H.R. 22)",
+            "a": "No recorded vote",
+            "b": "No recorded vote",
+            "sameSide": null
+          },
+          {
+            "keyVote": "Direct the President to end U.S. hostilities with Iran (H.Con.Res. 86)",
+            "a": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 184",
+              "date": "2026-06-23",
+              "supportedMeasure": false
+            },
+            "b": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 184",
+              "date": "2026-06-23",
+              "supportedMeasure": false
+            },
+            "sameSide": true
+          },
+          {
+            "keyVote": "Cancel California's waiver for its zero-emission car sales rules (H.J.Res. 88)",
+            "a": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 277",
+              "date": "2025-05-22",
+              "supportedMeasure": true
+            },
+            "b": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 277",
+              "date": "2025-05-22",
+              "supportedMeasure": true
+            },
+            "sameSide": true
+          },
+          {
+            "keyVote": "Cancel the March 2025 order ending union bargaining at many federal agencies (H.R. 2550)",
+            "a": "No recorded vote",
+            "b": "No recorded vote",
+            "sameSide": null
+          },
+          {
+            "keyVote": "Require care for infants born alive after an attempted abortion (H.R. 21 and S. 6)",
+            "a": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 11",
+              "date": "2025-01-22",
+              "supportedMeasure": true
+            },
+            "b": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 11",
+              "date": "2025-01-22",
+              "supportedMeasure": true
+            },
+            "sameSide": true
+          },
+          {
+            "keyVote": "Authorize military aid to Ukraine and conditional sanctions on Russia (H.R. 2913)",
+            "a": "No recorded vote",
+            "b": "No recorded vote",
+            "sameSide": null
+          },
+          {
+            "keyVote": "Limit girls' and women's school sports teams to students born female (H.R. 28 and S. 9)",
+            "a": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 100",
+              "date": "2025-03-03",
+              "supportedMeasure": true
+            },
+            "b": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 100",
+              "date": "2025-03-03",
+              "supportedMeasure": true
+            },
+            "sameSide": true
+          },
+          {
+            "keyVote": "Require temporary protected status for Haiti until 2029 (H.R. 1689)",
+            "a": "No recorded vote",
+            "b": "No recorded vote",
+            "sameSide": null
+          },
+          {
+            "keyVote": "Set federal rules for payment stablecoins, a type of digital token (S. 1582)",
+            "a": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 318",
+              "date": "2025-06-17",
+              "supportedMeasure": true
+            },
+            "b": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 318",
+              "date": "2025-06-17",
+              "supportedMeasure": true
+            },
+            "sameSide": true
+          },
+          {
+            "keyVote": "End the national energy emergency declared in January 2025 (S.J.Res. 10)",
+            "a": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 95",
+              "date": "2025-02-26",
+              "supportedMeasure": false
+            },
+            "b": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 95",
+              "date": "2025-02-26",
+              "supportedMeasure": false
+            },
+            "sameSide": true
+          },
+          {
+            "keyVote": "Cancel about $9 billion already approved for public broadcasting and foreign aid (H.R. 4)",
+            "a": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 411",
+              "date": "2025-07-17",
+              "supportedMeasure": true
+            },
+            "b": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 411",
+              "date": "2025-07-17",
+              "supportedMeasure": true
+            },
+            "sameSide": true
+          },
+          {
+            "keyVote": "End the national emergency behind the April 2025 global tariffs (S.J.Res. 88)",
+            "a": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 600",
+              "date": "2025-10-30",
+              "supportedMeasure": false
+            },
+            "b": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 600",
+              "date": "2025-10-30",
+              "supportedMeasure": false
+            },
+            "sameSide": true
+          },
+          {
+            "keyVote": "Bar card networks from using a sales code just for gun sellers (H.R. 1181)",
+            "a": "No recorded vote",
+            "b": "No recorded vote",
+            "sameSide": null
+          },
+          {
+            "keyVote": "Set deadlines and a binding panel decision for first union contracts (H.R. 5408)",
+            "a": "No recorded vote",
+            "b": "No recorded vote",
+            "sameSide": null
+          },
+          {
+            "keyVote": "Tie college student aid to not joining commercial boycotts of Israel (H.R. 4795)",
+            "a": "No recorded vote",
+            "b": "No recorded vote",
+            "sameSide": null
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 699
+}

@@ -1,0 +1,46 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "person-schumer",
+  "recordedAt": "2026-09-24T14:44:20.688Z",
+  "question": "Tell me about Chuck Schumer",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Charles E. Schumer is a U.S. Senator from New York. They voted with most of their party on 99% of 826 votes where most Democrats and most Republicans voted opposite ways, and missed 4 of 900 roll calls.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Chuck Schumer", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "S000148",
+            "name": "Charles E. Schumer",
+            "party": "D",
+            "office": "U.S. Senator, New York",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getPerson",
+      "input": { "personId": "S000148" },
+      "modelOutput": {
+        "person": {
+          "id": "S000148",
+          "name": "Charles E. Schumer",
+          "party": "D",
+          "office": "U.S. Senator, New York",
+          "serving": true
+        },
+        "record": {
+          "votedWithMostOfTheirParty": "99%",
+          "partyLineVotesCounted": 826,
+          "missedVotes": 4,
+          "missedShare": "0.4%",
+          "rollCallsWhileServing": 900
+        }
+      }
+    }
+  ],
+  "latencyMs": 758
+}

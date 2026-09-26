@@ -1,0 +1,521 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "keyvotes-all",
+  "recordedAt": "2026-09-24T14:44:30.242Z",
+  "question": "What bills are on the swipe cards?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "These are For The People's key votes on all issues, each checked against the official roll call. They include Permanently put fentanyl-related drugs in the strictest drug category (S. 331) and 2025 tax and spending law (H.R. 1, known as the One Big Beautiful Bill Act).",
+  "tools": [
+    {
+      "toolName": "getKeyVotes",
+      "input": { "issue": "swipe cards" },
+      "modelOutput": {
+        "issue": "all issues",
+        "keyVotes": [
+          {
+            "id": "kv-halt-fentanyl",
+            "title": "Permanently put fentanyl-related drugs in the strictest drug category (S. 331)",
+            "issue": "Crime and drugs",
+            "whatItDoes": "Fentanyl-related drugs are chemical cousins of fentanyl. This bill puts them in Schedule I, the strictest drug category, for good. Dealing them, including selling, making, or holding them to sell, brings the same penalties as other fentanyl-like drugs. That includes mandatory minimum prison time for larger amounts. It also makes it easier for scientists to get approval to study Schedule I drugs. Fentanyl itself stays in Schedule II, where doctors can use it.",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-127",
+                "chamber": "Senate",
+                "number": 127,
+                "date": "2025-03-14",
+                "question": "On Passage of the Bill",
+                "result": "Bill Passed",
+                "yea": 84,
+                "nay": 16,
+                "measure": "S. 331"
+              },
+              {
+                "id": "house-119-1-166",
+                "chamber": "House",
+                "number": 166,
+                "date": "2025-06-12",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 321,
+                "nay": 104,
+                "measure": "S. 331"
+              }
+            ]
+          },
+          {
+            "id": "kv-obbba",
+            "title": "2025 tax and spending law (H.R. 1, known as the One Big Beautiful Bill Act)",
+            "issue": "Taxes and spending",
+            "whatItDoes": "It makes many 2017 tax cuts permanent and raises the child tax credit. For a few years, it adds tax breaks for tips, overtime, car-loan interest, and seniors, and raises the cap on deducting state and local taxes. It adds Medicaid work requirements and limits a tax states use to help pay for Medicaid. It expands SNAP (food aid) work rules and moves some SNAP costs to states. It ends several clean-energy tax credits, adds money for the border and defense, and raises the debt limit by $5 trillion.",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-372",
+                "chamber": "Senate",
+                "number": 372,
+                "date": "2025-07-01",
+                "question": "On Passage of the Bill",
+                "result": "Bill Passed",
+                "yea": 50,
+                "nay": 50,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "house-119-1-190",
+                "chamber": "House",
+                "number": 190,
+                "date": "2025-07-03",
+                "question": "On Motion to Concur in the Senate Amendment",
+                "result": "Passed",
+                "yea": 218,
+                "nay": 214,
+                "measure": "H.R. 1"
+              }
+            ]
+          },
+          {
+            "id": "kv-aca-extension",
+            "title": "Extend the larger ACA health plan tax credits for 3 years (H.R. 1834)",
+            "issue": "Health care",
+            "whatItDoes": "People who buy health insurance through the Affordable Care Act (ACA) marketplace can get tax credits that lower their monthly cost. In 2021 Congress made these credits bigger on a temporary basis and opened them to people with higher incomes. A 2022 law extended the larger credits through 2025. This bill extends them through 2028. The original, smaller credits continue either way.",
+            "rollCalls": [
+              {
+                "id": "house-119-2-11",
+                "chamber": "House",
+                "number": 11,
+                "date": "2026-01-08",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 230,
+                "nay": 196,
+                "measure": "H.R. 1834"
+              },
+              {
+                "id": "senate-119-1-644",
+                "chamber": "Senate",
+                "number": 644,
+                "date": "2025-12-11",
+                "question": "On the Cloture Motion",
+                "result": "Cloture Motion Rejected",
+                "yea": 51,
+                "nay": 48,
+                "measure": "S. 3385"
+              }
+            ]
+          },
+          {
+            "id": "kv-laken-riley",
+            "title": "Detain certain immigrants arrested for or charged with some crimes (Laken Riley Act)",
+            "issue": "Immigration",
+            "whatItDoes": "Federal immigration officers must hold certain immigrants in custody if they are arrested for, charged with, or admit to certain crimes. It covers people who entered illegally, got in by fraud, or lack valid papers. The crimes are burglary, theft, shoplifting, assaulting a police officer, and crimes that kill or badly hurt someone. No conviction is needed. States can also sue over some federal decisions to release or parole immigrants.",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-7",
+                "chamber": "Senate",
+                "number": 7,
+                "date": "2025-01-20",
+                "question": "On Passage of the Bill",
+                "result": "Bill Passed",
+                "yea": 64,
+                "nay": 35,
+                "measure": "S. 5"
+              },
+              {
+                "id": "house-119-1-23",
+                "chamber": "House",
+                "number": 23,
+                "date": "2025-01-22",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 263,
+                "nay": 156,
+                "measure": "S. 5"
+              }
+            ]
+          },
+          {
+            "id": "kv-canada-tariffs",
+            "title": "End the national emergency behind tariffs on Canada (H.J.Res. 72 and S.J.Res. 37)",
+            "issue": "Trade and tariffs",
+            "whatItDoes": "On Feb. 1, 2025, the President declared a national emergency over illegal drugs and illegal crossings at the Canadian border. He used it to put tariffs, which are taxes on imports, on goods from Canada. This resolution ends that emergency.",
+            "rollCalls": [
+              {
+                "id": "house-119-2-65",
+                "chamber": "House",
+                "number": 65,
+                "date": "2026-02-11",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 219,
+                "nay": 211,
+                "measure": "H.J.Res. 72"
+              },
+              {
+                "id": "senate-119-1-160",
+                "chamber": "Senate",
+                "number": 160,
+                "date": "2025-04-02",
+                "question": "On the Joint Resolution",
+                "result": "Joint Resolution Passed",
+                "yea": 51,
+                "nay": 48,
+                "measure": "S.J.Res. 37"
+              }
+            ]
+          },
+          {
+            "id": "kv-save-act",
+            "title": "Require proof of citizenship to register to vote in federal elections (H.R. 22)",
+            "issue": "Elections and voting",
+            "whatItDoes": "People registering to vote in federal elections would have to show a document that proves U.S. citizenship, such as a passport. States must offer another way to prove it for people without such papers. People who register by mail must bring the proof in person to an election official. States must remove noncitizens from voter lists.",
+            "rollCalls": [
+              {
+                "id": "house-119-1-102",
+                "chamber": "House",
+                "number": 102,
+                "date": "2025-04-10",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 220,
+                "nay": 208,
+                "measure": "H.R. 22"
+              }
+            ]
+          },
+          {
+            "id": "kv-iran-war-powers",
+            "title": "Direct the President to end U.S. hostilities with Iran (H.Con.Res. 86)",
+            "issue": "War and foreign policy",
+            "whatItDoes": "It tells the President to remove U.S. forces from fighting with Iran unless Congress approves it. It relies on the War Powers Resolution, a law about the role of Congress in going to war. Forces may still defend the U.S. or an ally or partner from an attack that is about to happen, within that law's time limits.",
+            "rollCalls": [
+              {
+                "id": "house-119-2-199",
+                "chamber": "House",
+                "number": 199,
+                "date": "2026-06-03",
+                "question": "On Agreeing to the Resolution",
+                "result": "Passed",
+                "yea": 215,
+                "nay": 208,
+                "measure": "H.Con.Res. 86"
+              },
+              {
+                "id": "senate-119-2-184",
+                "chamber": "Senate",
+                "number": 184,
+                "date": "2026-06-23",
+                "question": "On the Concurrent Resolution",
+                "result": "Concurrent Resolution Agreed to",
+                "yea": 50,
+                "nay": 48,
+                "measure": "H.Con.Res. 86"
+              }
+            ]
+          },
+          {
+            "id": "kv-california-ev-waiver",
+            "title": "Cancel California's waiver for its zero-emission car sales rules (H.J.Res. 88)",
+            "issue": "Climate and energy",
+            "whatItDoes": "California needs special permission from the EPA, called a waiver, to set its own car pollution rules. This cancels the waiver for its newest rules. They required a growing share of new cars sold to be zero-emission, reaching 100% in 2035, with plug-in hybrids allowed for up to 20%. They also tightened limits for gas cars. States that copied the rules are blocked too.",
+            "rollCalls": [
+              {
+                "id": "house-119-1-114",
+                "chamber": "House",
+                "number": 114,
+                "date": "2025-05-01",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 246,
+                "nay": 164,
+                "measure": "H.J.Res. 88"
+              },
+              {
+                "id": "senate-119-1-277",
+                "chamber": "Senate",
+                "number": 277,
+                "date": "2025-05-22",
+                "question": "On the Joint Resolution",
+                "result": "Joint Resolution Passed",
+                "yea": 51,
+                "nay": 44,
+                "measure": "H.J.Res. 88"
+              }
+            ]
+          },
+          {
+            "id": "kv-federal-worker-unions",
+            "title": "Cancel the March 2025 order ending union bargaining at many federal agencies (H.R. 2550)",
+            "issue": "Jobs and labor",
+            "whatItDoes": "On March 27, 2025, the President signed an order ending union bargaining rights for workers at many federal agencies. It used a national security exception in federal labor law. This bill cancels that order. Union contracts in place the day before the order would last their full terms.",
+            "rollCalls": [
+              {
+                "id": "house-119-1-332",
+                "chamber": "House",
+                "number": 332,
+                "date": "2025-12-11",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 231,
+                "nay": 195,
+                "measure": "H.R. 2550"
+              }
+            ]
+          },
+          {
+            "id": "kv-born-alive",
+            "title": "Require care for infants born alive after an attempted abortion (H.R. 21 and S. 6)",
+            "issue": "Abortion",
+            "whatItDoes": "It covers a baby born alive after an attempted abortion. Doctors and other health care workers would have to give that baby the same care as any other newborn at the same stage of pregnancy. They would also have to take the baby to a hospital. The bill adds reporting rules and criminal penalties. The mother cannot be prosecuted under it.",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-11",
+                "chamber": "Senate",
+                "number": 11,
+                "date": "2025-01-22",
+                "question": "On Cloture on the Motion to Proceed",
+                "result": "Cloture on the Motion to Proceed Rejected",
+                "yea": 52,
+                "nay": 47,
+                "measure": "S. 6"
+              },
+              {
+                "id": "house-119-1-27",
+                "chamber": "House",
+                "number": 27,
+                "date": "2025-01-23",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 217,
+                "nay": 204,
+                "measure": "H.R. 21"
+              }
+            ]
+          },
+          {
+            "id": "kv-ukraine-aid",
+            "title": "Authorize military aid to Ukraine and conditional sanctions on Russia (H.R. 2913)",
+            "issue": "War and foreign policy",
+            "whatItDoes": "It allows $300 million a year in military aid to Ukraine for 2026 and 2027. It raises the limit on U.S. military loans to Ukraine and NATO allies from $4 billion to $8 billion. It creates a fund to help rebuild Ukraine. If the President finds Russia is still waging war on Ukraine, refusing peace talks, or breaking a peace deal, sanctions are required. They target Russian banks and oil, gas, and mining companies.",
+            "rollCalls": [
+              {
+                "id": "house-119-2-207",
+                "chamber": "House",
+                "number": 207,
+                "date": "2026-06-04",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 226,
+                "nay": 195,
+                "measure": "H.R. 2913"
+              }
+            ]
+          },
+          {
+            "id": "kv-girls-sports",
+            "title": "Limit girls' and women's school sports teams to students born female (H.R. 28 and S. 9)",
+            "issue": "Education and culture",
+            "whatItDoes": "It applies to schools and programs that get federal money. Under Title IX, the law against sex discrimination in education, it defines sex in sports by biology at birth. Only people born female could play on girls' and women's teams, so transgender girls and women could not. The House bill still lets people born male practice with those teams if no female loses a spot or other benefit.",
+            "rollCalls": [
+              {
+                "id": "house-119-1-12",
+                "chamber": "House",
+                "number": 12,
+                "date": "2025-01-14",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 218,
+                "nay": 206,
+                "measure": "H.R. 28"
+              },
+              {
+                "id": "senate-119-1-100",
+                "chamber": "Senate",
+                "number": 100,
+                "date": "2025-03-03",
+                "question": "On Cloture on the Motion to Proceed",
+                "result": "Cloture on the Motion to Proceed Rejected",
+                "yea": 51,
+                "nay": 45,
+                "measure": "S. 9"
+              }
+            ]
+          },
+          {
+            "id": "kv-haiti-tps",
+            "title": "Require temporary protected status for Haiti until 2029 (H.R. 1689)",
+            "issue": "Immigration",
+            "whatItDoes": "Temporary protected status (TPS) shields eligible people from certain countries from deportation. They must already be in the U.S., and they can work while it lasts. This bill requires the government to give Haiti this status until April 20, 2029, no matter what other laws say. People convicted of a felony or of two or more misdemeanors in the U.S., among others, cannot get it.",
+            "rollCalls": [
+              {
+                "id": "house-119-2-120",
+                "chamber": "House",
+                "number": 120,
+                "date": "2026-04-16",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 224,
+                "nay": 204,
+                "measure": "H.R. 1689"
+              }
+            ]
+          },
+          {
+            "id": "kv-genius-act",
+            "title": "Set federal rules for payment stablecoins, a type of digital token (S. 1582)",
+            "issue": "Tech and crypto",
+            "whatItDoes": "Stablecoins are digital tokens. The company that issues them must trade each one back for a fixed amount of money, such as $1. This law sets federal rules for them. Issuers must back every token with at least that much in approved reserves, like dollars, bank deposits, or short-term U.S. Treasury bills.",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-318",
+                "chamber": "Senate",
+                "number": 318,
+                "date": "2025-06-17",
+                "question": "On Passage of the Bill",
+                "result": "Bill Passed",
+                "yea": 68,
+                "nay": 30,
+                "measure": "S. 1582"
+              },
+              {
+                "id": "house-119-1-200",
+                "chamber": "House",
+                "number": 200,
+                "date": "2025-07-17",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 308,
+                "nay": 122,
+                "measure": "S. 1582"
+              }
+            ]
+          },
+          {
+            "id": "kv-energy-emergency",
+            "title": "End the national energy emergency declared in January 2025 (S.J.Res. 10)",
+            "issue": "Climate and energy",
+            "whatItDoes": "On Jan. 20, 2025, the President declared a national energy emergency. His order said U.S. energy supply and infrastructure fall short of the country's needs. It told agencies to use emergency powers to speed up energy projects. It covers oil, gas, coal, uranium, biofuels, geothermal, water power, and critical minerals, but not wind or solar. This resolution ends the emergency.",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-95",
+                "chamber": "Senate",
+                "number": 95,
+                "date": "2025-02-26",
+                "question": "On the Joint Resolution",
+                "result": "Joint Resolution Defeated",
+                "yea": 47,
+                "nay": 52,
+                "measure": "S.J.Res. 10"
+              }
+            ]
+          },
+          {
+            "id": "kv-rescissions",
+            "title": "Cancel about $9 billion already approved for public broadcasting and foreign aid (H.R. 4)",
+            "issue": "Government spending",
+            "whatItDoes": "It cancels about $9 billion that Congress had already approved. About $1.1 billion was for public radio and TV, through the Corporation for Public Broadcasting, for 2026 and 2027. About $7.9 billion was for foreign aid and dues to international groups.",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-411",
+                "chamber": "Senate",
+                "number": 411,
+                "date": "2025-07-17",
+                "question": "On Passage of the Bill",
+                "result": "Bill Passed",
+                "yea": 51,
+                "nay": 48,
+                "measure": "H.R. 4"
+              },
+              {
+                "id": "house-119-1-203",
+                "chamber": "House",
+                "number": 203,
+                "date": "2025-07-18",
+                "question": "On Agreeing to the Resolution",
+                "result": "Passed",
+                "yea": 216,
+                "nay": 213,
+                "measure": "H.Res. 590"
+              }
+            ]
+          },
+          {
+            "id": "kv-global-tariffs",
+            "title": "End the national emergency behind the April 2025 global tariffs (S.J.Res. 88)",
+            "issue": "Trade and tariffs",
+            "whatItDoes": "On April 2, 2025, the President declared a national emergency. He cited the U.S. buying far more goods from abroad than it sells, year after year, and unequal trade terms. He used it to add a 10% tariff, a tax on imports, to most goods from abroad, with higher rates for many countries. This resolution ends that emergency.",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-600",
+                "chamber": "Senate",
+                "number": 600,
+                "date": "2025-10-30",
+                "question": "On the Joint Resolution",
+                "result": "Joint Resolution Passed",
+                "yea": 51,
+                "nay": 47,
+                "measure": "S.J.Res. 88"
+              }
+            ]
+          },
+          {
+            "id": "kv-firearm-merchant-codes",
+            "title": "Bar card networks from using a sales code just for gun sellers (H.R. 1181)",
+            "issue": "Guns",
+            "whatItDoes": "Card networks sort the businesses that take their cards by type, using codes. This bill bars card networks and payment processors from using a code just for sellers of guns, ammunition, or gun parts. They may not require or assign one. The Attorney General enforces it, and it overrides state and local laws on such codes.",
+            "rollCalls": [
+              {
+                "id": "house-119-2-240",
+                "chamber": "House",
+                "number": 240,
+                "date": "2026-07-14",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 221,
+                "nay": 201,
+                "measure": "H.R. 1181"
+              }
+            ]
+          },
+          {
+            "id": "kv-faster-labor-contracts",
+            "title": "Set deadlines and a binding panel decision for first union contracts (H.R. 5408)",
+            "issue": "Jobs and labor",
+            "whatItDoes": "When workers form a new union, both sides must start bargaining within 10 days of a written request. If there is no first contract after 90 days, either side can ask a federal mediator for help. If that fails after 30 more days, a 3-person panel sets terms that both sides must follow for 2 years. Each side picks one member, and the third is neutral. During any bargaining, pay and conditions stay the same until a deal.",
+            "rollCalls": [
+              {
+                "id": "house-119-2-216",
+                "chamber": "House",
+                "number": 216,
+                "date": "2026-06-09",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 230,
+                "nay": 193,
+                "measure": "H.R. 5408"
+              }
+            ]
+          },
+          {
+            "id": "kv-college-israel-boycotts",
+            "title": "Tie college student aid to not joining commercial boycotts of Israel (H.R. 4795)",
+            "issue": "Education and culture",
+            "whatItDoes": "To keep federal student aid, colleges must agree not to join business boycotts of Israel without a valid business reason. That includes boycotts of Israeli companies and schools. Colleges in or applying to federal international education programs have a yearly check too. They must confirm their students and teachers can join programs in Israel on the same terms as other countries. People from Israeli colleges must be able to join theirs the same way.",
+            "rollCalls": [
+              {
+                "id": "house-119-2-295",
+                "chamber": "House",
+                "number": 295,
+                "date": "2026-09-03",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 237,
+                "nay": 169,
+                "measure": "H.R. 4795"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 693
+}

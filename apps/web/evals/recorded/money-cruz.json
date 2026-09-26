@@ -1,0 +1,49 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "money-cruz",
+  "recordedAt": "2026-09-24T14:44:33.771Z",
+  "question": "Who funds Ted Cruz?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "No record yet. Campaign finance totals for Ted Cruz are not loaded yet.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Ted Cruz", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "C001098",
+            "name": "Ted Cruz",
+            "party": "R",
+            "office": "U.S. Senator, Texas",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getMoney",
+      "input": { "personId": "C001098", "cycle": 2026 },
+      "modelOutput": {
+        "person": {
+          "id": "C001098",
+          "name": "Ted Cruz",
+          "party": "R",
+          "office": "U.S. Senator, Texas",
+          "serving": true
+        },
+        "cycle": 2026,
+        "money": [
+          {
+            "receipts": 10228279.58,
+            "fromIndividuals": 8297999.39,
+            "fromPacs": 474800,
+            "cashOnHand": 2964804.69,
+            "asOf": "2026-06-30"
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 408
+}

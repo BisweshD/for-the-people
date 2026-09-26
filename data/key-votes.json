@@ -1,0 +1,1416 @@
+{
+  "schema": "for-the-people.keyVotes",
+  "version": 1,
+  "congress": 119,
+  "note": "Curated key votes. Edit only through pull requests. The ingestion job verifies every roll call against the official record, and a card publishes only when every roll call is verified and two reviewers with different leanings approved its wording.",
+  "selectionRule": {
+    "version": "0.2",
+    "criteria": [
+      "A recorded roll-call vote in the 119th Congress (2025-2026).",
+      "Final passage, concurrence, adoption, or a cloture vote that decided the measure's fate. No purely procedural votes.",
+      "Not near-unanimous: the smaller side has at least 15% of votes cast, so the vote tells members apart.",
+      "About 12 plain-English issue areas, at most 2 key votes per area.",
+      "Include high-salience measures forced to the floor by the minority party or a cross-party coalition (discharge petitions, war powers, tariff emergencies).",
+      "Prefer measures voted on in both chambers.",
+      "Balance: across all cards, the number where a Yea matches the Republican majority and the number where a Yea matches the Democratic majority differ by at most one, counted from the official party tallies of each card's roll calls.",
+      "Titles say what the measure does first. The bill number comes second, with a short title only when the public widely knows the measure by that name.",
+      "No card cites a cost, deficit, or coverage estimate, from the Congressional Budget Office or anyone else. Dollar amounts appear only when the measure's own text sets them.",
+      "The deck opens on the most bipartisan card, and the cards after it alternate which party's majority a Yea matches."
+    ],
+    "reviewRequired": "Two reviewers with different political leanings approve each key vote's wording before launch."
+  },
+  "issueAreas": [
+    {
+      "id": "health-care",
+      "label": "Health care",
+      "description": "Health insurance, Medicaid, Medicare, and what care costs.",
+      "icon": "HeartPulse"
+    },
+    {
+      "id": "taxes-and-spending",
+      "label": "Taxes and spending",
+      "description": "Tax rates, deductions, and how the federal budget is spent.",
+      "icon": "Coins"
+    },
+    {
+      "id": "war-and-foreign-policy",
+      "label": "War and foreign policy",
+      "description": "Military action abroad, allies, and aid to other countries.",
+      "icon": "Globe"
+    },
+    {
+      "id": "immigration",
+      "label": "Immigration",
+      "description": "Border enforcement, detention, and who can live and work in the country.",
+      "icon": "Signpost"
+    },
+    {
+      "id": "trade",
+      "label": "Trade and tariffs",
+      "description": "Taxes on imports and trade with other countries.",
+      "icon": "Container"
+    },
+    {
+      "id": "elections",
+      "label": "Elections and voting",
+      "description": "Who can register, how votes are cast, and how elections are run.",
+      "icon": "Vote"
+    },
+    {
+      "id": "labor",
+      "label": "Jobs and labor",
+      "description": "Workers' rights, unions, and wages.",
+      "icon": "HardHat"
+    },
+    {
+      "id": "climate-and-energy",
+      "label": "Climate and energy",
+      "description": "Energy sources, emissions rules, and vehicles.",
+      "icon": "Leaf"
+    },
+    {
+      "id": "abortion",
+      "label": "Abortion",
+      "description": "Laws on abortion and related medical care.",
+      "icon": "Stethoscope"
+    },
+    {
+      "id": "tech-and-crypto",
+      "label": "Tech and crypto",
+      "description": "Rules for technology companies and digital currencies.",
+      "icon": "Cpu"
+    },
+    {
+      "id": "education-and-culture",
+      "label": "Education and culture",
+      "description": "Schools, school sports, and cultural questions in law.",
+      "icon": "GraduationCap"
+    },
+    {
+      "id": "crime-and-drugs",
+      "label": "Crime and drugs",
+      "description": "Criminal penalties, policing, and drug laws.",
+      "icon": "Scale"
+    },
+    {
+      "id": "government-spending",
+      "label": "Government spending",
+      "description": "Cuts and additions to money Congress already approved.",
+      "icon": "Landmark"
+    },
+    {
+      "id": "guns",
+      "label": "Guns",
+      "description": "Laws on buying, owning, and carrying firearms.",
+      "icon": "Target"
+    }
+  ],
+  "gaps": [],
+  "excluded": [
+    {
+      "measure": "Epstein Files Transparency Act",
+      "reason": "Near-unanimous in the House, so it cannot tell members apart."
+    },
+    {
+      "measure": "SAVE America Act (H.R. 7296), House 218-213 on Feb 11, 2026",
+      "reason": "Overlaps the SAVE Act key vote and had less cross-party voting (one Democrat)."
+    },
+    {
+      "measure": "Earlier Iran war powers votes (June 2025 and March 2026, both failed in the Senate)",
+      "reason": "Superseded by H.Con.Res. 86, which passed both chambers."
+    },
+    {
+      "measure": "Later Iran votes (House passed another resolution 214-208 on Jul 23, 2026; the Senate later defeated a related motion)",
+      "reason": "Candidates for a second Iran key vote or for monthly reports."
+    },
+    {
+      "measure": "November 2025 funding deal that ended the 43-day shutdown",
+      "reason": "Bundles many issues; hard to summarize neutrally as one key vote."
+    },
+    {
+      "measure": "Stop Insider Trading Act (House-passed text)",
+      "reason": "The passed text also adds a photo-ID requirement for voting, so one Yea or Nay cannot stand for a single clear question."
+    },
+    {
+      "measure": "S. 2882, the Senate Democrats' stopgap funding bill (Senate votes Sep 19 to Oct 9, 2025, all failed)",
+      "reason": "Bundles stopgap funding with health care provisions and overlaps the ACA card, so one Yea or Nay cannot stand for one clear question. Left out for the same reason as the November 2025 funding deal."
+    },
+    {
+      "measure": "ROTOR Act (S. 2503), House vote to pass under suspension failed 264-133 on 2026-02-24",
+      "reason": "A real cross-party vote, but no issue area fits and one card does not justify a new area (the same reason the Sunshine Protection Act was left out). The deck reached balance without it."
+    },
+    {
+      "measure": "Venezuela war powers votes (House H.Con.Res. 61, 64, and 68; Senate S.J.Res. 83, 90, and 98)",
+      "reason": "War and foreign policy already has two cards (Iran and Ukraine)."
+    },
+    {
+      "measure": "Senate motions to proceed to Congressional Review Act resolutions (for example S.J.Res. 84 on an ACA marketplace rule and S.J.Res. 103 on a VA reproductive health rule)",
+      "reason": "Motions to proceed are procedural votes under the selection rule, even when they end the resolution."
+    },
+    {
+      "measure": "Veto override votes on H.R. 131 and H.R. 504 (House, 2026-01-08, both failed)",
+      "reason": "Local water and land projects with low salience; a Yea mainly answers whether to override the veto."
+    },
+    {
+      "measure": "Senate votes to end the tariff emergencies for Brazil (S.J.Res. 81) and Canada (S.J.Res. 77) in October 2025",
+      "reason": "Overlap the two tariff cards, and trade already has two cards."
+    }
+  ],
+  "keyVotes": [
+    {
+      "id": "kv-halt-fentanyl",
+      "order": 0,
+      "issueArea": "crime-and-drugs",
+      "card": {
+        "question": "Should fentanyl-related drugs stay in the strictest drug category for good, with mandatory minimum prison time for dealing larger amounts?",
+        "title": "Permanently put fentanyl-related drugs in the strictest drug category (S. 331)",
+        "whatItDoes": "Fentanyl-related drugs are chemical cousins of fentanyl. This bill puts them in Schedule I, the strictest drug category, for good. Dealing them, including selling, making, or holding them to sell, brings the same penalties as other fentanyl-like drugs. That includes mandatory minimum prison time for larger amounts. It also makes it easier for scientists to get approval to study Schedule I drugs. Fentanyl itself stays in Schedule II, where doctors can use it.",
+        "context": "It became law on July 16, 2025. These drugs had been in Schedule I on a temporary basis since 2018.",
+        "yeaMeans": "Support the bill",
+        "nayMeans": "Oppose the bill"
+      },
+      "measures": [
+        "119-s-331"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "senate-119-1-127",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-03-14",
+            "yea": 84,
+            "nay": 16
+          }
+        },
+        {
+          "rollCallId": "house-119-1-166",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-06-12",
+            "yea": 321,
+            "nay": 104
+          }
+        }
+      ],
+      "yeaLean": "both",
+      "status": "draft",
+      "selectionReason": "Bipartisan crime law that still has a meaningful minority against it.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "The body now says the minimums apply only to larger amounts, which matches the headline and the steward's finding. Splitting the sentence in two changes nothing in meaning."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Takes the progressive reviewer's body fix, which accurately limits mandatory minimums to larger amounts and matches the headline. It still says dealing brings the same penalties as other fentanyl-like drugs, so the bill's tougher sentencing is not softened."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-obbba",
+      "order": 1,
+      "issueArea": "taxes-and-spending",
+      "card": {
+        "question": "Do you support the 2025 tax and spending law known as the One Big Beautiful Bill Act?",
+        "title": "2025 tax and spending law (H.R. 1, known as the One Big Beautiful Bill Act)",
+        "whatItDoes": "It makes many 2017 tax cuts permanent and raises the child tax credit. For a few years, it adds tax breaks for tips, overtime, car-loan interest, and seniors, and raises the cap on deducting state and local taxes. It adds Medicaid work requirements and limits a tax states use to help pay for Medicaid. It expands SNAP (food aid) work rules and moves some SNAP costs to states. It ends several clean-energy tax credits, adds money for the border and defense, and raises the debt limit by $5 trillion.",
+        "context": "It became law on July 4, 2025. The Vice President broke a 50-50 tie in the Senate. Many of the 2017 tax cuts had been set to end after 2025.",
+        "yeaMeans": "Support the bill",
+        "nayMeans": "Oppose the bill"
+      },
+      "measures": [
+        "119-hr-1"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "senate-119-1-372",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-07-01",
+            "yea": 50,
+            "nay": 50
+          }
+        },
+        {
+          "rollCallId": "house-119-1-190",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-07-03",
+            "yea": 218,
+            "nay": 214
+          }
+        }
+      ],
+      "yeaLean": "R",
+      "status": "draft",
+      "selectionReason": "The largest law of this Congress; touches taxes, Medicaid, SNAP, energy, border, and the debt limit.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "My fix was taken: 'Medicaid work requirements' is back. Everything else was already even-handed."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Takes the progressive reviewer's 'Medicaid work requirements', which is the law's plain term and not loaded. The tax, border, defense, and debt-limit parts are all still listed evenly."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-aca-extension",
+      "order": 2,
+      "issueArea": "health-care",
+      "card": {
+        "question": "Should the larger, temporary tax credits for Affordable Care Act health plans be extended for 3 more years?",
+        "title": "Extend the larger ACA health plan tax credits for 3 years (H.R. 1834)",
+        "whatItDoes": "People who buy health insurance through the Affordable Care Act (ACA) marketplace can get tax credits that lower their monthly cost. In 2021 Congress made these credits bigger on a temporary basis and opened them to people with higher incomes. A 2022 law extended the larger credits through 2025. This bill extends them through 2028. The original, smaller credits continue either way.",
+        "context": "The House passed it after a majority of members signed a petition to force a vote. In the Senate, a Dec. 11, 2025 vote to move a matching bill (S. 3385) forward got 51 votes, short of the 60 needed. Neither bill has become law.",
+        "yeaMeans": "Support extending the expanded credits",
+        "nayMeans": "Oppose extending the expanded credits"
+      },
+      "measures": [
+        "119-hr-1834",
+        "119-s-3385"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "house-119-2-11",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2026-01-08",
+            "yea": 230,
+            "nay": 196
+          }
+        },
+        {
+          "rollCallId": "senate-119-1-644",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-12-11",
+            "yea": 51,
+            "nay": 48
+          }
+        }
+      ],
+      "yeaLean": "D",
+      "status": "draft",
+      "selectionReason": "Top pocketbook issue; cross-party House vote; tied to the longest shutdown in history.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "This takes the conservative fix ('larger, temporary', and 'on a temporary basis' in the body). It is accurate because the 2021 expansion was temporary and was extended in 2022. The card still says the credits were opened to people with higher incomes and that the original credits continue, so nothing a progressive voter needs was lost."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "My fix was adopted: 'tax credits' replaces 'extra help', and the copy now says the larger credits were temporary and already extended once in 2022. Accurate and neutral."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-laken-riley",
+      "order": 3,
+      "issueArea": "immigration",
+      "card": {
+        "question": "Should immigrants who entered illegally or lack valid papers be held if arrested for theft, burglary, or some violent crimes, before any conviction?",
+        "title": "Detain certain immigrants arrested for or charged with some crimes (Laken Riley Act)",
+        "whatItDoes": "Federal immigration officers must hold certain immigrants in custody if they are arrested for, charged with, or admit to certain crimes. It covers people who entered illegally, got in by fraud, or lack valid papers. The crimes are burglary, theft, shoplifting, assaulting a police officer, and crimes that kill or badly hurt someone. No conviction is needed. States can also sue over some federal decisions to release or parole immigrants.",
+        "context": "It is named for Laken Riley, a Georgia nursing student killed in 2024. Her killer had crossed the border illegally in 2022 and was then released on immigration parole. It was the first law passed by the 119th Congress, signed Jan. 29, 2025.",
+        "yeaMeans": "Support the bill",
+        "nayMeans": "Oppose the bill"
+      },
+      "measures": [
+        "119-s-5"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "senate-119-1-7",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-01-20",
+            "yea": 64,
+            "nay": 35
+          }
+        },
+        {
+          "rollCallId": "house-119-1-23",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-01-22",
+            "yea": 263,
+            "nay": 156
+          }
+        }
+      ],
+      "yeaLean": "R",
+      "status": "draft",
+      "selectionReason": "High-salience immigration law with real Democratic crossover in both chambers.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "The headline now uses the bill's own groups and says 'before any conviction', which covers my fix, and it adds burglary per the steward. The conservative's point about immigration parole in the context is accurate and matches the previous published copy."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "The headline blends the progressive reviewer's and steward's fixes; 'before any conviction' is factual and more neutral than 'even without'. My parole fix is in the context and body, and '119th Congress' (steward) avoids going stale."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-canada-tariffs",
+      "order": 4,
+      "issueArea": "trade",
+      "card": {
+        "question": "Should the national emergency used to put tariffs on goods from Canada end?",
+        "title": "End the national emergency behind tariffs on Canada (H.J.Res. 72 and S.J.Res. 37)",
+        "whatItDoes": "On Feb. 1, 2025, the President declared a national emergency over illegal drugs and illegal crossings at the Canadian border. He used it to put tariffs, which are taxes on imports, on goods from Canada. This resolution ends that emergency.",
+        "context": "The House and the Senate each passed their own version, but neither version has passed both. In February 2026 the Supreme Court ruled that the law used does not allow tariffs. The President ended these tariffs but kept the emergency in place.",
+        "yeaMeans": "Support ending the emergency",
+        "nayMeans": "Keep the emergency in place"
+      },
+      "measures": [
+        "119-hjres-72",
+        "119-sjres-37"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "house-119-2-65",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2026-02-11",
+            "yea": 219,
+            "nay": 211
+          }
+        },
+        {
+          "rollCallId": "senate-119-1-160",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-04-02",
+            "yea": 51,
+            "nay": 48
+          }
+        }
+      ],
+      "yeaLean": "D",
+      "status": "draft",
+      "selectionReason": "Signature economic policy; cross-party House rebuke.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Unchanged from the version I approved in round 1. It is neutral and accurate."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Unchanged from the round-1 copy I approved. The President's stated reasons and the Supreme Court outcome are kept, and the question is neutral."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-save-act",
+      "order": 5,
+      "issueArea": "elections",
+      "card": {
+        "question": "Should people have to show proof of U.S. citizenship to register to vote in federal elections?",
+        "title": "Require proof of citizenship to register to vote in federal elections (H.R. 22)",
+        "whatItDoes": "People registering to vote in federal elections would have to show a document that proves U.S. citizenship, such as a passport. States must offer another way to prove it for people without such papers. People who register by mail must bring the proof in person to an election official. States must remove noncitizens from voter lists.",
+        "context": "It is already illegal for noncitizens to vote in federal elections. Today, people swear they are citizens when they register. Supporters say document checks are needed to enforce the ban. Opponents say many citizens cannot easily get a passport or birth certificate. The Senate has not passed the bill.",
+        "yeaMeans": "Support the bill",
+        "nayMeans": "Oppose the bill"
+      },
+      "measures": [
+        "119-hr-22"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "house-119-1-102",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-04-10",
+            "yea": 220,
+            "nay": 208
+          }
+        }
+      ],
+      "yeaLean": "R",
+      "status": "draft",
+      "selectionReason": "Core elections issue with Democratic crossover.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Unchanged from the version I approved in round 1. It keeps that noncitizen voting is already illegal, the sworn statement people make today, and the opponents' point about access to documents."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Unchanged from the round-1 copy I approved. Supporters' enforcement argument and opponents' document-access point carry equal weight."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-iran-war-powers",
+      "order": 6,
+      "issueArea": "war-and-foreign-policy",
+      "card": {
+        "question": "Should the President have to pull U.S. forces out of fighting with Iran unless Congress approves it?",
+        "title": "Direct the President to end U.S. hostilities with Iran (H.Con.Res. 86)",
+        "whatItDoes": "It tells the President to remove U.S. forces from fighting with Iran unless Congress approves it. It relies on the War Powers Resolution, a law about the role of Congress in going to war. Forces may still defend the U.S. or an ally or partner from an attack that is about to happen, within that law's time limits.",
+        "context": "Fighting began Feb. 28, 2026. After an Apr. 7 ceasefire, the White House said May 1 it had ended. Congress's research office reported on-and-off fighting from May 4, and the President reported new U.S. strikes from June 9. Both chambers passed it. It does not go to the President, and whether it is legally binding is disputed.",
+        "yeaMeans": "Support directing the withdrawal",
+        "nayMeans": "Oppose directing the withdrawal"
+      },
+      "measures": [
+        "119-hconres-86"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "house-119-2-199",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2026-06-03",
+            "yea": 215,
+            "nay": 208
+          }
+        },
+        {
+          "rollCallId": "senate-119-2-184",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2026-06-23",
+            "yea": 50,
+            "nay": 48
+          }
+        }
+      ],
+      "yeaLean": "D",
+      "status": "draft",
+      "selectionReason": "An active war; the same measure passed both chambers with cross-party votes.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Both sources are named again: Congress's research office and the President's own report. It takes the conservative and steward wording 'on-and-off fighting', which matches the CRS 'intermittent' and is fair."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "My fix was adopted word for word: the May 4 fighting is credited to Congress's research office as on-and-off, and the June 9 strikes to the President's report. Neither side's claim is stated as unsourced fact."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-california-ev-waiver",
+      "order": 7,
+      "issueArea": "climate-and-energy",
+      "card": {
+        "question": "Should Congress block California's rule that all new cars sold by 2035 be zero-emission or plug-in hybrids?",
+        "title": "Cancel California's waiver for its zero-emission car sales rules (H.J.Res. 88)",
+        "whatItDoes": "California needs special permission from the EPA, called a waiver, to set its own car pollution rules. This cancels the waiver for its newest rules. They required a growing share of new cars sold to be zero-emission, reaching 100% in 2035, with plug-in hybrids allowed for up to 20%. They also tightened limits for gas cars. States that copied the rules are blocked too.",
+        "context": "It became law on June 12, 2025. Congress used a law for overturning agency rules. Congress's own watchdog office, the GAO, said that law did not apply to this waiver. Supporters said it did, because the EPA sent the waiver to Congress as a rule. California and 10 other states sued.",
+        "yeaMeans": "Support canceling the waiver",
+        "nayMeans": "Keep the waiver in place"
+      },
+      "measures": [
+        "119-hjres-88"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "house-119-1-114",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-05-01",
+            "yea": 246,
+            "nay": 164
+          }
+        },
+        {
+          "rollCallId": "senate-119-1-277",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-05-22",
+            "yea": 51,
+            "nay": 44
+          }
+        }
+      ],
+      "yeaLean": "R",
+      "status": "draft",
+      "selectionReason": "The biggest climate/energy floor vote; cross-party in the House.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "My fix identifying the GAO as Congress's own watchdog was taken. The steward's question and title replace 'gas-only', which was wrong, with accurate wording that stays neutral."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Takes the steward's question and title, which describe the 2035 zero-emission/plug-in requirement more accurately than 'gas-only'. Also takes the progressive reviewer's GAO wording; supporters' reason the Review Act applied is still kept."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-federal-worker-unions",
+      "order": 8,
+      "issueArea": "labor",
+      "card": {
+        "question": "Should Congress cancel the President's March 2025 order that used a national security exception to end union bargaining at many federal agencies?",
+        "title": "Cancel the March 2025 order ending union bargaining at many federal agencies (H.R. 2550)",
+        "whatItDoes": "On March 27, 2025, the President signed an order ending union bargaining rights for workers at many federal agencies. It used a national security exception in federal labor law. This bill cancels that order. Union contracts in place the day before the order would last their full terms.",
+        "context": "A majority of House members signed a petition to force this vote, and it passed the House. The Senate has not voted on it. A second order in August 2025 covered more agencies; this bill does not undo it.",
+        "yeaMeans": "Support canceling the executive order",
+        "nayMeans": "Keep the executive order in place"
+      },
+      "measures": [
+        "119-hr-2550"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "house-119-1-332",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-12-11",
+            "yea": 231,
+            "nay": 195
+          }
+        }
+      ],
+      "yeaLean": "D",
+      "status": "draft",
+      "selectionReason": "Only labor measure with a floor vote; strong Republican crossover.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "The headline now uses my exact fix, which names the March order and says 'used a national security exception' in place of stating a motive. The title's return to the previously approved March 2025 wording also removes the confusion with the August order."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Re-confirmed the revised question from the progressive reviewer. It restores \"March\" from my round-1 fix and presents the national security exception as the legal basis the order used, not as its motive. It is accurate and neutral."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-born-alive",
+      "order": 9,
+      "issueArea": "abortion",
+      "card": {
+        "question": "Should federal law set care rules and criminal penalties for health care workers when a baby is born alive after an attempted abortion?",
+        "title": "Require care for infants born alive after an attempted abortion (H.R. 21 and S. 6)",
+        "whatItDoes": "It covers a baby born alive after an attempted abortion. Doctors and other health care workers would have to give that baby the same care as any other newborn at the same stage of pregnancy. They would also have to take the baby to a hospital. The bill adds reporting rules and criminal penalties. The mother cannot be prosecuted under it.",
+        "context": "A 2002 federal law already treats any baby born alive as a person. Supporters say that law lacks care rules and penalties. Opponents say current laws already cover this and that the bill overrides doctors' judgment. The House passed it. The Senate version fell short of the 60 votes needed to move forward.",
+        "yeaMeans": "Support the bill",
+        "nayMeans": "Oppose the bill"
+      },
+      "measures": [
+        "119-hr-21",
+        "119-s-6"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "senate-119-1-11",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-01-22",
+            "yea": 52,
+            "nay": 47
+          }
+        },
+        {
+          "rollCallId": "house-119-1-27",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-01-23",
+            "yea": 217,
+            "nay": 204
+          }
+        }
+      ],
+      "yeaLean": "R",
+      "status": "draft",
+      "selectionReason": "The main abortion-related floor vote in both chambers.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "This takes the steward's question ('set care rules and criminal penalties'), which does what my fix did. It no longer suggests that care isn't required today."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Takes the progressive reviewer's and steward's headline, which I did not ask for. It is accurate given the 2002 law, and the title and body still say the bill requires the same care as any newborn, with supporters' argument that current law lacks care rules and penalties kept."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-ukraine-aid",
+      "order": 10,
+      "issueArea": "war-and-foreign-policy",
+      "card": {
+        "question": "Should the U.S. approve military aid to Ukraine, and require sanctions on Russia if Russia keeps waging war or blocks peace?",
+        "title": "Authorize military aid to Ukraine and conditional sanctions on Russia (H.R. 2913)",
+        "whatItDoes": "It allows $300 million a year in military aid to Ukraine for 2026 and 2027. It raises the limit on U.S. military loans to Ukraine and NATO allies from $4 billion to $8 billion. It creates a fund to help rebuild Ukraine. If the President finds Russia is still waging war on Ukraine, refusing peace talks, or breaking a peace deal, sanctions are required. They target Russian banks and oil, gas, and mining companies.",
+        "context": "A majority of House members signed a petition to force this vote. The Senate has not voted on it.",
+        "yeaMeans": "Support the bill",
+        "nayMeans": "Oppose the bill"
+      },
+      "measures": [
+        "119-hr-2913"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "house-119-2-207",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2026-06-04",
+            "yea": 226,
+            "nay": 195
+          }
+        }
+      ],
+      "yeaLean": "D",
+      "status": "draft",
+      "selectionReason": "Second foreign-policy vote; strong Republican crossover.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "This combines my fix with the steward's: Russia is named, the condition applies only to sanctions, and 'blocks peace' is included. The body says 'waging war on Ukraine' again."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Takes the steward's and progressive reviewer's fixes, which remove the ambiguous 'it' and make clear only the sanctions are conditional. 'Waging war' matches the previously approved copy, and the dollar amounts and doubled loan cap remain."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-girls-sports",
+      "order": 11,
+      "issueArea": "education-and-culture",
+      "card": {
+        "question": "Should only students born female be allowed to compete on girls' and women's school sports teams?",
+        "title": "Limit girls' and women's school sports teams to students born female (H.R. 28 and S. 9)",
+        "whatItDoes": "It applies to schools and programs that get federal money. Under Title IX, the law against sex discrimination in education, it defines sex in sports by biology at birth. Only people born female could play on girls' and women's teams, so transgender girls and women could not. The House bill still lets people born male practice with those teams if no female loses a spot or other benefit.",
+        "context": "Supporters say it protects fairness, safety, and chances for female athletes. Opponents say it unfairly shuts out transgender girls and women and could lead to invasive checks of students' sex. The House passed it. The Senate version fell short of the 60 votes needed to move forward.",
+        "yeaMeans": "Support the bill",
+        "nayMeans": "Oppose the bill"
+      },
+      "measures": [
+        "119-hr-28",
+        "119-s-9"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "house-119-1-12",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-01-14",
+            "yea": 218,
+            "nay": 206
+          }
+        },
+        {
+          "rollCallId": "senate-119-1-100",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-03-03",
+            "yea": 51,
+            "nay": 45
+          }
+        }
+      ],
+      "yeaLean": "R",
+      "status": "draft",
+      "selectionReason": "High-salience culture vote in both chambers.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "The steward's 'compete on' is more accurate given the practice exception. The body still says transgender girls and women are excluded, and the context keeps the opponents' points."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Takes the steward's 'compete on', which matches the House practice exception described in the body. Supporters' fairness and safety argument is kept in full."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-haiti-tps",
+      "order": 12,
+      "issueArea": "immigration",
+      "card": {
+        "question": "Should the government have to give Haiti temporary protected status until 2029, overriding its decision to end it?",
+        "title": "Require temporary protected status for Haiti until 2029 (H.R. 1689)",
+        "whatItDoes": "Temporary protected status (TPS) shields eligible people from certain countries from deportation. They must already be in the U.S., and they can work while it lasts. This bill requires the government to give Haiti this status until April 20, 2029, no matter what other laws say. People convicted of a felony or of two or more misdemeanors in the U.S., among others, cannot get it.",
+        "context": "In Nov. 2025, Homeland Security moved to end Haiti's status. It said Haiti no longer met the law's conditions and that letting Haitians stay was against the national interest. Supporters pointed to gang violence and unsafe conditions in Haiti. A petition forced the House vote; the Senate has not voted. After a June 2026 Supreme Court ruling, the status ended July 27, 2026.",
+        "yeaMeans": "Support the bill",
+        "nayMeans": "Oppose the bill"
+      },
+      "measures": [
+        "119-hr-1689"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "house-119-2-120",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2026-04-16",
+            "yea": 224,
+            "nay": 204
+          }
+        }
+      ],
+      "yeaLean": "D",
+      "status": "draft",
+      "selectionReason": "Minority-forced immigration vote (discharge petition) on final passage; 10 Republicans voted yes. A Yea matches the Democratic majority, which balances the Laken Riley card in the same area.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "This takes the conservative's wording. 'Overriding its decision to end it' is accurate because the bill applies no matter what other laws say and DHS did decide to end the status. It describes the action plainly without favoring either side, and the context still keeps both sides' reasons and the July 27, 2026 end date."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "My fix was adopted word for word: the question now says the bill overrides the government's decision to end the status, which is accurate both at the April 2026 vote and now. The updated context on DHS's reasons, supporters' reasons, and the July 27, 2026 end date is neutral."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-genius-act",
+      "order": 13,
+      "issueArea": "tech-and-crypto",
+      "card": {
+        "question": "Do you support the GENIUS Act, which sets federal rules for stablecoins, digital tokens meant to keep a fixed value?",
+        "title": "Set federal rules for payment stablecoins, a type of digital token (S. 1582)",
+        "whatItDoes": "Stablecoins are digital tokens. The company that issues them must trade each one back for a fixed amount of money, such as $1. This law sets federal rules for them. Issuers must back every token with at least that much in approved reserves, like dollars, bank deposits, or short-term U.S. Treasury bills.",
+        "context": "It became law on July 18, 2025. Supporters said it gives a growing market clear rules and keeps the dollar central to digital payments. Opponents said its protections for consumers and its ethics limits were too weak. One Republican opponent wanted it to fully block a Federal Reserve digital currency.",
+        "yeaMeans": "Support the bill",
+        "nayMeans": "Oppose the bill"
+      },
+      "measures": [
+        "119-s-1582"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "senate-119-1-318",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-06-17",
+            "yea": 68,
+            "nay": 30
+          }
+        },
+        {
+          "rollCallId": "house-119-1-200",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-07-17",
+            "yea": 308,
+            "nay": 122
+          }
+        }
+      ],
+      "yeaLean": "R",
+      "status": "draft",
+      "selectionReason": "Splits both parties, so it separates members well.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "The steward's 'Do you support the GENIUS Act' question fixes my concern: a no vote no longer reads as being against any rules. 'Approved reserves' replaces 'safe assets', which was the card's own judgment."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Takes the steward's question and 'approved reserves'. Both are accurate and neutral, and the Republican objection about a Federal Reserve digital currency is still kept."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-energy-emergency",
+      "order": 14,
+      "issueArea": "climate-and-energy",
+      "card": {
+        "question": "Should the energy emergency the President declared in January 2025 end?",
+        "title": "End the national energy emergency declared in January 2025 (S.J.Res. 10)",
+        "whatItDoes": "On Jan. 20, 2025, the President declared a national energy emergency. His order said U.S. energy supply and infrastructure fall short of the country's needs. It told agencies to use emergency powers to speed up energy projects. It covers oil, gas, coal, uranium, biofuels, geothermal, water power, and critical minerals, but not wind or solar. This resolution ends the emergency.",
+        "context": "The Senate rejected it 47-52 on Feb. 26, 2025. A second try failed 47-51 on Oct. 8, 2025. Neither passed the Senate, so the House did not vote. In January 2026 the President renewed the emergency for another year.",
+        "yeaMeans": "Support ending the emergency",
+        "nayMeans": "Keep the emergency in place"
+      },
+      "measures": [
+        "119-sjres-10"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "senate-119-1-95",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-02-26",
+            "yea": 47,
+            "nay": 52
+          }
+        }
+      ],
+      "yeaLean": "D",
+      "status": "draft",
+      "selectionReason": "Minority-forced vote under the National Emergencies Act on the administration's energy policy; the passage vote decided the resolution's fate. Second climate-and-energy card; a Yea matches the Democratic majority.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Unchanged from the version I approved in round 1. It keeps the point that wind and solar are left out, both failed votes, and the renewal."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Unchanged from the round-1 copy I approved. The order's stated reason, both failed votes, and the renewal are kept."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-rescissions",
+      "order": 15,
+      "issueArea": "government-spending",
+      "card": {
+        "question": "Should Congress take back about $9 billion it had approved for public broadcasting and foreign aid?",
+        "title": "Cancel about $9 billion already approved for public broadcasting and foreign aid (H.R. 4)",
+        "whatItDoes": "It cancels about $9 billion that Congress had already approved. About $1.1 billion was for public radio and TV, through the Corporation for Public Broadcasting, for 2026 and 2027. About $7.9 billion was for foreign aid and dues to international groups.",
+        "context": "It became law on July 24, 2025. The House vote shown here, 216-213, agreed to the Senate's version.",
+        "yeaMeans": "Support canceling the funding",
+        "nayMeans": "Keep the funding in place"
+      },
+      "measures": [
+        "119-hr-4",
+        "119-hres-590"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "senate-119-1-411",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-07-17",
+            "yea": 51,
+            "nay": 48
+          }
+        },
+        {
+          "rollCallId": "house-119-1-203",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-07-18",
+            "yea": 216,
+            "nay": 213
+          }
+        }
+      ],
+      "yeaLean": "R",
+      "status": "draft",
+      "selectionReason": "First enacted presidential rescissions package in decades; spending-power fight.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Unchanged from the version I approved in round 1. It keeps that the money was already approved and went to public radio and TV."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Unchanged from the round-1 copy I approved. Plain and accurate about the amounts and where the money was going."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-global-tariffs",
+      "order": 16,
+      "issueArea": "trade",
+      "card": {
+        "question": "Should the national emergency behind the April 2025 tariffs on most imports end?",
+        "title": "End the national emergency behind the April 2025 global tariffs (S.J.Res. 88)",
+        "whatItDoes": "On April 2, 2025, the President declared a national emergency. He cited the U.S. buying far more goods from abroad than it sells, year after year, and unequal trade terms. He used it to add a 10% tariff, a tax on imports, to most goods from abroad, with higher rates for many countries. This resolution ends that emergency.",
+        "context": "The Senate passed it 51-47 on Oct. 30, 2025. The House has not voted. In February 2026 the Supreme Court ruled that the law used does not allow tariffs. The President ended these tariffs and set a 10% import charge under another law until July 24, 2026. The emergency is still in place.",
+        "yeaMeans": "Support ending the emergency",
+        "nayMeans": "Keep the emergency in place"
+      },
+      "measures": [
+        "119-sjres-88"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "senate-119-1-600",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2025-10-30",
+            "yea": 51,
+            "nay": 47
+          }
+        }
+      ],
+      "yeaLean": "D",
+      "status": "draft",
+      "selectionReason": "Minority-forced tariff-emergency vote that passed the Senate with 4 Republicans voting yes. Broader than the Canada card (it covers the tariffs on most imports). A Yea matches the Democratic majority.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Unchanged from the version I approved in round 1. It keeps the Supreme Court ruling, the replacement charge, and the emergency still being in place."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Unchanged from the round-1 copy I approved. The President's stated reasons and the later 10% charge under another law are kept."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-firearm-merchant-codes",
+      "order": 17,
+      "issueArea": "guns",
+      "card": {
+        "question": "Should card companies be barred from using a special sales code for gun sellers?",
+        "title": "Bar card networks from using a sales code just for gun sellers (H.R. 1181)",
+        "whatItDoes": "Card networks sort the businesses that take their cards by type, using codes. This bill bars card networks and payment processors from using a code just for sellers of guns, ammunition, or gun parts. They may not require or assign one. The Attorney General enforces it, and it overrides state and local laws on such codes.",
+        "context": "Supporters say the code singles out legal gun sales for tracking. Opponents say it helps banks spot suspicious gun buying. Card companies may still follow laws on fraud, disputes, suspicious activity, data breaches, and cyber risks. It passed the House on July 14, 2026. The Senate has not voted on it.",
+        "yeaMeans": "Support the bill",
+        "nayMeans": "Oppose the bill"
+      },
+      "measures": [
+        "119-hr-1181"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "house-119-2-240",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2026-07-14",
+            "yea": 221,
+            "nay": 201
+          }
+        }
+      ],
+      "yeaLean": "R",
+      "status": "draft",
+      "selectionReason": "First firearms-related roll call in the 119th Congress that meets the selection rule; fills the guns gap. A single clear question on final passage, with 5 Democrats voting yes.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Unchanged from the version I approved in round 1. It keeps the opponents' point about spotting suspicious gun buying."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "Unchanged from the round-1 copy I approved. Supporters' tracking concern and the carve-outs are both kept."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-faster-labor-contracts",
+      "order": 18,
+      "issueArea": "labor",
+      "card": {
+        "question": "Should a 3-person panel set binding terms for a new union's first contract if talks fail?",
+        "title": "Set deadlines and a binding panel decision for first union contracts (H.R. 5408)",
+        "whatItDoes": "When workers form a new union, both sides must start bargaining within 10 days of a written request. If there is no first contract after 90 days, either side can ask a federal mediator for help. If that fails after 30 more days, a 3-person panel sets terms that both sides must follow for 2 years. Each side picks one member, and the third is neutral. During any bargaining, pay and conditions stay the same until a deal.",
+        "context": "The panel must weigh the employer's finances and size, workers' cost of living and ability to support their families, and pay at similar employers. A majority of House members signed a petition to force this vote. The Senate has not voted on it.",
+        "yeaMeans": "Support the bill",
+        "nayMeans": "Oppose the bill"
+      },
+      "measures": [
+        "119-hr-5408"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "house-119-2-216",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2026-06-09",
+            "yea": 230,
+            "nay": 193
+          }
+        }
+      ],
+      "yeaLean": "D",
+      "status": "draft",
+      "selectionReason": "Discharge-petition labor bill on final passage; 20 Republicans voted yes. Second labor card; a Yea matches the Democratic majority.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "The headline drops the bargaining deadlines I proposed, but it is accurate: the panel is a 3-person panel whose terms are binding. The title and body keep the deadlines, the mediation step, and the factors that protect workers."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "The headline takes 'a 3-person panel' instead of my 'outside panel', which is fair because each side picks a member. It keeps 'binding terms', my main concern, and the body uses my wording that both sides must follow the terms for 2 years."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    },
+    {
+      "id": "kv-college-israel-boycotts",
+      "order": 19,
+      "issueArea": "education-and-culture",
+      "card": {
+        "question": "Should colleges lose federal student aid if they join business boycotts of Israel without a valid business reason?",
+        "title": "Tie college student aid to not joining commercial boycotts of Israel (H.R. 4795)",
+        "whatItDoes": "To keep federal student aid, colleges must agree not to join business boycotts of Israel without a valid business reason. That includes boycotts of Israeli companies and schools. Colleges in or applying to federal international education programs have a yearly check too. They must confirm their students and teachers can join programs in Israel on the same terms as other countries. People from Israeli colleges must be able to join theirs the same way.",
+        "context": "It covers business actions, like refusing to deal, which the bill calls nonexpressive boycotts. Colleges that miss the yearly check lose international education funds. Supporters say it counters bias against Israel. Opponents say it lets the government pressure colleges over their views. The Senate has not voted.",
+        "yeaMeans": "Support the bill",
+        "nayMeans": "Oppose the bill"
+      },
+      "measures": [
+        "119-hr-4795"
+      ],
+      "rollCallRefs": [
+        {
+          "rollCallId": "house-119-2-295",
+          "yeaSupportsMeasure": true,
+          "decisive": true,
+          "expected": {
+            "date": "2026-09-03",
+            "yea": 237,
+            "nay": 169
+          }
+        }
+      ],
+      "yeaLean": "R",
+      "status": "draft",
+      "selectionReason": "A single clear question on campus boycotts of Israel with real crossover (33 Democrats yes, 2 Republicans no). Would be the second education-and-culture card.",
+      "reviewers": [
+        {
+          "id": "reviewer-progressive",
+          "kind": "ai",
+          "leaning": "progressive",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "This takes the conservative fix adding 'without a valid business reason'. It is accurate to the bill, and the context still keeps the opponents' point about government pressure on colleges over their views."
+        },
+        {
+          "id": "reviewer-conservative",
+          "kind": "ai",
+          "leaning": "conservative",
+          "reviewedAt": "2026-09-24T14:19:05Z",
+          "verdict": "approved",
+          "notes": "My fix was adopted: the question now includes the valid-business-reason limit that supporters rely on. The opponents' point about government pressure is still in the context."
+        },
+        {
+          "id": "reviewer-owner",
+          "kind": "human",
+          "leaning": "unstated",
+          "reviewedAt": "2026-09-24T23:10:05Z",
+          "verdict": "approved",
+          "notes": "The project owner read the plain-language card and approved it."
+        }
+      ]
+    }
+  ]
+}

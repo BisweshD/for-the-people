@@ -1,0 +1,402 @@
+{
+  "asOf": "2026-09-23",
+  "source": {
+    "publisher": "USA.gov (U.S. General Services Administration)",
+    "url": "https://www.usa.gov/state-election-office"
+  },
+  "note": "Each state's and territory's official election website, as listed by USA.gov. Every link was requested on 2026-09-23. check is \"ok\" when it answered 200, and \"blocks-automated-checks\" when the site answered with a bot challenge instead of the page (the host is the official one USA.gov lists). Where USA.gov's link had moved, the replacement is the same office's current page and notes says why.",
+  "offices": [
+    {
+      "state": "AK",
+      "name": "Alaska",
+      "url": "https://www.elections.alaska.gov/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "AL",
+      "name": "Alabama",
+      "url": "https://www.sos.alabama.gov/alabama-votes",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "AR",
+      "name": "Arkansas",
+      "url": "https://www.sos.arkansas.gov/elections",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "AS",
+      "name": "American Samoa",
+      "url": "https://www.aselectionoffice.gov/",
+      "check": "ok",
+      "notes": "USA.gov lists the bare domain, which has no DNS record; the www host answers."
+    },
+    {
+      "state": "AZ",
+      "name": "Arizona",
+      "url": "https://azsos.gov/elections",
+      "check": "blocks-automated-checks",
+      "notes": null
+    },
+    {
+      "state": "CA",
+      "name": "California",
+      "url": "https://www.sos.ca.gov/elections",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "CO",
+      "name": "Colorado",
+      "url": "https://www.sos.state.co.us/pubs/elections/main.html",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "CT",
+      "name": "Connecticut",
+      "url": "https://portal.ct.gov/sots/common-elements/v5-template---redesign/elections--voting--home-page",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "DC",
+      "name": "District of Columbia",
+      "url": "https://dcboe.org/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "DE",
+      "name": "Delaware",
+      "url": "https://elections.delaware.gov/index.html",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "FL",
+      "name": "Florida",
+      "url": "https://dos.fl.gov/elections/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "GA",
+      "name": "Georgia",
+      "url": "https://sos.ga.gov/elections-division-georgia-secretary-states-office",
+      "check": "blocks-automated-checks",
+      "notes": null
+    },
+    {
+      "state": "GU",
+      "name": "Guam",
+      "url": "https://gec.guam.gov/",
+      "check": "ok",
+      "notes": "Answers 200; its certificate chain is incomplete for some clients."
+    },
+    {
+      "state": "HI",
+      "name": "Hawaii",
+      "url": "https://elections.hawaii.gov/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "IA",
+      "name": "Iowa",
+      "url": "https://sos.iowa.gov/elections-voting",
+      "check": "ok",
+      "notes": "USA.gov's link returns 404; this is the Iowa Secretary of State's current elections page."
+    },
+    {
+      "state": "ID",
+      "name": "Idaho",
+      "url": "https://voteidaho.gov/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "IL",
+      "name": "Illinois",
+      "url": "https://www.elections.il.gov/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "IN",
+      "name": "Indiana",
+      "url": "https://indianavoters.in.gov/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "KS",
+      "name": "Kansas",
+      "url": "https://sos.ks.gov/elections/elections.html",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "KY",
+      "name": "Kentucky",
+      "url": "https://elect.ky.gov/Pages/default.aspx",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "LA",
+      "name": "Louisiana",
+      "url": "https://www.sos.la.gov/elections-voting",
+      "check": "ok",
+      "notes": "USA.gov's link returns 404; this is the Louisiana Secretary of State's current elections page."
+    },
+    {
+      "state": "MA",
+      "name": "Massachusetts",
+      "url": "https://www.sec.state.ma.us/divisions/elections/elections-and-voting.htm",
+      "check": "blocks-automated-checks",
+      "notes": null
+    },
+    {
+      "state": "MD",
+      "name": "Maryland",
+      "url": "https://elections.maryland.gov/",
+      "check": "blocks-automated-checks",
+      "notes": null
+    },
+    {
+      "state": "ME",
+      "name": "Maine",
+      "url": "https://www.maine.gov/sos/elections-voting",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "MI",
+      "name": "Michigan",
+      "url": "https://www.michigan.gov/sos/elections",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "MN",
+      "name": "Minnesota",
+      "url": "https://www.sos.mn.gov/elections-voting/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "MO",
+      "name": "Missouri",
+      "url": "https://www.sos.mo.gov/elections/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "MP",
+      "name": "Northern Mariana Islands",
+      "url": "https://www.votecnmi.gov.mp/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "MS",
+      "name": "Mississippi",
+      "url": "https://www.sos.ms.gov/elections-voting",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "MT",
+      "name": "Montana",
+      "url": "https://sosmt.gov/elections/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "NC",
+      "name": "North Carolina",
+      "url": "https://www.ncsbe.gov/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "ND",
+      "name": "North Dakota",
+      "url": "https://vip.sos.nd.gov/PortalList.aspx",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "NE",
+      "name": "Nebraska",
+      "url": "https://www.nebraska.gov/featured/elections-voting/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "NH",
+      "name": "New Hampshire",
+      "url": "https://www.sos.nh.gov/elections/voters",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "NJ",
+      "name": "New Jersey",
+      "url": "https://www.nj.gov/state/elections/vote.shtml",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "NM",
+      "name": "New Mexico",
+      "url": "https://www.sos.nm.gov/voting-and-elections/",
+      "check": "ok",
+      "notes": "USA.gov's link returns 404; this is the New Mexico Secretary of State's current elections page."
+    },
+    {
+      "state": "NV",
+      "name": "Nevada",
+      "url": "https://www.nvsos.gov/sos/elections",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "NY",
+      "name": "New York",
+      "url": "https://www.elections.ny.gov/",
+      "check": "blocks-automated-checks",
+      "notes": null
+    },
+    {
+      "state": "OH",
+      "name": "Ohio",
+      "url": "https://www.ohiosos.gov/elections/",
+      "check": "blocks-automated-checks",
+      "notes": "USA.gov's sos.state.oh.us host no longer resolves. ohiosos.gov is the Secretary of State's domain (it publishes the 2026 redistricting directive) and refuses scripted requests."
+    },
+    {
+      "state": "OK",
+      "name": "Oklahoma",
+      "url": "https://oklahoma.gov/elections.html",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "OR",
+      "name": "Oregon",
+      "url": "https://sos.oregon.gov/elections/pages/default.aspx",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "PA",
+      "name": "Pennsylvania",
+      "url": "https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "PR",
+      "name": "Puerto Rico",
+      "url": "https://ww2.ceepur.org/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "RI",
+      "name": "Rhode Island",
+      "url": "https://vote.sos.ri.gov/",
+      "check": "blocks-automated-checks",
+      "notes": null
+    },
+    {
+      "state": "SC",
+      "name": "South Carolina",
+      "url": "https://www.scvotes.org/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "SD",
+      "name": "South Dakota",
+      "url": "https://sdsos.gov/elections-voting/default.aspx",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "TN",
+      "name": "Tennessee",
+      "url": "https://sos.tn.gov/elections",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "TX",
+      "name": "Texas",
+      "url": "https://www.sos.state.tx.us/elections/index.shtml",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "UT",
+      "name": "Utah",
+      "url": "https://vote.utah.gov/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "VA",
+      "name": "Virginia",
+      "url": "https://www.elections.virginia.gov/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "VI",
+      "name": "U.S. Virgin Islands",
+      "url": "https://vivote.gov/",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "VT",
+      "name": "Vermont",
+      "url": "https://sos.vermont.gov/elections",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "WA",
+      "name": "Washington",
+      "url": "https://www.sos.wa.gov/elections",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "WI",
+      "name": "Wisconsin",
+      "url": "https://myvote.wi.gov/en-us/",
+      "check": "blocks-automated-checks",
+      "notes": null
+    },
+    {
+      "state": "WV",
+      "name": "West Virginia",
+      "url": "https://sos.wv.gov/elections",
+      "check": "ok",
+      "notes": null
+    },
+    {
+      "state": "WY",
+      "name": "Wyoming",
+      "url": "https://sos.wyo.gov/Elections/Default.aspx",
+      "check": "ok",
+      "notes": null
+    }
+  ]
+}

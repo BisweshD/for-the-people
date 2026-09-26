@@ -1,0 +1,64 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "votes-murkowski-obbba",
+  "recordedAt": "2026-09-24T14:44:15.410Z",
+  "question": "Did Lisa Murkowski vote for the One Big Beautiful Bill Act?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Lisa Murkowski voted Yea on 2025 tax and spending law (H.R. 1, known as the One Big Beautiful Bill Act) in Senate roll call 372 on Jul 1, 2025.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Lisa Murkowski", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "M001153",
+            "name": "Lisa Murkowski",
+            "party": "R",
+            "office": "U.S. Senator, Alaska",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getVotes",
+      "input": { "personId": "M001153", "issue": "One Big Beautiful Bill Act" },
+      "modelOutput": {
+        "person": {
+          "id": "M001153",
+          "name": "Lisa Murkowski",
+          "party": "R",
+          "office": "U.S. Senator, Alaska",
+          "serving": true
+        },
+        "issue": "Taxes and spending",
+        "counts": {
+          "keyVotes": 1,
+          "heldInTheirChamber": 1,
+          "theirChamber": "Senate",
+          "votedYea": 1,
+          "votedNay": 0,
+          "votedPresent": 0,
+          "didNotVote": 0,
+          "noRecordedVote": 0,
+          "heldOnlyInOtherChamber": 0,
+          "otherChamber": "House"
+        },
+        "votes": [
+          {
+            "keyVote": "2025 tax and spending law (H.R. 1, known as the One Big Beautiful Bill Act)",
+            "issue": "Taxes and spending",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 372",
+              "date": "2025-07-01",
+              "supportedMeasure": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 708
+}

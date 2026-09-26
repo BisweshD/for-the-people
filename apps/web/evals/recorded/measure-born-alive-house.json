@@ -1,0 +1,74 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "measure-born-alive-house",
+  "recordedAt": "2026-09-24T14:44:27.677Z",
+  "question": "How did the House vote on the Born-Alive Abortion Survivors Protection Act?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "H.R. 21, Born-Alive Abortion Survivors Protection Act, had its latest action on Jan 24, 2025. In House roll call 27 on Jan 23, 2025, the result was passed, 217 Yea to 204 Nay.",
+  "tools": [
+    {
+      "toolName": "getMeasure",
+      "input": { "measure": "Born-Alive Abortion Survivors Protection Act" },
+      "modelOutput": {
+        "measures": [
+          {
+            "id": "119-hr-21",
+            "label": "H.R. 21",
+            "title": "Born-Alive Abortion Survivors Protection Act",
+            "becameLaw": false,
+            "latestAction": "Received in the Senate and Read twice and referred to the Committee on the Judiciary.",
+            "latestActionDate": "2025-01-24",
+            "summary": "Born-Alive Abortion Survivors Protection Act\nThis bill establishes requirements for the degree of care a health care practitioner must provide in the case of a child born alive following an abortion or attempted abortion.\nSpecifically, a health care practitioner who is present must (1) exercise the same degree of care as would reasonably be provided to any other child born alive at the same gestational age, and (2) ensure the child is immediately admitted to a hospital. Additionally, a health care practitioner or other employee who has knowledge of a failure to comply with the degree-of-care requirements must immediately report such failure to law enforcement.\nA health care practitioner who…",
+            "rollCalls": [
+              {
+                "id": "house-119-1-26",
+                "chamber": "House",
+                "number": 26,
+                "date": "2025-01-23",
+                "question": "On Motion to Recommit",
+                "result": "Failed",
+                "yea": 205,
+                "nay": 216,
+                "measure": "H.R. 21"
+              },
+              {
+                "id": "house-119-1-27",
+                "chamber": "House",
+                "number": 27,
+                "date": "2025-01-23",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 217,
+                "nay": 204,
+                "measure": "H.R. 21"
+              }
+            ]
+          },
+          {
+            "id": "119-s-6",
+            "label": "S. 6",
+            "title": "Born-Alive Abortion Survivors Protection Act",
+            "becameLaw": false,
+            "latestAction": "Cloture on the motion to proceed to the measure not invoked in Senate by Yea-Nay Vote. 52 - 47. Record Vote Number: 11. (CR S294-295)",
+            "latestActionDate": "2025-01-22",
+            "summary": "Born-Alive Abortion Survivors Protection Act\nThis bill establishes requirements for the degree of care a health care practitioner must provide in the case of a child born alive following an abortion or attempted abortion.\nSpecifically, a health care practitioner who is present must (1) exercise the same degree of care as would reasonably be provided to any other child born alive at the same gestational age, and (2) ensure the child is immediately admitted to a hospital. Additionally, a health care practitioner or other employee who has knowledge of a failure to comply with the degree-of-care requirements must immediately report such failure to law enforcement.\nA health care practitioner who…",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-11",
+                "chamber": "Senate",
+                "number": 11,
+                "date": "2025-01-22",
+                "question": "On Cloture on the Motion to Proceed",
+                "result": "Cloture on the Motion to Proceed Rejected",
+                "yea": 52,
+                "nay": 47,
+                "measure": "S. 6"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 526
+}

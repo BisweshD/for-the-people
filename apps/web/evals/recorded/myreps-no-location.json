@@ -1,0 +1,20 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "myreps-no-location",
+  "recordedAt": "2026-09-24T14:44:34.772Z",
+  "question": "Who are my senators?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Add your address on the Ballot page, and I can show your members of Congress.",
+  "tools": [
+    {
+      "toolName": "myRepresentatives",
+      "input": { "districtIds": [] },
+      "modelOutput": {
+        "status": "no-location",
+        "people": [],
+        "note": "The voter has not set a location. Suggest adding an address on the Ballot page."
+      }
+    }
+  ],
+  "latencyMs": 291
+}

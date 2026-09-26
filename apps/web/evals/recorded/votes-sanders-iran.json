@@ -1,0 +1,69 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "votes-sanders-iran",
+  "recordedAt": "2026-09-24T14:44:18.983Z",
+  "question": "How did Bernie Sanders vote on the Iran war powers resolution?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Bernard Sanders voted Yea on Direct the President to end U.S. hostilities with Iran (H.Con.Res. 86) in Senate roll call 184 on Jun 23, 2026. Authorize military aid to Ukraine and conditional sanctions on Russia (H.R. 2913) has only a House roll call; senators do not vote on House roll calls.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Bernie Sanders", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "S000033",
+            "name": "Bernard Sanders",
+            "party": "I",
+            "office": "U.S. Senator, Vermont",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getVotes",
+      "input": { "personId": "S000033", "issue": "Iran war powers resolution" },
+      "modelOutput": {
+        "person": {
+          "id": "S000033",
+          "name": "Bernard Sanders",
+          "party": "I",
+          "office": "U.S. Senator, Vermont",
+          "serving": true
+        },
+        "issue": "War and foreign policy",
+        "counts": {
+          "keyVotes": 2,
+          "heldInTheirChamber": 1,
+          "theirChamber": "Senate",
+          "votedYea": 1,
+          "votedNay": 0,
+          "votedPresent": 0,
+          "didNotVote": 0,
+          "noRecordedVote": 0,
+          "heldOnlyInOtherChamber": 1,
+          "otherChamber": "House"
+        },
+        "votes": [
+          {
+            "keyVote": "Direct the President to end U.S. hostilities with Iran (H.Con.Res. 86)",
+            "issue": "War and foreign policy",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 184",
+              "date": "2026-06-23",
+              "supportedMeasure": true
+            }
+          },
+          {
+            "keyVote": "Authorize military aid to Ukraine and conditional sanctions on Russia (H.R. 2913)",
+            "issue": "War and foreign policy",
+            "memberVote": "House vote only: senators do not vote on House roll calls"
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 916
+}

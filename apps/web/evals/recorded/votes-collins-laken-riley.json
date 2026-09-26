@@ -1,0 +1,64 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "votes-collins-laken-riley",
+  "recordedAt": "2026-09-24T14:44:12.389Z",
+  "question": "How did Susan Collins vote on the Laken Riley Act?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Susan M. Collins voted Yea on Detain certain immigrants arrested for or charged with some crimes (Laken Riley Act) in Senate roll call 7 on Jan 20, 2025.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Susan Collins", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "C001035",
+            "name": "Susan M. Collins",
+            "party": "R",
+            "office": "U.S. Senator, Maine",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getVotes",
+      "input": { "personId": "C001035", "issue": "Laken Riley Act" },
+      "modelOutput": {
+        "person": {
+          "id": "C001035",
+          "name": "Susan M. Collins",
+          "party": "R",
+          "office": "U.S. Senator, Maine",
+          "serving": true
+        },
+        "issue": "Immigration",
+        "counts": {
+          "keyVotes": 1,
+          "heldInTheirChamber": 1,
+          "theirChamber": "Senate",
+          "votedYea": 1,
+          "votedNay": 0,
+          "votedPresent": 0,
+          "didNotVote": 0,
+          "noRecordedVote": 0,
+          "heldOnlyInOtherChamber": 0,
+          "otherChamber": "House"
+        },
+        "votes": [
+          {
+            "keyVote": "Detain certain immigrants arrested for or charged with some crimes (Laken Riley Act)",
+            "issue": "Immigration",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 7",
+              "date": "2025-01-20",
+              "supportedMeasure": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 636
+}

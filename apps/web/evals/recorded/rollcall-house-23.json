@@ -1,0 +1,33 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "rollcall-house-23",
+  "recordedAt": "2026-09-24T14:44:30.712Z",
+  "question": "What happened in house-119-1-23?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "House roll call 23, on Jan 22, 2025, was a vote on \"On Passage\". The result was passed, 263 Yea to 156 Nay.",
+  "tools": [
+    {
+      "toolName": "getRollCall",
+      "input": { "rollCallId": "house-119-1-23" },
+      "modelOutput": {
+        "rollCall": {
+          "id": "house-119-1-23",
+          "chamber": "House",
+          "number": 23,
+          "date": "2025-01-22",
+          "question": "On Passage",
+          "result": "Passed",
+          "yea": 263,
+          "nay": 156,
+          "measure": "S. 5"
+        },
+        "measure": "S. 5: Laken Riley Act",
+        "byParty": [
+          { "party": "D", "yea": 46, "nay": 156 },
+          { "party": "R", "yea": 217, "nay": 0 }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 456
+}

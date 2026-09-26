@@ -1,0 +1,50 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "keyvotes-abortion",
+  "recordedAt": "2026-09-24T14:44:29.542Z",
+  "question": "Show me the key votes on abortion",
+  "modelId": "for-the-people-demo-templates",
+  "text": "These are For The People's key votes on Abortion, each checked against the official roll call. They include Require care for infants born alive after an attempted abortion (H.R. 21 and S. 6).",
+  "tools": [
+    {
+      "toolName": "getKeyVotes",
+      "input": { "issue": "abortion" },
+      "modelOutput": {
+        "issue": "Abortion",
+        "keyVotes": [
+          {
+            "id": "kv-born-alive",
+            "title": "Require care for infants born alive after an attempted abortion (H.R. 21 and S. 6)",
+            "issue": "Abortion",
+            "whatItDoes": "It covers a baby born alive after an attempted abortion. Doctors and other health care workers would have to give that baby the same care as any other newborn at the same stage of pregnancy. They would also have to take the baby to a hospital. The bill adds reporting rules and criminal penalties. The mother cannot be prosecuted under it.",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-11",
+                "chamber": "Senate",
+                "number": 11,
+                "date": "2025-01-22",
+                "question": "On Cloture on the Motion to Proceed",
+                "result": "Cloture on the Motion to Proceed Rejected",
+                "yea": 52,
+                "nay": 47,
+                "measure": "S. 6"
+              },
+              {
+                "id": "house-119-1-27",
+                "chamber": "House",
+                "number": 27,
+                "date": "2025-01-23",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 217,
+                "nay": 204,
+                "measure": "H.R. 21"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 520
+}

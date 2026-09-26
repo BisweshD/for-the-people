@@ -1,0 +1,33 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "state-texas-senators",
+  "recordedAt": "2026-09-24T14:44:35.196Z",
+  "question": "Who are the senators from Texas?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Members from Texas include John Cornyn and Ted Cruz. Each result shows their office and party.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "state": "TX", "chamber": "senate", "includeFormer": false, "limit": 10 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "C001056",
+            "name": "John Cornyn",
+            "party": "R",
+            "office": "U.S. Senator, Texas",
+            "serving": true
+          },
+          {
+            "id": "C001098",
+            "name": "Ted Cruz",
+            "party": "R",
+            "office": "U.S. Senator, Texas",
+            "serving": true
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 419
+}

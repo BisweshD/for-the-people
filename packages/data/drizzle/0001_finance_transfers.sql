@@ -1,0 +1,1 @@
+ALTER TABLE "finance_summaries" ADD COLUMN "transfers" numeric(14, 2) DEFAULT 0 NOT NULL;

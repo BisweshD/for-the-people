@@ -1,0 +1,34 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "rollcall-senate-7",
+  "recordedAt": "2026-09-24T14:44:31.194Z",
+  "question": "What was senate-119-1-7 about?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Senate roll call 7, on Jan 20, 2025, was a vote on \"On Passage of the Bill\". The result was bill passed, 64 Yea to 35 Nay.",
+  "tools": [
+    {
+      "toolName": "getRollCall",
+      "input": { "rollCallId": "senate-119-1-7" },
+      "modelOutput": {
+        "rollCall": {
+          "id": "senate-119-1-7",
+          "chamber": "Senate",
+          "number": 7,
+          "date": "2025-01-20",
+          "question": "On Passage of the Bill",
+          "result": "Bill Passed",
+          "yea": 64,
+          "nay": 35,
+          "measure": "S. 5"
+        },
+        "measure": "S. 5: Laken Riley Act",
+        "byParty": [
+          { "party": "D", "yea": 12, "nay": 33 },
+          { "party": "I", "yea": 0, "nay": 2 },
+          { "party": "R", "yea": 52, "nay": 0 }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 479
+}

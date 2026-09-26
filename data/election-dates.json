@@ -1,0 +1,1283 @@
+{
+  "schema": "for-the-people.electionDates",
+  "version": 1,
+  "electionDay": "2026-11-03",
+  "note": "Registration deadlines and official links for the 2026 general election, read from each state page on vote.gov (U.S. Election Assistance Commission). Deadlines keep vote.gov's wording, which counts days before Election Day; they are never converted into guessed calendar dates. Early voting dates are not listed on vote.gov, so none are recorded here. Two link fixes: Oregon's lookup link had an HTML-escaped ampersand and Pennsylvania's election office link had a trailing period.",
+  "states": [
+    {
+      "state": "AL",
+      "name": "Alabama",
+      "source": {
+        "id": "src_937c51fe2b6786f5",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/alabama",
+        "retrievedAt": "2026-09-24T02:29:28.126Z",
+        "contentHash": "96c19afd01d8d0622630d0713bbec2d09e36ecc900a124fd89974c61d521c69d",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "15 days before Election Day",
+        "mail": "Must be received 15 days before Election Day",
+        "inPerson": "15 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://myinfo.alabamavotes.gov/voterview",
+        "registerOnline": "https://www.alabamainteractive.org/sos/voter_registration/voterRegistrationWelcome.action",
+        "electionOffice": "https://www.sos.alabama.gov/alabama-votes/voter/register-to-vote"
+      }
+    },
+    {
+      "state": "AK",
+      "name": "Alaska",
+      "source": {
+        "id": "src_bb3a45b075762870",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/alaska",
+        "retrievedAt": "2026-09-24T02:29:28.835Z",
+        "contentHash": "fd4025f9243576c29a27203da9bb808bf078fea97d4faf5b574f23dc6f5b6dff",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "30 days before Election Day",
+        "mail": "Must be received 30 days before Election Day",
+        "inPerson": "30 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://myvoterportal.alaska.gov/",
+        "registerOnline": "https://www.elections.alaska.gov/voter-information/#Reg",
+        "electionOffice": "https://www.elections.alaska.gov/voter-information/#Reg"
+      }
+    },
+    {
+      "state": "AZ",
+      "name": "Arizona",
+      "source": {
+        "id": "src_07e91a491d92ee77",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/arizona",
+        "retrievedAt": "2026-09-24T02:29:29.552Z",
+        "contentHash": "e89c2dd1465fbd564ef97c0325e46ccfb549f82a6c476614f14bea9431f8ba2f",
+        "notes": null
+      },
+      "pageUpdated": "2025-09-12",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "29 days before Election Day",
+        "mail": "Must be postmarked 29 days before Election Day",
+        "inPerson": "29 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://my.arizona.vote/WhereToVote.aspx?s=individual",
+        "registerOnline": "https://servicearizona.com/VoterRegistration/selectLanguage",
+        "electionOffice": "https://azsos.gov/elections/voters#regreq"
+      }
+    },
+    {
+      "state": "AR",
+      "name": "Arkansas",
+      "source": {
+        "id": "src_02f3d5e00488b4ba",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/arkansas",
+        "retrievedAt": "2026-09-24T02:29:30.288Z",
+        "contentHash": "a6fb35382c9869be72ead41d604ea34b07af879880715e68d62bf4bb1c429eec",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": null,
+        "mail": "Must be postmarked 30 days before Election Day",
+        "inPerson": "30 days before Election Day"
+      },
+      "onlineRegistrationOffered": false,
+      "links": {
+        "checkRegistration": "https://www.voterview.ar-nova.org/voterview",
+        "registerOnline": null,
+        "electionOffice": "https://www.sos.arkansas.gov/elections/voter-information/"
+      }
+    },
+    {
+      "state": "CA",
+      "name": "California",
+      "source": {
+        "id": "src_a23bd5a22326285b",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/california",
+        "retrievedAt": "2026-09-24T02:29:31.035Z",
+        "contentHash": "fbca424a7e543a1a4f465605a07d67d8d5d465fef38589fac0c4a8d24524c5b9",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "15 days before Election Day",
+        "mail": "Must be postmarked 15 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://voterstatus.sos.ca.gov/",
+        "registerOnline": "https://registertovote.ca.gov/",
+        "electionOffice": "https://www.sos.ca.gov/elections/voting-resources/voting-california/registering-vote"
+      }
+    },
+    {
+      "state": "CO",
+      "name": "Colorado",
+      "source": {
+        "id": "src_beaa52551445a75b",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/colorado",
+        "retrievedAt": "2026-09-24T02:29:31.770Z",
+        "contentHash": "a6c2dec4867e5e93fab1f2420a1c9e9da13312c36d31d924a63f751bea2aec0b",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "8 days before Election Day",
+        "mail": "Must be postmarked 8 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://www.sos.state.co.us/voter/pages/pub/olvr/findVoterReg.xhtml",
+        "registerOnline": "https://www.sos.state.co.us/voter/pages/pub/olvr/verifyNewVoter.xhtml",
+        "electionOffice": "https://www.coloradosos.gov/voter/pages/pub/home.xhtml"
+      }
+    },
+    {
+      "state": "CT",
+      "name": "Connecticut",
+      "source": {
+        "id": "src_0fda569c2c097d3e",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/connecticut",
+        "retrievedAt": "2026-09-24T02:29:32.529Z",
+        "contentHash": "053b2398a3295d52b4152859a01bda97c1b610ae07082fe3740ed54ffc61dbc2",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "18 days before Election Day",
+        "mail": "Must be postmarked 18 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://portaldir.ct.gov/sots/LookUp.aspx",
+        "registerOnline": "https://voterregistration.ct.gov/OLVR/welcome.do",
+        "electionOffice": "https://portal.ct.gov/SOTS/Election-Services/Voter-Information/Voter-Fact-Sheet"
+      }
+    },
+    {
+      "state": "DE",
+      "name": "Delaware",
+      "source": {
+        "id": "src_c67bd9519156a809",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/delaware",
+        "retrievedAt": "2026-09-24T02:29:33.282Z",
+        "contentHash": "a1221a91d9786ea63a10995d7c3e0e82fda6de792dd241febb7dddd95241cda3",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "24 days before Election Day",
+        "mail": "Must be postmarked 24 days before Election Day",
+        "inPerson": "24 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://ivote.de.gov/VoterView",
+        "registerOnline": "https://ivote.de.gov/VoterView/registrant/newregistrant",
+        "electionOffice": "https://elections.delaware.gov/voter/votereg.shtml"
+      }
+    },
+    {
+      "state": "FL",
+      "name": "Florida",
+      "source": {
+        "id": "src_2c1e562780f7e4aa",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/florida",
+        "retrievedAt": "2026-09-24T02:29:34.023Z",
+        "contentHash": "749002f16b823e5ad67693b167dfbc55cf7fd70f1ff3b005226f478e6ecc7adb",
+        "notes": null
+      },
+      "pageUpdated": "2025-11-17",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "29 days before Election Day",
+        "mail": "Must be postmarked 29 days before Election Day",
+        "inPerson": "29 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://registration.elections.myflorida.com/CheckVoterStatus",
+        "registerOnline": "https://registertovoteflorida.gov/eligibilityreactive",
+        "electionOffice": "https://dos.fl.gov/elections/for-voters/voter-registration/"
+      }
+    },
+    {
+      "state": "GA",
+      "name": "Georgia",
+      "source": {
+        "id": "src_6ff4a9c243c04daf",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/georgia",
+        "retrievedAt": "2026-09-24T02:29:34.744Z",
+        "contentHash": "85e1b709c3300060870c7550e9239554bc483df89c7689a10a6af3b9038689d6",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "29 days before Election Day",
+        "mail": "Must be postmarked 29 days before Election Day",
+        "inPerson": "29 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://mvp.sos.ga.gov/s/",
+        "registerOnline": "https://registertovote.sos.ga.gov/GAOLVR/welcome.do#no-back-button",
+        "electionOffice": "https://sos.ga.gov/elections-division-georgia-secretary-states-office"
+      }
+    },
+    {
+      "state": "HI",
+      "name": "Hawaii",
+      "source": {
+        "id": "src_0ef433104bbdc2a9",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/hawaii",
+        "retrievedAt": "2026-09-24T02:29:35.488Z",
+        "contentHash": "db296da34f73aa6dc1fae59cb8c31b9a0bf2c3fde8da79e0d7a41b691b621f0f",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "Available up to and including on Election Day",
+        "mail": "Must be postmarked 10 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://olvr.hawaii.gov/",
+        "registerOnline": "https://olvr.hawaii.gov/",
+        "electionOffice": "https://elections.hawaii.gov/voters/registration/"
+      }
+    },
+    {
+      "state": "ID",
+      "name": "Idaho",
+      "source": {
+        "id": "src_0baa5fd704cf19a6",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/idaho",
+        "retrievedAt": "2026-09-24T02:29:36.234Z",
+        "contentHash": "0033e3fd5c2883680858ce4eaeed491d6ec9c8afd08b6ffe0306ed5b827a454d",
+        "notes": null
+      },
+      "pageUpdated": "2025-09-12",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "11 days before Election Day",
+        "mail": "Must be received 11 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/VoterSearch.aspx",
+        "registerOnline": "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ApplicationInstructions.aspx",
+        "electionOffice": "https://voteidaho.gov/voter-registration/"
+      }
+    },
+    {
+      "state": "IL",
+      "name": "Illinois",
+      "source": {
+        "id": "src_fb04c116aa94b260",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/illinois",
+        "retrievedAt": "2026-09-24T02:29:37.028Z",
+        "contentHash": "73925168a39f28aca683732abfaf9a1cb3ecdbe497c86917425e80f99efe5f53",
+        "notes": null
+      },
+      "pageUpdated": "2025-09-12",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "16 days before Election Day",
+        "mail": "Must be postmarked 28 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://ova.elections.il.gov/RegistrationLookup.aspx",
+        "registerOnline": "https://ova.elections.il.gov/",
+        "electionOffice": "https://www.elections.il.gov/Default.aspx"
+      }
+    },
+    {
+      "state": "IN",
+      "name": "Indiana",
+      "source": {
+        "id": "src_2a35ad101b6a7408",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/indiana",
+        "retrievedAt": "2026-09-24T02:29:37.771Z",
+        "contentHash": "1b4bee76cf4be80ee5dd991024b4637cbd534266a9746ae3169810449455b7bd",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "29 days before Election Day",
+        "mail": "Must be postmarked 29 days before Election Day",
+        "inPerson": "29 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://indianavoters.in.gov/",
+        "registerOnline": "https://indianavoters.in.gov/",
+        "electionOffice": "https://www.in.gov/sos/elections/2403.htm"
+      }
+    },
+    {
+      "state": "IA",
+      "name": "Iowa",
+      "source": {
+        "id": "src_1f4225a4e4d132b7",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/iowa",
+        "retrievedAt": "2026-09-24T02:29:38.585Z",
+        "contentHash": "9cf3404d0d367aa8c63b9e148da969d5984c3de322aa2d4c6a8eca9177dfc249",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "15 days before Election Day",
+        "mail": "Must be postmarked 15 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://sos.iowa.gov/elections/voterreg/regtovote/search.aspx",
+        "registerOnline": "https://mymvd.iowadot.gov/Account/Login?ReturnUrl=%2fVoterRegistration",
+        "electionOffice": "https://sos.iowa.gov/elections/voterinformation/voterregistration.html"
+      }
+    },
+    {
+      "state": "KS",
+      "name": "Kansas",
+      "source": {
+        "id": "src_e2670f50dc732237",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/kansas",
+        "retrievedAt": "2026-09-24T02:29:39.337Z",
+        "contentHash": "96da53a6a0861f4acf728084812900e43afac5e18658bde7b021924679694d07",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "21 days before Election Day",
+        "mail": "Must be postmarked 21 days before Election Day",
+        "inPerson": "21 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://myvoteinfo.voteks.org/voterview/",
+        "registerOnline": "https://www.kdor.ks.gov/Apps/VoterReg/Default.aspx",
+        "electionOffice": "https://sos.ks.gov/elections/voter-information.html"
+      }
+    },
+    {
+      "state": "KY",
+      "name": "Kentucky",
+      "source": {
+        "id": "src_626511a4ef32ab84",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/kentucky",
+        "retrievedAt": "2026-09-24T02:29:40.079Z",
+        "contentHash": "821804be0abdd2e41cccd922aaf11280ab7ef7e838f3f12fb11fe37eedc04161",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "29 days before Election Day",
+        "mail": "Must be postmarked 29 days before Election Day",
+        "inPerson": "29 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://vrsws.sos.ky.gov/VIC/",
+        "registerOnline": "https://vrsws.sos.ky.gov/ovrweb/",
+        "electionOffice": "https://elect.ky.gov/Resources/Pages/Registration.aspx"
+      }
+    },
+    {
+      "state": "LA",
+      "name": "Louisiana",
+      "source": {
+        "id": "src_8738b2a65a0f8e19",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/louisiana",
+        "retrievedAt": "2026-09-24T02:29:40.816Z",
+        "contentHash": "4c9278c4f274846bb720e381e5e3ed79481f3a24047e8b676ea9934685630d0a",
+        "notes": null
+      },
+      "pageUpdated": "2026-08-03",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "20 days before Election Day",
+        "mail": "Must be postmarked 30 days before Election Day",
+        "inPerson": "30 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://voterportal.sos.la.gov/",
+        "registerOnline": "https://voterportal.sos.la.gov/VoterRegistration",
+        "electionOffice": "https://www.sos.la.gov/elections-voting/register-to-vote"
+      }
+    },
+    {
+      "state": "ME",
+      "name": "Maine",
+      "source": {
+        "id": "src_0ac0076aef4dd526",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/maine",
+        "retrievedAt": "2026-09-24T02:29:41.557Z",
+        "contentHash": "28ba7dce84d9813f3f5146b0bd2ca83a8f20d5b2a53b02061c50dd9710fed20c",
+        "notes": null
+      },
+      "pageUpdated": "2026-08-03",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "21 days before Election Day",
+        "mail": "Must be received 21 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://maine.gov/sos/cec/elec/munic.html",
+        "registerOnline": "https://www.maine.gov/sos/elections-voting/registering-to-vote",
+        "electionOffice": "https://www.maine.gov/sos/elections-voting/registering-to-vote"
+      }
+    },
+    {
+      "state": "MD",
+      "name": "Maryland",
+      "source": {
+        "id": "src_e5946135a0c7a9d8",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/maryland",
+        "retrievedAt": "2026-09-24T02:29:42.298Z",
+        "contentHash": "c906ea7c71f3026945ffb12904fa165475d7f7c766044e750563799a08e7398f",
+        "notes": null
+      },
+      "pageUpdated": "2026-03-11",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "21 days before Election Day",
+        "mail": "Must be postmarked 21 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://voterservices.elections.maryland.gov/VoterSearch",
+        "registerOnline": "https://voterservices.elections.maryland.gov/OnlineVoterRegistration/InstructionsStep1",
+        "electionOffice": "https://www.elections.maryland.gov/voter_registration/application.html"
+      }
+    },
+    {
+      "state": "MA",
+      "name": "Massachusetts",
+      "source": {
+        "id": "src_4d63bd44f295b03d",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/massachusetts",
+        "retrievedAt": "2026-09-24T02:29:43.073Z",
+        "contentHash": "599d8f7e0f8fdc87c0c5c39cfa800a00e6747017b3258378dc78f10b62844a5b",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "10 days before Election Day",
+        "mail": "Must be postmarked 10 days before Election Day",
+        "inPerson": "10 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://www.sec.state.ma.us/VoterRegistrationSearch/MyVoterRegStatus.aspx",
+        "registerOnline": "https://www.sec.state.ma.us/ovr/",
+        "electionOffice": "https://www.sec.state.ma.us/divisions/elections/voter-resources/registering-to-vote.htm"
+      }
+    },
+    {
+      "state": "MI",
+      "name": "Michigan",
+      "source": {
+        "id": "src_8101634f3aedefc0",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/michigan",
+        "retrievedAt": "2026-09-24T02:29:44.632Z",
+        "contentHash": "e5dc17e25327330d87076f916ed5df9a12856c694b53518547ddb64711617607",
+        "notes": null
+      },
+      "pageUpdated": "2025-09-12",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "15 days before Election Day",
+        "mail": "Must be postmarked 15 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://mvic.sos.state.mi.us/Voter/Index",
+        "registerOnline": "https://mvic.sos.state.mi.us/registervoter",
+        "electionOffice": "https://mvic.sos.state.mi.us/"
+      }
+    },
+    {
+      "state": "MN",
+      "name": "Minnesota",
+      "source": {
+        "id": "src_d34139fc60b40e84",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/minnesota",
+        "retrievedAt": "2026-09-24T02:29:45.395Z",
+        "contentHash": "b3b76b5e0bf0a2e057641d790f4ec27b7a8a79d3efce87c941b66b2bdc32a2e2",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "21 days before Election Day",
+        "mail": "Must be received 21 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://mnvotes.sos.state.mn.us/VoterStatus.aspx",
+        "registerOnline": "https://mnvotes.sos.state.mn.us/VoterRegistration/VoterRegistrationMain.aspx",
+        "electionOffice": "https://www.sos.state.mn.us/elections-voting/register-to-vote/"
+      }
+    },
+    {
+      "state": "MS",
+      "name": "Mississippi",
+      "source": {
+        "id": "src_61fb4b01b547f9cd",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/mississippi",
+        "retrievedAt": "2026-09-24T02:29:46.193Z",
+        "contentHash": "19e8f32fbe5844773a848d0606b83bc952eadf1a8004d962de2d782502628b03",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": null,
+        "mail": "Must be postmarked 30 days before Election Day",
+        "inPerson": "30 days before Election Day"
+      },
+      "onlineRegistrationOffered": false,
+      "links": {
+        "checkRegistration": "https://www.msegov.com/sos/voter_registration/amiregistered/Search",
+        "registerOnline": null,
+        "electionOffice": "https://www.sos.ms.gov/elections-voting/voter-registration-information"
+      }
+    },
+    {
+      "state": "MO",
+      "name": "Missouri",
+      "source": {
+        "id": "src_51211a36f3a344d5",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/missouri",
+        "retrievedAt": "2026-09-24T02:29:46.963Z",
+        "contentHash": "8c1c39c4f60252d433a80f3cf64f1a7b9551ea592989a775fe15fd4278034f38",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "27 days before Election Day",
+        "mail": "Must be postmarked 27 days before Election Day",
+        "inPerson": "27 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://voteroutreach.sos.mo.gov/portal/",
+        "registerOnline": "https://s1.sos.mo.gov/elections/voterregistration/",
+        "electionOffice": "https://www.sos.mo.gov/elections/goVoteMissouri/register"
+      }
+    },
+    {
+      "state": "MT",
+      "name": "Montana",
+      "source": {
+        "id": "src_852de5e435a21c3b",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/montana",
+        "retrievedAt": "2026-09-24T02:29:47.700Z",
+        "contentHash": "a35b6d09b6b0446d87b9b5375c1b5b97af210ca506fb127536ed075e8059c520",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": null,
+        "mail": "Must be postmarked 30 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": false,
+      "links": {
+        "checkRegistration": "https://prodvoterportal.mt.gov/WhereToVote.aspx",
+        "registerOnline": null,
+        "electionOffice": "https://votemt.gov/"
+      }
+    },
+    {
+      "state": "NE",
+      "name": "Nebraska",
+      "source": {
+        "id": "src_bd05aa1135083921",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/nebraska",
+        "retrievedAt": "2026-09-24T02:29:48.446Z",
+        "contentHash": "cdc6b223b3c88b8bddd67ea54f1b5e03d42360104f77bf90bc0f43c84b9f1c45",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-22",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "18 days before Election Day",
+        "mail": "Must be postmarked 18 days before Election Day",
+        "inPerson": "11 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://www.votercheck.necvr.ne.gov/voterview",
+        "registerOnline": "https://www.nebraska.gov/apps-sos-voter-registration/",
+        "electionOffice": "https://sos.nebraska.gov/elections/voter-forms"
+      }
+    },
+    {
+      "state": "NV",
+      "name": "Nevada",
+      "source": {
+        "id": "src_ae43f7046bc79b6d",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/nevada",
+        "retrievedAt": "2026-09-24T02:29:49.190Z",
+        "contentHash": "0de47d91184de1a9d11cbd52555459a27350fc6daa3397919ab69f5cdd20b859",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "5 days before Election Day",
+        "mail": "Must be postmarked 28 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://www.nvsos.gov/votersearch/",
+        "registerOnline": "https://www.nvsos.gov/SOSVoterServices/start.aspx",
+        "electionOffice": "https://www.nvsos.gov/sos/elections/voters/registering-to-vote"
+      }
+    },
+    {
+      "state": "NH",
+      "name": "New Hampshire",
+      "source": {
+        "id": "src_7af7dcc50117ec1e",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/new-hampshire",
+        "retrievedAt": "2026-09-24T02:29:49.946Z",
+        "contentHash": "94d5299cd292c24bf26698678a78365e350ae39332dbe789a6f54527801ef573",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-19",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": null,
+        "mail": "Must be received 13 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": false,
+      "links": {
+        "checkRegistration": "https://app.sos.nh.gov/voterinformation",
+        "registerOnline": null,
+        "electionOffice": "https://www.sos.nh.gov/elections/voters/register-vote"
+      }
+    },
+    {
+      "state": "NJ",
+      "name": "New Jersey",
+      "source": {
+        "id": "src_84f699b25119daf2",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/new-jersey",
+        "retrievedAt": "2026-09-24T02:29:50.723Z",
+        "contentHash": "e2209316528aa679eb0c6050c269578bb42ea44491750a05820ac030eb88748a",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "21 days before Election Day",
+        "mail": "Must be postmarked 21 days before Election Day",
+        "inPerson": "21 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://voter.svrs.nj.gov/registration-check",
+        "registerOnline": "https://voter.svrs.nj.gov/register",
+        "electionOffice": "https://nj.gov/state/elections/voter-registration.shtml"
+      }
+    },
+    {
+      "state": "NM",
+      "name": "New Mexico",
+      "source": {
+        "id": "src_2d37e2107f3f96de",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/new-mexico",
+        "retrievedAt": "2026-09-24T02:29:51.493Z",
+        "contentHash": "275d7c6d18a2d17b7d037df13d8a077ecc749226c672f7d4611825a79beec099",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-19",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "28 days before Election Day",
+        "mail": "Must be postmarked 28 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://voterportal.servis.sos.state.nm.us/WhereToVote.aspx",
+        "registerOnline": "https://portal1.sos.nm.gov/OVR/(S(pigoz0o23kypo5vyga3wgsry))/WebPages/InstructionsStep1.aspx",
+        "electionOffice": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/voter-registration/"
+      }
+    },
+    {
+      "state": "NY",
+      "name": "New York",
+      "source": {
+        "id": "src_acafe756b2108718",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/new-york",
+        "retrievedAt": "2026-09-24T02:29:52.235Z",
+        "contentHash": "10e5f5b59cc4ff10638fc4d963230e54aae0b7e03fd466208cab71653c6cb7f8",
+        "notes": null
+      },
+      "pageUpdated": "2026-08-03",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "10 days before Election Day",
+        "mail": "Must be postmarked 15 days before and received 10 days before Election Day",
+        "inPerson": "10 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://voterlookup.elections.ny.gov/",
+        "registerOnline": "https://elections.ny.gov/voter-registration-process",
+        "electionOffice": "https://www.elections.ny.gov/votingregister.html"
+      }
+    },
+    {
+      "state": "NC",
+      "name": "North Carolina",
+      "source": {
+        "id": "src_8e4f4a358e6ce0bc",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/north-carolina",
+        "retrievedAt": "2026-09-24T02:29:52.999Z",
+        "contentHash": "d4b55ce9ad0031a8ec6ecfae5ff23afda745a668ae43caa48266611ec324eeb8",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "25 days before Election Day",
+        "mail": "Must be postmarked 25 days before Election Day",
+        "inPerson": "Same day registration available during early voting period"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://vt.ncsbe.gov/RegLkup/",
+        "registerOnline": "https://www.ncdot.gov/dmv/offices-services/online/Pages/voter-registration-application.aspx",
+        "electionOffice": "https://www.ncsbe.gov/registering/how-register"
+      }
+    },
+    {
+      "state": "ND",
+      "name": "North Dakota",
+      "source": {
+        "id": "src_fd7718544973c4c2",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/north-dakota",
+        "retrievedAt": "2026-09-24T02:29:53.720Z",
+        "contentHash": "ad69afa488a00b4ca7d1196f2419c71fe4e76a080cc13d125cfafee73bbc222c",
+        "notes": null
+      },
+      "pageUpdated": "2024-07-30",
+      "registrationRequired": false,
+      "deadlines": {
+        "online": null,
+        "mail": null,
+        "inPerson": null
+      },
+      "onlineRegistrationOffered": false,
+      "links": {
+        "checkRegistration": null,
+        "registerOnline": null,
+        "electionOffice": "https://www.sos.nd.gov/elections"
+      }
+    },
+    {
+      "state": "OH",
+      "name": "Ohio",
+      "source": {
+        "id": "src_762d64e1db69034f",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/ohio",
+        "retrievedAt": "2026-09-24T02:29:54.471Z",
+        "contentHash": "34df5d82a3303572f4b621f699c949819c118d5a689ccdc77ce66dd39f1b2497",
+        "notes": null
+      },
+      "pageUpdated": "2026-08-03",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "30 days before Election Day",
+        "mail": "Must be postmarked 30 days before Election Day",
+        "inPerson": "30 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://voterlookup.ohiosos.gov/voterlookup.aspx",
+        "registerOnline": "https://olvr.ohiosos.gov/",
+        "electionOffice": "https://www.ohiosos.gov/elections/voters/"
+      }
+    },
+    {
+      "state": "OK",
+      "name": "Oklahoma",
+      "source": {
+        "id": "src_ad5e4a20c439e973",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/oklahoma",
+        "retrievedAt": "2026-09-24T02:29:55.215Z",
+        "contentHash": "e98ed6fb7ad96ab879504b7bb108cf92e45dbd9057c0c28372cfbad7362510fe",
+        "notes": null
+      },
+      "pageUpdated": "2025-09-12",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "25 days before Election Day",
+        "mail": "Must be received 25 days before Election Day",
+        "inPerson": "25 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://okvoterportal.okelections.us/",
+        "registerOnline": "https://okvoterportal.okelections.gov/Home/RegWizard",
+        "electionOffice": "https://oklahoma.gov/elections/voter-registration/register-to-vote.html"
+      }
+    },
+    {
+      "state": "OR",
+      "name": "Oregon",
+      "source": {
+        "id": "src_ccd23ac13b9faaad",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/oregon",
+        "retrievedAt": "2026-09-24T02:29:55.976Z",
+        "contentHash": "c95d2afdebc6e4b0b0432058cf76216594af9efdf5e77b9e42de2f81f455a059",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "21 days before Election Day",
+        "mail": "Must be postmarked 21 days before Election Day",
+        "inPerson": "21 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do?lang=eng&source=SOS",
+        "registerOnline": "https://secure.sos.state.or.us/orestar/vr/register.do",
+        "electionOffice": "https://sos.oregon.gov/voting/Pages/registration.aspx"
+      }
+    },
+    {
+      "state": "PA",
+      "name": "Pennsylvania",
+      "source": {
+        "id": "src_8f6d2629b817e2d5",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/pennsylvania",
+        "retrievedAt": "2026-09-24T02:29:56.719Z",
+        "contentHash": "35a10d95f220dfa2babd5bb63f07a66ce7bd53fb64577f3c05441ecc8ad2209f",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "15 days before Election Day",
+        "mail": "Must be received 15 days before Election Day",
+        "inPerson": "15 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx",
+        "registerOnline": "https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx",
+        "electionOffice": "https://www.pa.gov/en/services/vote/register-to-vote.html"
+      }
+    },
+    {
+      "state": "RI",
+      "name": "Rhode Island",
+      "source": {
+        "id": "src_01116c8ed2b1e608",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/rhode-island",
+        "retrievedAt": "2026-09-24T02:29:57.467Z",
+        "contentHash": "aa8d04d4295064af048f58f063f958592b9d79660c22efc350fe92c44a402098",
+        "notes": null
+      },
+      "pageUpdated": "2026-03-04",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "30 days before Election Day",
+        "mail": "Must be postmarked 30 days before Election Day",
+        "inPerson": "30 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://vote.sos.ri.gov/Home/UpdateVoterRecord?ActiveFlag=0",
+        "registerOnline": "https://vote.sos.ri.gov/Home/RegistertoVote",
+        "electionOffice": "https://vote.sos.ri.gov/Voter/RegisterToVote"
+      }
+    },
+    {
+      "state": "SC",
+      "name": "South Carolina",
+      "source": {
+        "id": "src_eaf2cc6a4fa766a5",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/south-carolina",
+        "retrievedAt": "2026-09-24T02:29:58.978Z",
+        "contentHash": "56a173eadd8d45a409a5667859be64198349881bfc271dfa4f95f6b24dabf49b",
+        "notes": null
+      },
+      "pageUpdated": "2025-09-12",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "30 days before Election Day",
+        "mail": "Must be postmarked 30 days before Election Day",
+        "inPerson": "30 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://vrems.scvotes.sc.gov/Voter/Login?PageMode=VoterInformation",
+        "registerOnline": "https://vrems.scvotes.sc.gov/ovr/start",
+        "electionOffice": "https://scvotes.gov/voters/register-to-vote/"
+      }
+    },
+    {
+      "state": "SD",
+      "name": "South Dakota",
+      "source": {
+        "id": "src_86856d16cc451086",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/south-dakota",
+        "retrievedAt": "2026-09-24T02:29:59.960Z",
+        "contentHash": "827a6d1a80a57365c6352aa85d81884e93151224001e8f55f1900cade78459ac",
+        "notes": null
+      },
+      "pageUpdated": "2026-08-03",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": null,
+        "mail": "Must be received 15 days before Election Day",
+        "inPerson": "15 days before Election Day"
+      },
+      "onlineRegistrationOffered": false,
+      "links": {
+        "checkRegistration": "https://vip.sdsos.gov/VIPLogin.aspx",
+        "registerOnline": null,
+        "electionOffice": "https://sdsos.gov/elections-voting/voting/register-to-vote/default.aspx"
+      }
+    },
+    {
+      "state": "TN",
+      "name": "Tennessee",
+      "source": {
+        "id": "src_3e7306c90185cc91",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/tennessee",
+        "retrievedAt": "2026-09-24T02:30:00.972Z",
+        "contentHash": "fb12a11da563bf106429712e7f75600cda2f03cae25c47753ea17427d6e45b52",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "30 days before Election Day",
+        "mail": "Must be postmarked 30 days before Election Day",
+        "inPerson": "30 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://tnmap.tn.gov/voterlookup/",
+        "registerOnline": "https://ovr.govote.tn.gov/",
+        "electionOffice": "https://sos.tn.gov/products/elections/register-vote"
+      }
+    },
+    {
+      "state": "TX",
+      "name": "Texas",
+      "source": {
+        "id": "src_92fed0817012df7b",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/texas",
+        "retrievedAt": "2026-09-24T02:30:01.973Z",
+        "contentHash": "f46fcee150b71780683a7a5684eb3a33c1e01938f2328de01688026d45e48976",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": null,
+        "mail": "Must be postmarked 30 days before Election Day",
+        "inPerson": "30 days before Election Day"
+      },
+      "onlineRegistrationOffered": false,
+      "links": {
+        "checkRegistration": "https://teamrv-mvp.sos.texas.gov/MVP/mvp.do",
+        "registerOnline": null,
+        "electionOffice": "https://www.votetexas.gov/register-to-vote/index.html"
+      }
+    },
+    {
+      "state": "UT",
+      "name": "Utah",
+      "source": {
+        "id": "src_69b2bfe9eaf0c1ee",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/utah",
+        "retrievedAt": "2026-09-24T02:30:02.948Z",
+        "contentHash": "521f64edba3bf0870e0a4cd88d7d91914b2ee368c1b87ae5a0794646a077c10a",
+        "notes": null
+      },
+      "pageUpdated": "2026-03-13",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "11 days before Election Day",
+        "mail": "Must be received 11 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://votesearch.utah.gov/voter-search/search/search-by-voter/voter-info",
+        "registerOnline": "https://secure.utah.gov/voterreg/login.html?selection=REGISTER",
+        "electionOffice": "https://vote.utah.gov/"
+      }
+    },
+    {
+      "state": "VT",
+      "name": "Vermont",
+      "source": {
+        "id": "src_d2ccaf474d542a7d",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/vermont",
+        "retrievedAt": "2026-09-24T02:30:03.969Z",
+        "contentHash": "08ff2d4dd0f7a6c357204898e09597ec78342d975659812dd4901dbfd7275090",
+        "notes": null
+      },
+      "pageUpdated": "2026-08-03",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "Available up to and including on Election Day",
+        "mail": "Must be received by or on Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://mvp.vermont.gov/",
+        "registerOnline": "https://olvr.vermont.gov/",
+        "electionOffice": "https://sos.vermont.gov/elections/voters/registration/"
+      }
+    },
+    {
+      "state": "VA",
+      "name": "Virginia",
+      "source": {
+        "id": "src_c6407599aa35c9cd",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/virginia",
+        "retrievedAt": "2026-09-24T02:30:04.964Z",
+        "contentHash": "4c8bee181691361947f2612ce3331e47c424833784f82534cdd9edb72332e928",
+        "notes": null
+      },
+      "pageUpdated": "2025-09-12",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "11 days before Election Day",
+        "mail": "Must be postmarked 11 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://vote.elections.virginia.gov/VoterInformation/Lookup/status",
+        "registerOnline": "https://vote.elections.virginia.gov/Registration/DmvLookup",
+        "electionOffice": "https://www.elections.virginia.gov/registration/how-to-register/"
+      }
+    },
+    {
+      "state": "WA",
+      "name": "Washington",
+      "source": {
+        "id": "src_469f0e96352c270b",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/washington",
+        "retrievedAt": "2026-09-24T02:30:05.958Z",
+        "contentHash": "0e0a0e1a1042a3d7d0e3d91819d6683583fd476501bf07468ff55cf1a46f6559",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "8 days before Election Day",
+        "mail": "Must be received 8 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://voter.votewa.gov/WhereToVote.aspx",
+        "registerOnline": "https://voter.votewa.gov/WhereToVote.aspx",
+        "electionOffice": "https://www.sos.wa.gov/elections/voters/"
+      }
+    },
+    {
+      "state": "WV",
+      "name": "West Virginia",
+      "source": {
+        "id": "src_b1855afb03af0d7e",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/west-virginia",
+        "retrievedAt": "2026-09-24T02:30:06.969Z",
+        "contentHash": "33accb2f07ba3314137517ec4865b4d1b39ba51072be597495443d90876d4867",
+        "notes": null
+      },
+      "pageUpdated": "2026-08-03",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "21 days before Election Day",
+        "mail": "Must be postmarked 21 days before Election Day",
+        "inPerson": "21 days before Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://apps.sos.wv.gov/Elections/voter/amiregisteredtovote",
+        "registerOnline": "https://ovr.sos.wv.gov/Register/Landing",
+        "electionOffice": "https://ovr.sos.wv.gov/Register/Landing"
+      }
+    },
+    {
+      "state": "WI",
+      "name": "Wisconsin",
+      "source": {
+        "id": "src_d241119eca69bf6c",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/wisconsin",
+        "retrievedAt": "2026-09-24T02:30:07.957Z",
+        "contentHash": "fa8374ec8733b5bbb2099374c95ef0171ac59e904f27379af7637e850a86a1a1",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "20 days before Election Day",
+        "mail": "Must be postmarked 20 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://myvote.wi.gov/en-us/MyVoterInfo",
+        "registerOnline": "https://myvote.wi.gov/en-us/RegisterToVote",
+        "electionOffice": "https://elections.wi.gov/Register"
+      }
+    },
+    {
+      "state": "WY",
+      "name": "Wyoming",
+      "source": {
+        "id": "src_818b1c1b42573ad8",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/wyoming",
+        "retrievedAt": "2026-09-24T02:30:08.960Z",
+        "contentHash": "c3919c4634dc7130a70ca8c94a4df1667db98b85dd094c357d8cc4630baf35a2",
+        "notes": null
+      },
+      "pageUpdated": "2024-11-18",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": null,
+        "mail": "Must be received 14 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": false,
+      "links": {
+        "checkRegistration": "https://sos.wyo.gov/Elections/State/RegisteringToVote.aspx",
+        "registerOnline": null,
+        "electionOffice": "https://sos.wyo.gov/Elections/State/RegisteringToVote.aspx"
+      }
+    },
+    {
+      "state": "DC",
+      "name": "District of Columbia",
+      "source": {
+        "id": "src_189e59f474617456",
+        "publisher": "U.S. Election Assistance Commission (vote.gov)",
+        "url": "https://vote.gov/register/district-of-columbia",
+        "retrievedAt": "2026-09-24T02:30:09.942Z",
+        "contentHash": "aa8116e100c9c37ca8a77cc5a2dcfb44badb086d77ef83d825d6aa7cc8817b60",
+        "notes": null
+      },
+      "pageUpdated": "2026-03-11",
+      "registrationRequired": true,
+      "deadlines": {
+        "online": "21 days before Election Day",
+        "mail": "Must be received 21 days before Election Day",
+        "inPerson": "Available up to and including on Election Day"
+      },
+      "onlineRegistrationOffered": true,
+      "links": {
+        "checkRegistration": "https://apps.dcboe.org/vrs",
+        "registerOnline": "https://vr.dcboe.org/213324797239968?agency_code=12",
+        "electionOffice": "https://www.dcboe.org/voters/register-to-vote/register-update-voter-registration"
+      }
+    }
+  ]
+}

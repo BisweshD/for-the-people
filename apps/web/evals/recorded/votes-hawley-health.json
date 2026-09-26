@@ -1,0 +1,64 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "votes-hawley-health",
+  "recordedAt": "2026-09-24T14:44:16.643Z",
+  "question": "How has Josh Hawley voted on health care?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Josh Hawley voted Yea on Extend the larger ACA health plan tax credits for 3 years (H.R. 1834) in Senate roll call 644 on Dec 11, 2025.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Josh Hawley", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "H001089",
+            "name": "Josh Hawley",
+            "party": "R",
+            "office": "U.S. Senator, Missouri",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getVotes",
+      "input": { "personId": "H001089", "issue": "health care" },
+      "modelOutput": {
+        "person": {
+          "id": "H001089",
+          "name": "Josh Hawley",
+          "party": "R",
+          "office": "U.S. Senator, Missouri",
+          "serving": true
+        },
+        "issue": "Health care",
+        "counts": {
+          "keyVotes": 1,
+          "heldInTheirChamber": 1,
+          "theirChamber": "Senate",
+          "votedYea": 1,
+          "votedNay": 0,
+          "votedPresent": 0,
+          "didNotVote": 0,
+          "noRecordedVote": 0,
+          "heldOnlyInOtherChamber": 0,
+          "otherChamber": "House"
+        },
+        "votes": [
+          {
+            "keyVote": "Extend the larger ACA health plan tax credits for 3 years (H.R. 1834)",
+            "issue": "Health care",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 644",
+              "date": "2025-12-11",
+              "supportedMeasure": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 590
+}

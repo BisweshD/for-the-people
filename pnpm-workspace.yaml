@@ -1,0 +1,17 @@
+packages:
+  - apps/*
+  - packages/*
+allowBuilds:
+  esbuild: true
+  unrs-resolver: true
+minimumReleaseAgeExclude:
+  - framer-motion@13.4.2
+  - motion-dom@13.4.2
+  - motion@13.4.2
+  - prettier@3.9.9
+  - "@ai-sdk/anthropic@3.0.122"
+  - "@ai-sdk/gateway@3.0.200"
+  - "@ai-sdk/provider-utils@4.0.54"
+  - "@ai-sdk/provider@3.0.17"
+  - "@ai-sdk/react@3.0.293"
+  - ai@6.0.290

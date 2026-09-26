@@ -1,0 +1,814 @@
+{
+  "asOf": "2026-09-23",
+  "note": "U.S. Senate candidates for November 3, 2026, read from each state's official election authority. 'certified' is the state's list of candidates on the general-election ballot; 'official-primary-results' lists nominees from official primary results, so independent and minor-party candidates may be missing; 'pending' means no official list could be read automatically, and no names are shown. News, Ballotpedia and Wikipedia were used only to find official pages. Names printed in capitals by a state are shown in title case.",
+  "races": [
+    {
+      "state": "AL",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://www.sos.alabama.gov/alabama-votes/voter/election-information/2026",
+        "publisher": "Alabama Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [],
+      "note": "The state's certification PDFs could not be read automatically."
+    },
+    {
+      "state": "AK",
+      "seatClass": 2,
+      "special": false,
+      "status": "certified",
+      "source": {
+        "url": "https://www.elections.alaska.gov/candidates/?election=26genr",
+        "publisher": "Alaska Division of Elections",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Gerald L. Heikes",
+          "party": "R",
+          "partyLabel": "Registered Republican",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Mary Peltola",
+          "party": "D",
+          "partyLabel": "Registered Democrat",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Dan S. Sullivan",
+          "party": "R",
+          "partyLabel": "Registered Republican",
+          "incumbent": true,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Daniel J. Sullivan Jr.",
+          "party": "R",
+          "partyLabel": "Registered Republican",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "AR",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://www.sos.arkansas.gov/elections/research/election-results",
+        "publisher": "Arkansas Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": []
+    },
+    {
+      "state": "CO",
+      "seatClass": 2,
+      "special": false,
+      "status": "certified",
+      "source": {
+        "url": "https://www.sos.state.co.us/pubs/elections/vote/generalCandidates.html",
+        "publisher": "Colorado Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Mark Baisley",
+          "party": "R",
+          "partyLabel": "Republican Party",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "John Hickenlooper",
+          "party": "D",
+          "partyLabel": "Democratic Party",
+          "incumbent": true,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Bob Chew",
+          "party": "O",
+          "partyLabel": "Forward Party",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Christopher Baum",
+          "party": "O",
+          "partyLabel": "Approval Voting Party",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Blake Huber",
+          "party": "L",
+          "partyLabel": "Libertarian Party",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Adam Withrow",
+          "party": "O",
+          "partyLabel": "Unity Party",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "DE",
+      "seatClass": 2,
+      "special": false,
+      "status": "certified",
+      "source": {
+        "url": "https://elections.delaware.gov/candidates/candidatelist/genl_fcddt_2026.html",
+        "publisher": "Delaware Department of Elections",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Chris Coons",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": true,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Michael \"Dr. Mike\" Katz",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "FL",
+      "seatClass": 3,
+      "special": true,
+      "status": "official-primary-results",
+      "source": {
+        "url": "https://dos.elections.myflorida.com/candidates/CanList.asp?elecid=20261103-GEN",
+        "publisher": "Florida Department of State, Division of Elections",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Ashley Moody",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": true,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Angie Nixon",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Neil J. Gillespie",
+          "party": "O",
+          "partyLabel": "No Party Affiliation",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "GA",
+      "seatClass": 2,
+      "special": false,
+      "status": "official-primary-results",
+      "source": {
+        "url": "https://results.sos.ga.gov/results/public/Georgia/elections/06162026GeneralPrimaryRunoff",
+        "publisher": "Georgia Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Mike Collins",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Jon Ossoff",
+          "party": "D",
+          "partyLabel": "Democrat",
+          "incumbent": true,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "ID",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://results.voteidaho.gov/results/public/id/elections/may2026",
+        "publisher": "Idaho Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [],
+      "note": "The Democratic primary winner may have withdrawn; the official candidate list could not be read to confirm."
+    },
+    {
+      "state": "IL",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://www.elections.il.gov/",
+        "publisher": "Illinois State Board of Elections",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": []
+    },
+    {
+      "state": "IA",
+      "seatClass": 2,
+      "special": false,
+      "status": "official-primary-results",
+      "source": {
+        "url": "https://electionresults.iowa.gov/IA/126082/377216/json/en/summary.json",
+        "publisher": "Iowa Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Ashley Hinson",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Josh Turek",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "KS",
+      "seatClass": 2,
+      "special": false,
+      "status": "official-primary-results",
+      "source": {
+        "url": "https://www.sos.ks.gov/elections/26elec/2026-Primary-Election-Official-Vote-Totals.pdf",
+        "publisher": "Kansas Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Roger Marshall",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": true,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Adam Hamilton",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "KY",
+      "seatClass": 2,
+      "special": false,
+      "status": "official-primary-results",
+      "source": {
+        "url": "https://elect.ky.gov/Documents/2026%20Primary%20Certification%20of%20Vote%20Totals%20Final.pdf",
+        "publisher": "Kentucky State Board of Elections",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Andy Barr",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Charles Booker",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Christopher Campbell",
+          "party": "O",
+          "partyLabel": "Kentucky Party",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "LA",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://voterportal.sos.la.gov/graphical",
+        "publisher": "Louisiana Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": []
+    },
+    {
+      "state": "ME",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://www.maine.gov/sos/elections-voting/upcoming-elections",
+        "publisher": "Maine Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [],
+      "note": "The Democratic nominee withdrew on July 10, 2026 and was replaced on July 27; the official candidate list could not be read to confirm the full ballot."
+    },
+    {
+      "state": "MA",
+      "seatClass": 2,
+      "special": false,
+      "status": "official-primary-results",
+      "source": {
+        "url": "https://electionstats.state.ma.us/elections/search/year_from:2026/year_to:2026/office_id:6",
+        "publisher": "Massachusetts Secretary of the Commonwealth",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Edward J. Markey",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": true,
+          "fecCandidateId": null
+        },
+        {
+          "name": "John Deaton",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "MI",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://www.michigan.gov/sos/elections",
+        "publisher": "Michigan Department of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": []
+    },
+    {
+      "state": "MN",
+      "seatClass": 2,
+      "special": false,
+      "status": "certified",
+      "source": {
+        "url": "https://electionresultsfiles.sos.mn.gov/20261103/cand.txt",
+        "publisher": "Minnesota Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Peggy Flanagan",
+          "party": "D",
+          "partyLabel": "Democratic-Farmer-Labor",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Michele Tafoya",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Marisa Simonetti",
+          "party": "I",
+          "partyLabel": "Independent",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Rebecca Whiting",
+          "party": "L",
+          "partyLabel": "Libertarian",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "MS",
+      "seatClass": 2,
+      "special": false,
+      "status": "official-primary-results",
+      "source": {
+        "url": "https://sos.ms.gov/content/CandidateQualifying/default.aspx",
+        "publisher": "Mississippi Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Cindy Hyde-Smith",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": true,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Scott Colom",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Ty Pinkins",
+          "party": "I",
+          "partyLabel": "Independent",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "MT",
+      "seatClass": 2,
+      "special": false,
+      "status": "official-primary-results",
+      "source": {
+        "url": "https://electionresults.mt.gov/resultsSW.aspx?type=FED&map=CTY",
+        "publisher": "Montana Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Kurt Alme",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Alani Bankhead",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Kyle Austin",
+          "party": "L",
+          "partyLabel": "Libertarian",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "NE",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://sos.nebraska.gov/",
+        "publisher": "Nebraska Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [],
+      "note": "The Democratic primary winner declined the nomination; the certified list could not be read to confirm the full ballot."
+    },
+    {
+      "state": "NH",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://www.sos.nh.gov/2026-state-primary-election-results",
+        "publisher": "New Hampshire Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": []
+    },
+    {
+      "state": "NJ",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://nj.gov/state/elections/election-information-2026.shtml",
+        "publisher": "New Jersey Division of Elections",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": []
+    },
+    {
+      "state": "NM",
+      "seatClass": 2,
+      "special": false,
+      "status": "certified",
+      "source": {
+        "url": "https://candidateportal.servis.sos.state.nm.us/CandidateList.aspx?eid=2917&cty=99",
+        "publisher": "New Mexico Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Ben R. Lujan",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": true,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Larry E. Marker",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "NC",
+      "seatClass": 2,
+      "special": false,
+      "status": "certified",
+      "source": {
+        "url": "https://s3.amazonaws.com/dl.ncsbe.gov/Elections/2026/Candidate%20Filing/Candidate_Listing_2026.csv",
+        "publisher": "North Carolina State Board of Elections",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Roy Cooper",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Michael Whatley",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Shannon W. Bray",
+          "party": "L",
+          "partyLabel": "Libertarian",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Michael Dublin",
+          "party": "G",
+          "partyLabel": "Green",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "OH",
+      "seatClass": 3,
+      "special": true,
+      "status": "pending",
+      "source": {
+        "url": "https://www.ohiosos.gov/elections/election-results-and-data/2026/",
+        "publisher": "Ohio Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": []
+    },
+    {
+      "state": "OK",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://oklahoma.gov/elections.html",
+        "publisher": "Oklahoma State Election Board",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": []
+    },
+    {
+      "state": "OR",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://sos.oregon.gov/elections/Pages/default.aspx",
+        "publisher": "Oregon Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": []
+    },
+    {
+      "state": "RI",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://vote.sos.ri.gov/",
+        "publisher": "Rhode Island Department of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": []
+    },
+    {
+      "state": "SC",
+      "seatClass": 2,
+      "special": false,
+      "status": "official-primary-results",
+      "source": {
+        "url": "https://www.enr-scvotes.org/SC/127179/",
+        "publisher": "South Carolina Election Commission",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Darline Graham",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": true,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Annie Andrews",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "SD",
+      "seatClass": 2,
+      "special": false,
+      "status": "certified",
+      "source": {
+        "url": "https://vip.sdsos.gov/candidatelist.aspx?eid=774",
+        "publisher": "South Dakota Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Mike Rounds",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": true,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Brian L. Bengs",
+          "party": "I",
+          "partyLabel": "Independent",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "TN",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://sos.tn.gov/elections/2026-candidate-lists",
+        "publisher": "Tennessee Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": []
+    },
+    {
+      "state": "TX",
+      "seatClass": 2,
+      "special": false,
+      "status": "pending",
+      "source": {
+        "url": "https://www.sos.texas.gov/elections/forms/2026-ballot-cert.pdf",
+        "publisher": "Texas Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [],
+      "note": "The certified ballot list, which names every nominee, could not be read automatically, so no name here is marked as a nominee."
+    },
+    {
+      "state": "VA",
+      "seatClass": 2,
+      "special": false,
+      "status": "certified",
+      "source": {
+        "url": "https://www.elections.virginia.gov/casting-a-ballot/candidate-list/november-3-2026-gen-elect-all-offices/",
+        "publisher": "Virginia Department of Elections",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Mark R. Warner",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": true,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Bert Mizusawa",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "WV",
+      "seatClass": 2,
+      "special": false,
+      "status": "official-primary-results",
+      "source": {
+        "url": "https://sos.wv.gov/govotewv",
+        "publisher": "West Virginia Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Shelley Moore Capito",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": true,
+          "fecCandidateId": null
+        },
+        {
+          "name": "Rachel Fetty Anderson",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    },
+    {
+      "state": "WY",
+      "seatClass": 2,
+      "special": false,
+      "status": "certified",
+      "source": {
+        "url": "https://sos.wyo.gov/Elections/Docs/2026/2026_WY_General_Election_Candidates.csv",
+        "publisher": "Wyoming Secretary of State",
+        "retrieved": "2026-09-23"
+      },
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "R",
+          "partyLabel": "Republican",
+          "incumbent": false,
+          "fecCandidateId": null
+        },
+        {
+          "name": "James Byrd",
+          "party": "D",
+          "partyLabel": "Democratic",
+          "incumbent": false,
+          "fecCandidateId": null
+        }
+      ]
+    }
+  ]
+}

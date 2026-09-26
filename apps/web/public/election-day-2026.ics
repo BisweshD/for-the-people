@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//For The People//Election Day 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:election-day-2026-11-03@for-the-people
+DTSTAMP:20260923T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Election Day
+DESCRIPTION:U.S. general election for Congress and many state and local of
+ fices. Your state sets polling hours and places. Find yours at https://vote
+ .gov or on your state election office website.
+URL:https://vote.gov/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Election Day is tomorrow
+END:VALARM
+END:VEVENT
+END:VCALENDAR

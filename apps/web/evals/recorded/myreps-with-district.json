@@ -1,0 +1,41 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "myreps-with-district",
+  "recordedAt": "2026-09-24T14:44:34.477Z",
+  "question": "Who represents me?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Your members of Congress are Susan M. Collins, Angus S. King, Jr., and Jared F. Golden. Each result shows their office and party.",
+  "tools": [
+    {
+      "toolName": "myRepresentatives",
+      "input": { "districtIds": [] },
+      "modelOutput": {
+        "status": "found",
+        "people": [
+          {
+            "id": "C001035",
+            "name": "Susan M. Collins",
+            "party": "R",
+            "office": "U.S. Senator, Maine",
+            "serving": true
+          },
+          {
+            "id": "K000383",
+            "name": "Angus S. King, Jr.",
+            "party": "I",
+            "office": "U.S. Senator, Maine",
+            "serving": true
+          },
+          {
+            "id": "G000592",
+            "name": "Jared F. Golden",
+            "party": "D",
+            "office": "U.S. Representative, ME-2",
+            "serving": true
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 289
+}

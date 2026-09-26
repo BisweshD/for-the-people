@@ -1,0 +1,19 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "method-missed",
+  "recordedAt": "2026-09-24T14:44:36.712Z",
+  "question": "How do you count missed votes?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "How we count missed votes: roll calls where the member is recorded as Not Voting, out of the roll calls the official record lists them on while they served. The Speaker, who votes only when they choose to, and delegates, who vote only in the Committee of the Whole, get no missed-vote share.",
+  "tools": [
+    {
+      "toolName": "explainMethod",
+      "input": { "topic": "missed-votes" },
+      "modelOutput": {
+        "title": "How we count missed votes",
+        "method": "Roll calls where the member is recorded as Not Voting, out of the roll calls the official record lists them on while they served. The Speaker, who votes only when they choose to, and delegates, who vote only in the Committee of the Whole, get no missed-vote share."
+      }
+    }
+  ],
+  "latencyMs": 791
+}

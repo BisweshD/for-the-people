@@ -1,0 +1,171 @@
+{
+  "asOf": "2026-09-23",
+  "note": "States whose U.S. House map on Nov 3, 2026 (120th Congress) differs from the map used in Nov 2024 (119th Congress). Each redrawnFor2026=true entry was confirmed against an official state source (legislature, secretary of state, redistricting commission, state GIS office, or court filing); news, Ballotpedia, NCSL and Wikipedia were used only to find those sources. Nine states are confirmed: TX, CA, NC, OH, UT, FL, TN, LA, AL. Missouri is NOT confirmed. The Aug 4, 2026 primary used the 2025 HB 1 map. On Sep 3, 2026 the Missouri Supreme Court (SC101805) ordered the 2022 map for November. The 8th Circuit ordered HB 1 on Sep 21, 2026, but stayed that order until Sep 28, and it is now before SCOTUS for the third time. Geocodio's cd120 announcement (2026-02-26) covers only TX, CA, MO, NC, OH and UT. It does not cover FL, TN, LA or AL, which redrew in May-June 2026, and its MO cd120 data reflects HB 1, which may not be used. Louisiana: Nov 3, 2026 is the first round of an open (majority-vote) congressional election, with a runoff on Dec 12, 2026. No-change states whose attempts failed, from NCSL/secondary sources and not individually verified against official sources: GA, SC, NY, WI, KS, AR, WA, CO, IL; every other state keeps its 2024 map. mapDownload URLs were checked (HTTP 200 and archive contents) on 2026-09-23. lookupUrl values are official voter or district lookups; the registration-based ones only work for registered voters.",
+  "blockOverrides": {
+    "370350107003014": {
+      "state": "NC",
+      "cd120": 10,
+      "source": "https://webservices.ncleg.gov/ViewBillDocument/2025/7669/0/SL%202025-95%20-%20Block%20Assignment%20File",
+      "notes": "Catawba County, 27 residents (2020). The official S.L. 2025-95 block assignment file puts this 2020 block in district 10; the Census 120th Congressional Districts layer puts most of it in 14."
+    }
+  },
+  "states": [
+    {
+      "state": "TX",
+      "redrawnFor2026": true,
+      "plan": "PLANC2333 (HB 4, 89th Legislature, 2nd Called Session)",
+      "enacted": "2025-08-29",
+      "status2026": "in effect",
+      "officialSource": "https://redistricting.capitol.texas.gov/Current-districts",
+      "mapDownload": {
+        "url": "https://data.capitol.texas.gov/dataset/748c952b-e926-4f44-8d01-a738884b3ec8/resource/5712ebe1-d777-4d4a-b836-0534e17bca01/download/planc2333.zip",
+        "format": "shapefile"
+      },
+      "lookupUrl": "https://dvr.capitol.texas.gov/Congress/0/PLANC2333",
+      "notes": "Texas Legislative Council says PLANC2333 is the congressional plan in effect for the 2026 elections; PLANC2193 members serve until Jan 2027. A three-judge court preliminarily enjoined the map on 2025-11-18 (LULAC v. Abbott). SCOTUS stayed that injunction on 2025-12-04 and summarily reversed it on 2026-04-27. The Mar 3, 2026 primary used PLANC2333. Litigation over the 2025 map continues but does not affect Nov 2026. Dataset page: https://data.capitol.texas.gov/dataset/planc2333. The lookup is DistrictViewer, an interactive map with address search."
+    },
+    {
+      "state": "CA",
+      "redrawnFor2026": true,
+      "plan": "AB 604 (Ch. 96, Stats. 2025) congressional map, enacted by Proposition 50 (Election Rigging Response Act)",
+      "enacted": "2025-11-04",
+      "status2026": "in effect",
+      "officialSource": "https://www.sos.ca.gov/elections/california-redistricting",
+      "mapDownload": {
+        "url": "https://statewidedatabase.org/pub/data/d25/AB604.zip",
+        "format": "block-assignment-csv"
+      },
+      "lookupUrl": null,
+      "notes": "AB 604 was chaptered 2025-08-21, and voters approved Prop 50 on 2025-11-04. The CA Secretary of State says the 2026 primary and general ballots include candidates for the new districts, which seat members in Jan 2027. A three-judge federal panel declined to block the map in Jan 2026, and SCOTUS denied the appeal on 2026-02-04. Shapefile source: the Statewide Database (the Legislature's redistricting database, UC Berkeley). The same districts are on the state GIS portal (CA Dept. of Technology): https://gis.data.ca.gov/maps/California::ab-604-california-congressional-districts-2027-2032-as-enacted-by-proposition-50/about. GeoJSON query: https://services3.arcgis.com/uknczv4rpevve42E/arcgis/rest/services/AB_604_-_California_Congressional_Districts_2027-2032_as_enacted_by_Proposition_50_view/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson (52 features). No official address lookup for the new districts was found; the Senate per-district pages are at https://sdmg.senate.ca.gov/committeehome/2025-congressional-districts."
+    },
+    {
+      "state": "NC",
+      "redrawnFor2026": true,
+      "plan": "S.L. 2025-95 (Senate Bill 249), 2025 Congressional Plan",
+      "enacted": "2025-10-22",
+      "status2026": "in effect",
+      "officialSource": "https://www.ncsbe.gov/results-data/voting-maps-redistricting",
+      "mapDownload": {
+        "url": "https://webservices.ncleg.gov/ViewBillDocument/2025/7667/0/SL%202025-95%20-%20Shapefile",
+        "format": "shapefile"
+      },
+      "lookupUrl": "https://vt.ncsbe.gov/RegLkup/",
+      "notes": "The NCSBE says the General Assembly approved the new 14-district map (S.L. 2025-95) for use in the 2026 elections. A federal three-judge panel declined to block it on 2025-11-26, and the Mar 3, 2026 primary used it. The download is a ZIP with SL 2025-95.shp and its sidecar files. The block assignment file is at https://webservices.ncleg.gov/ViewBillDocument/2025/7669/0/SL%202025-95%20-%20Block%20Assignment%20File. Bill page: https://www.ncleg.gov/BillLookup/2025/S249. The lookup is the NCSBE voter search (registered voters)."
+    },
+    {
+      "state": "OH",
+      "redrawnFor2026": true,
+      "plan": "Ohio Redistricting Commission Congressional District Plan, adopted 2025-10-31 (U.S. Congressional Districts 2026-2032)",
+      "enacted": "2025-10-31",
+      "status2026": "in effect",
+      "officialSource": "https://www.ohiosos.gov/globalassets/elections/directives/2025/dir2025-55-u.s.-house-of-representatives-u.s.-house-district-maps.pdf",
+      "mapDownload": {
+        "url": "https://maps.ohio.gov/arcgis/rest/services/Hosted/Districts_2025_11_03_SHP/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson",
+        "format": "geojson"
+      },
+      "lookupUrl": "https://voterlookup.ohiosos.gov/voterlookup.aspx",
+      "notes": "Adopted unanimously by the Ohio Redistricting Commission. Secretary of State Directive 2025-55 (2025-11-21) told county boards to reprogram to the new districts by 2025-12-12 for the 2026 cycle. No court blocked the map, and the May 5, 2026 primary used it. The download is from the OGRIP (State of Ohio) feature service 'Federal Congressional Districts (Ohio) 2026-2032' and returns 15 features. SOS PDF map: https://www.ohiosos.gov/assets/congressional-2026-2032-adopted-2025-10-31.pdf. Commission maps page, which has shapefiles and equivalency files but is JS-rendered: https://redistricting.ohio.gov/maps. The SOS site blocks scripted requests, so the lookup URL could not be checked automatically."
+    },
+    {
+      "state": "UT",
+      "redrawnFor2026": true,
+      "plan": "Court-ordered 'Map 1A' (plaintiffs' Map 1 as clarified), League of Women Voters of Utah v. Utah State Legislature, 3rd District Court (Judge Dianna Gibson)",
+      "enacted": "2025-11-10",
+      "status2026": "in effect",
+      "officialSource": "https://gis.utah.gov/blog/2025-11-25-an-update-on-redistricting/",
+      "mapDownload": {
+        "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/political_us_congress_districts_2026_to_2032/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson",
+        "format": "geojson"
+      },
+      "lookupUrl": null,
+      "notes": "Judge Gibson adopted plaintiffs' Map 1 on 2025-11-10 and made minor clarifications, giving 'Map 1A'. The Utah Supreme Court dismissed the Legislature's appeal on 2026-02-20, and a federal three-judge panel denied the Maloy/Owens bid to block the map on 2026-02-23. UGRC (the state GIS office) publishes it as 'Utah US Congress Districts 2026 to 2032': https://opendata.gis.utah.gov/datasets/utah-us-congress-districts-2026-to-2032/about. Shapefile and other formats are available there. No official address lookup was confirmed for the new districts."
+    },
+    {
+      "state": "FL",
+      "redrawnFor2026": true,
+      "plan": "EOGPCRP2026 (HB 1-D, 2026 Special Session D; Ch. 2026-229, Laws of Florida)",
+      "enacted": "2026-05-04",
+      "status2026": "in effect",
+      "officialSource": "https://www.flsenate.gov/Session/Bill/2026D/1",
+      "mapDownload": {
+        "url": "https://www.flsenate.gov/PublishedContent/Session/Congressional/EOGPCRP2026.zip",
+        "format": "shapefile"
+      },
+      "lookupUrl": null,
+      "notes": "Passed on 2026-04-29 and signed on 2026-05-04. The House bill analysis says section 5 amends s. 8.07, F.S., so the new districts apply to qualification, nomination and election starting in 2026. Members take their seats when current terms expire in Jan 2027. A Leon Circuit Court judge denied a temporary injunction in May 2026, and the Florida Supreme Court declined to block the map on 2026-06-10. The underlying Fair Districts challenge continues but not for 2026. Block assignment: https://www.flsenate.gov/PublishedContent/Session/Congressional/EOGPCRP2026.txt. PDF map: https://www.flsenate.gov/PublishedContent/Session/Congressional/Letter_1_FL_EOGPCRP2026.pdf. No statewide official address lookup was confirmed; county Supervisors of Elections provide voter lookups."
+    },
+    {
+      "state": "TN",
+      "redrawnFor2026": true,
+      "plan": "HB 7003, 114th General Assembly, Second Extraordinary Session (2026 congressional plan)",
+      "enacted": "2026-05-07",
+      "status2026": "in effect",
+      "officialSource": "https://sos.tn.gov/announcements/2026-congressional-redistricting",
+      "mapDownload": {
+        "url": "https://comptroller.tn.gov/content/dam/cot/pa/documents/district-maps/congress-districts/NewCongressional26.zip",
+        "format": "shapefile"
+      },
+      "lookupUrl": "https://tn-cot.maps.arcgis.com/apps/instant/lookup/index.html?appid=2bd3c9b349634d2ba7153410c0930d27",
+      "notes": "Passed and signed on 2026-05-07; it splits Memphis three ways. The TN Secretary of State page posts the revised districts, an address lookup (tncot.cc/tndistrict, which redirects to the Comptroller's lookup above) and the 2026 US House candidate list. A federal three-judge panel denied a preliminary injunction in July 2026, and the Aug 6, 2026 primary used the new map. The ACLU, NAACP and TN Democratic Party suits continue on the merits. Statewide PDF: https://comptroller.tn.gov/content/dam/cot/pa/documents/district-maps/statewide/USCongress2026New.pdf. Comptroller maps page: https://comptroller.tn.gov/maps/u-s--congress-districts.html."
+    },
+    {
+      "state": "LA",
+      "redrawnFor2026": true,
+      "plan": "Act 2 of the 2026 Regular Session (SB 121)",
+      "enacted": "2026-05-29",
+      "status2026": "in effect",
+      "officialSource": "https://www.legis.la.gov/Legis/ViewDocument.aspx?d=1475788",
+      "mapDownload": {
+        "url": "https://redist.legis.la.gov/2026_Files/Act2Congress/Shapefile/Shapefile%20-%20Act_2_(2026_RS).zip",
+        "format": "shapefile"
+      },
+      "lookupUrl": "https://voterportal.sos.la.gov/",
+      "notes": "Enacted after Louisiana v. Callais (SCOTUS, 2026-04-29) struck the SB8 (2024) map. The official digest says the districts take effect on signature 'for election purposes only for the regular congressional elections in 2026' and for all purposes on 2027-01-03. In the Callais three-judge court (W.D. La. 3:24-cv-122), plaintiffs agreed not to contest Act 2 for 2026 on Purcell grounds. Any challenge to Act 2 is scheduled for Dec 15, 2026 and later, so it affects 2028 at the earliest. HB 842 moved U.S. House races to the open majority-vote system. Nov 3, 2026 is the first round (qualifying ran Aug 5-7, 2026), with a runoff on Dec 12, 2026. Block equivalency: https://redist.legis.la.gov/2026_Files/Act2Congress/Block%20Equivalency%20File/Block%20Equlivancy%20File%20-%20Act%202%20(2026%20RS%20-%20Congress).txt. The lookup is the SOS Voter Portal (registered voters)."
+    },
+    {
+      "state": "AL",
+      "redrawnFor2026": true,
+      "plan": "2023 Congressional Plan (Act 2023-563, 'Livingston Congressional Plan 3'), restored for 2026 in place of the court-ordered 2024 remedial plan",
+      "enacted": "2026-06-02",
+      "status2026": "in effect",
+      "officialSource": "https://www.sos.alabama.gov/sites/default/files/2023_Congressional_Plan_CERTIFICATION_Jun_10_2026.pdf",
+      "mapDownload": {
+        "url": "https://www.sos.alabama.gov/sites/default/files/06-03-2026/2023_CONGRESSIONAL_PLAN.zip",
+        "format": "shapefile"
+      },
+      "lookupUrl": "https://myinfo.alabamavotes.gov/voterview",
+      "notes": "The Legislature enacted this plan in July 2023. Federal courts blocked it (Allen v. Milligan remedial proceedings), so Nov 2024 used the court-drawn remedial map. After Callais, SCOTUS stayed the injunction on 2026-06-02 (6-3), letting Alabama use the 2023 plan in 2026; the enacted date here is that order date. Gov. Ivey's proclamation (https://governor.alabama.gov/newsroom/2026/05/governor-ivey-celebrates-major-court-victory-in-states-redistricting-battle-calls-special-election-for-alabama-drawn-congressional-map/) set special primaries in CD 1, 2, 6 and 7 on 2026-08-11 and kept the general election on 2026-11-03. The SOS certified the 2023 plan on 2026-06-10. Merits litigation continues. PDF map: https://www.sos.alabama.gov/sites/default/files/06-03-2026/2023%20Congressional%20Plan_Map.pdf. The lookup is the SOS voter lookup (registered voters)."
+    },
+    {
+      "state": "MO",
+      "redrawnFor2026": false,
+      "plan": "HB 1, 2025 Second Extraordinary Session ('Missouri First Map'); challenged by referendum petition 2026-R004 (Proposition A)",
+      "enacted": "2025-09-28",
+      "status2026": "uncertain",
+      "officialSource": "https://ago.mo.gov/wp-content/uploads/Hoskins-v.-von-Glahn-Application-for-Stay-FINAL.pdf",
+      "mapDownload": {
+        "url": "https://www.arcgis.com/sharing/rest/content/items/c04d940b1adb4d97b9af24c7a49707d5/data",
+        "format": "geojson"
+      },
+      "lookupUrl": null,
+      "notes": "Cannot be confirmed as of 2026-09-23. The Aug 4, 2026 primary used HB 1. On 2026-09-03 the Missouri Supreme Court (von Glahn v. Hoskins, SC101805) held the referendum valid, ruled that HB 1 never took effect, and enjoined its use; the 2022 map (the 2024 map) governs Nov 2026 unless voters approve Prop A. SCOTUS (Kavanaugh) denied the state's stay on 2026-09-08. A federal district court (Judge Clark) then ordered use of HB 1, SCOTUS paused that order (about Sep 10), and on 2026-09-21 the 8th Circuit directed a permanent injunction requiring HB 1. That injunction is stayed until 2026-09-28 5pm CT, and challengers asked SCOTUS on 2026-09-22 to block it. The Missouri Supreme Court also found SOS Hoskins in contempt (Sep 10). Ballots are already out. If the 2022 map is used, MO has no change from 2024. The official source is the MO Attorney General's SCOTUS filing, which attaches the state supreme court opinion. The SOS press release https://www.sos.mo.gov/default.aspx?PageId=10637 (May 2026) is outdated. The download is the HB 1 map as GeoJSON from MSDIS (University of Missouri, the state's spatial data clearinghouse): https://data-msdis.opendata.arcgis.com/datasets/ce3a1c710aba4d2f9c25720acabacac6."
+    }
+  ],
+  "checkedNoChange": [
+    {
+      "state": "VA",
+      "officialSource": "https://www.vacourts.gov/opinions/opnscvwp/1260127.pdf",
+      "notes": "Voters approved a redistricting amendment and new map on 2026-04-21. The Supreme Court of Virginia voided that result on 2026-05-08 (Scott v. McDougle, Record No. 260127, 4-3), holding that the court-drawn 2021 congressional maps stay in force for the 2026 elections. SCOTUS denied a stay on 2026-05-15. The 2024 map is used on Nov 3, 2026."
+    },
+    {
+      "state": "IN",
+      "officialSource": "https://iga.in.gov/legislative/2026/bills/house/1032",
+      "notes": "The Indiana Senate defeated HB 1032, the mid-decade congressional map, 19-31 on 2025-12-11. The 2021 map (used in 2024) stays in effect."
+    },
+    {
+      "state": "MD",
+      "officialSource": "https://www.mdcourts.gov/data/opinions/coa/2026/22a26pc.pdf",
+      "notes": "No new congressional map was enacted; the 2022 plan (Ch. 16 of 2022) stays in effect for 2026. An Aug 2026 special session passed only a constitutional amendment (Question 3) that would allow a later redraw, at the earliest for 2028. Circuit courts kept it off the ballot, and the Maryland Supreme Court (Nos. 21 & 22, Sept. Term 2026) reversed. Either way, 2026 districts are unchanged."
+    }
+  ]
+}

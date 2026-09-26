@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Local secrets (.env.example stays tracked)
+.env
+.env.*
+!.env.example
+
+# Next.js build output and generated types
+.next/
+next-env.d.ts
+*.tsbuildinfo
+.vercel
+
+# Local database (rebuilt by `pnpm db:setup`) and caches
+.data/
+.cache/
+
+# Test, eval, audit, and screenshot output
+test-results/
+playwright-report/
+coverage/
+.lighthouseci/
+verification/
+**/evals/results/
+audits/
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db

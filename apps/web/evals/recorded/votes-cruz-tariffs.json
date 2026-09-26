@@ -1,0 +1,74 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "votes-cruz-tariffs",
+  "recordedAt": "2026-09-24T14:44:13.457Z",
+  "question": "How did Ted Cruz vote on tariffs?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Ted Cruz voted Nay on End the national emergency behind tariffs on Canada (H.J.Res. 72 and S.J.Res. 37) in Senate roll call 160 on Apr 2, 2025. Ted Cruz voted Nay on End the national emergency behind the April 2025 global tariffs (S.J.Res. 88) in Senate roll call 600 on Oct 30, 2025.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Ted Cruz", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "C001098",
+            "name": "Ted Cruz",
+            "party": "R",
+            "office": "U.S. Senator, Texas",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getVotes",
+      "input": { "personId": "C001098", "issue": "tariffs" },
+      "modelOutput": {
+        "person": {
+          "id": "C001098",
+          "name": "Ted Cruz",
+          "party": "R",
+          "office": "U.S. Senator, Texas",
+          "serving": true
+        },
+        "issue": "Trade and tariffs",
+        "counts": {
+          "keyVotes": 2,
+          "heldInTheirChamber": 2,
+          "theirChamber": "Senate",
+          "votedYea": 0,
+          "votedNay": 2,
+          "votedPresent": 0,
+          "didNotVote": 0,
+          "noRecordedVote": 0,
+          "heldOnlyInOtherChamber": 0,
+          "otherChamber": "House"
+        },
+        "votes": [
+          {
+            "keyVote": "End the national emergency behind tariffs on Canada (H.J.Res. 72 and S.J.Res. 37)",
+            "issue": "Trade and tariffs",
+            "memberVote": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 160",
+              "date": "2025-04-02",
+              "supportedMeasure": false
+            }
+          },
+          {
+            "keyVote": "End the national emergency behind the April 2025 global tariffs (S.J.Res. 88)",
+            "issue": "Trade and tariffs",
+            "memberVote": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 600",
+              "date": "2025-10-30",
+              "supportedMeasure": false
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 843
+}

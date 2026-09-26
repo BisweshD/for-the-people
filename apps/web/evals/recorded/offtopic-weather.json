@@ -1,0 +1,10 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "offtopic-weather",
+  "recordedAt": "2026-09-24T14:44:43.286Z",
+  "question": "What's the weather in Tampa?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "I can answer questions about how members of Congress voted, what bills did, and how For The People counts. Try asking about a member, a bill, or an issue.",
+  "tools": [],
+  "latencyMs": 433
+}

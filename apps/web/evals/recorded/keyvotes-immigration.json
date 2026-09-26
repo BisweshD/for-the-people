@@ -1,0 +1,69 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "keyvotes-immigration",
+  "recordedAt": "2026-09-24T14:44:29.017Z",
+  "question": "Which votes are about immigration?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "These are For The People's key votes on Immigration, each checked against the official roll call. They include Detain certain immigrants arrested for or charged with some crimes (Laken Riley Act) and Require temporary protected status for Haiti until 2029 (H.R. 1689).",
+  "tools": [
+    {
+      "toolName": "getKeyVotes",
+      "input": { "issue": "immigration" },
+      "modelOutput": {
+        "issue": "Immigration",
+        "keyVotes": [
+          {
+            "id": "kv-laken-riley",
+            "title": "Detain certain immigrants arrested for or charged with some crimes (Laken Riley Act)",
+            "issue": "Immigration",
+            "whatItDoes": "Federal immigration officers must hold certain immigrants in custody if they are arrested for, charged with, or admit to certain crimes. It covers people who entered illegally, got in by fraud, or lack valid papers. The crimes are burglary, theft, shoplifting, assaulting a police officer, and crimes that kill or badly hurt someone. No conviction is needed. States can also sue over some federal decisions to release or parole immigrants.",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-7",
+                "chamber": "Senate",
+                "number": 7,
+                "date": "2025-01-20",
+                "question": "On Passage of the Bill",
+                "result": "Bill Passed",
+                "yea": 64,
+                "nay": 35,
+                "measure": "S. 5"
+              },
+              {
+                "id": "house-119-1-23",
+                "chamber": "House",
+                "number": 23,
+                "date": "2025-01-22",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 263,
+                "nay": 156,
+                "measure": "S. 5"
+              }
+            ]
+          },
+          {
+            "id": "kv-haiti-tps",
+            "title": "Require temporary protected status for Haiti until 2029 (H.R. 1689)",
+            "issue": "Immigration",
+            "whatItDoes": "Temporary protected status (TPS) shields eligible people from certain countries from deportation. They must already be in the U.S., and they can work while it lasts. This bill requires the government to give Haiti this status until April 20, 2029, no matter what other laws say. People convicted of a felony or of two or more misdemeanors in the U.S., among others, cannot get it.",
+            "rollCalls": [
+              {
+                "id": "house-119-2-120",
+                "chamber": "House",
+                "number": 120,
+                "date": "2026-04-16",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 224,
+                "nay": 204,
+                "measure": "H.R. 1689"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 633
+}

@@ -1,0 +1,107 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "measure-genius",
+  "recordedAt": "2026-09-24T14:44:25.178Z",
+  "question": "What is the GENIUS Act?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "S. 1582, Guiding and Establishing National Innovation for U.S. Stablecoins Act, became law. In House roll call 200 on Jul 17, 2025, the result was passed, 308 Yea to 122 Nay.",
+  "tools": [
+    {
+      "toolName": "getMeasure",
+      "input": { "measure": "GENIUS Act" },
+      "modelOutput": {
+        "measures": [
+          {
+            "id": "119-s-1582",
+            "label": "S. 1582",
+            "title": "Guiding and Establishing National Innovation for U.S. Stablecoins Act",
+            "becameLaw": true,
+            "latestAction": "Became Public Law No: 119-27.",
+            "latestActionDate": "2025-07-18",
+            "summary": "Guiding and Establishing National Innovation for U.S. Stablecoins Act or the GENIUS Act\nThis act establishes a regulatory framework for payment stablecoins (digital assets which an issuer must redeem for a fixed value).\nUnder the act, only permitted issuers may issue a payment stablecoin for use by U.S. persons, subject to certain exceptions and safe harbors. Permitted issuers must be a subsidiary of an insured depository institution, a federal-qualified nonbank payment stablecoin issuer, or a state-qualified payment stablecoin issuer. Permitted issuers must be regulated by the appropriate federal or state regulator. Permitted issuers may choose federal or state regulation; however, state re…",
+            "rollCalls": [
+              {
+                "id": "senate-119-1-240",
+                "chamber": "Senate",
+                "number": 240,
+                "date": "2025-05-08",
+                "question": "On Cloture on the Motion to Proceed",
+                "result": "Cloture on the Motion to Proceed Rejected",
+                "yea": 48,
+                "nay": 49,
+                "measure": "S. 1582"
+              },
+              {
+                "id": "senate-119-1-262",
+                "chamber": "Senate",
+                "number": 262,
+                "date": "2025-05-19",
+                "question": "On Cloture on the Motion to Proceed",
+                "result": "Cloture on the Motion to Proceed Agreed to",
+                "yea": 66,
+                "nay": 32,
+                "measure": "S. 1582"
+              },
+              {
+                "id": "senate-119-1-263",
+                "chamber": "Senate",
+                "number": 263,
+                "date": "2025-05-21",
+                "question": "On the Motion to Proceed",
+                "result": "Motion to Proceed Agreed to",
+                "yea": 69,
+                "nay": 31,
+                "measure": "S. 1582"
+              },
+              {
+                "id": "senate-119-1-305",
+                "chamber": "Senate",
+                "number": 305,
+                "date": "2025-06-11",
+                "question": "On the Cloture Motion",
+                "result": "Cloture Motion Agreed to",
+                "yea": 68,
+                "nay": 30,
+                "measure": "S. 1582"
+              },
+              {
+                "id": "senate-119-1-312",
+                "chamber": "Senate",
+                "number": 312,
+                "date": "2025-06-12",
+                "question": "On the Cloture Motion",
+                "result": "Cloture Motion Agreed to",
+                "yea": 67,
+                "nay": 27,
+                "measure": "S. 1582"
+              },
+              {
+                "id": "senate-119-1-318",
+                "chamber": "Senate",
+                "number": 318,
+                "date": "2025-06-17",
+                "question": "On Passage of the Bill",
+                "result": "Bill Passed",
+                "yea": 68,
+                "nay": 30,
+                "measure": "S. 1582"
+              },
+              {
+                "id": "house-119-1-200",
+                "chamber": "House",
+                "number": 200,
+                "date": "2025-07-17",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 308,
+                "nay": 122,
+                "measure": "S. 1582"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 500
+}

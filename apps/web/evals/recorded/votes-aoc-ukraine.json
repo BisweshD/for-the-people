@@ -1,0 +1,74 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "votes-aoc-ukraine",
+  "recordedAt": "2026-09-24T14:44:18.059Z",
+  "question": "How did Alexandria Ocasio-Cortez vote on Ukraine aid?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Alexandria Ocasio-Cortez voted Yea on Direct the President to end U.S. hostilities with Iran (H.Con.Res. 86) in House roll call 199 on Jun 3, 2026. Alexandria Ocasio-Cortez voted Yea on Authorize military aid to Ukraine and conditional sanctions on Russia (H.R. 2913) in House roll call 207 on Jun 4, 2026.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Alexandria Ocasio-Cortez", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "O000172",
+            "name": "Alexandria Ocasio-Cortez",
+            "party": "D",
+            "office": "U.S. Representative, NY-14",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getVotes",
+      "input": { "personId": "O000172", "issue": "Ukraine aid" },
+      "modelOutput": {
+        "person": {
+          "id": "O000172",
+          "name": "Alexandria Ocasio-Cortez",
+          "party": "D",
+          "office": "U.S. Representative, NY-14",
+          "serving": true
+        },
+        "issue": "War and foreign policy",
+        "counts": {
+          "keyVotes": 2,
+          "heldInTheirChamber": 2,
+          "theirChamber": "House",
+          "votedYea": 2,
+          "votedNay": 0,
+          "votedPresent": 0,
+          "didNotVote": 0,
+          "noRecordedVote": 0,
+          "heldOnlyInOtherChamber": 0,
+          "otherChamber": "Senate"
+        },
+        "votes": [
+          {
+            "keyVote": "Direct the President to end U.S. hostilities with Iran (H.Con.Res. 86)",
+            "issue": "War and foreign policy",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "House roll call 199",
+              "date": "2026-06-03",
+              "supportedMeasure": true
+            }
+          },
+          {
+            "keyVote": "Authorize military aid to Ukraine and conditional sanctions on Russia (H.R. 2913)",
+            "issue": "War and foreign policy",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "House roll call 207",
+              "date": "2026-06-04",
+              "supportedMeasure": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 872
+}

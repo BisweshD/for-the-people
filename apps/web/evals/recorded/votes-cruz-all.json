@@ -1,0 +1,219 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "votes-cruz-all",
+  "recordedAt": "2026-09-24T14:44:16.046Z",
+  "question": "How has Ted Cruz voted?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Ted Cruz voted Yea on 8 and Nay on 5 of the 13 key votes held in the Senate; the other 7 have only a House roll call.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Ted Cruz", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "C001098",
+            "name": "Ted Cruz",
+            "party": "R",
+            "office": "U.S. Senator, Texas",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getVotes",
+      "input": { "personId": "C001098" },
+      "modelOutput": {
+        "person": {
+          "id": "C001098",
+          "name": "Ted Cruz",
+          "party": "R",
+          "office": "U.S. Senator, Texas",
+          "serving": true
+        },
+        "issue": "all issues",
+        "counts": {
+          "keyVotes": 20,
+          "heldInTheirChamber": 13,
+          "theirChamber": "Senate",
+          "votedYea": 8,
+          "votedNay": 5,
+          "votedPresent": 0,
+          "didNotVote": 0,
+          "noRecordedVote": 0,
+          "heldOnlyInOtherChamber": 7,
+          "otherChamber": "House"
+        },
+        "votes": [
+          {
+            "keyVote": "Permanently put fentanyl-related drugs in the strictest drug category (S. 331)",
+            "issue": "Crime and drugs",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 127",
+              "date": "2025-03-14",
+              "supportedMeasure": true
+            }
+          },
+          {
+            "keyVote": "2025 tax and spending law (H.R. 1, known as the One Big Beautiful Bill Act)",
+            "issue": "Taxes and spending",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 372",
+              "date": "2025-07-01",
+              "supportedMeasure": true
+            }
+          },
+          {
+            "keyVote": "Extend the larger ACA health plan tax credits for 3 years (H.R. 1834)",
+            "issue": "Health care",
+            "memberVote": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 644",
+              "date": "2025-12-11",
+              "supportedMeasure": false
+            }
+          },
+          {
+            "keyVote": "Detain certain immigrants arrested for or charged with some crimes (Laken Riley Act)",
+            "issue": "Immigration",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 7",
+              "date": "2025-01-20",
+              "supportedMeasure": true
+            }
+          },
+          {
+            "keyVote": "End the national emergency behind tariffs on Canada (H.J.Res. 72 and S.J.Res. 37)",
+            "issue": "Trade and tariffs",
+            "memberVote": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 160",
+              "date": "2025-04-02",
+              "supportedMeasure": false
+            }
+          },
+          {
+            "keyVote": "Require proof of citizenship to register to vote in federal elections (H.R. 22)",
+            "issue": "Elections and voting",
+            "memberVote": "House vote only: senators do not vote on House roll calls"
+          },
+          {
+            "keyVote": "Direct the President to end U.S. hostilities with Iran (H.Con.Res. 86)",
+            "issue": "War and foreign policy",
+            "memberVote": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 184",
+              "date": "2026-06-23",
+              "supportedMeasure": false
+            }
+          },
+          {
+            "keyVote": "Cancel California's waiver for its zero-emission car sales rules (H.J.Res. 88)",
+            "issue": "Climate and energy",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 277",
+              "date": "2025-05-22",
+              "supportedMeasure": true
+            }
+          },
+          {
+            "keyVote": "Cancel the March 2025 order ending union bargaining at many federal agencies (H.R. 2550)",
+            "issue": "Jobs and labor",
+            "memberVote": "House vote only: senators do not vote on House roll calls"
+          },
+          {
+            "keyVote": "Require care for infants born alive after an attempted abortion (H.R. 21 and S. 6)",
+            "issue": "Abortion",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 11",
+              "date": "2025-01-22",
+              "supportedMeasure": true
+            }
+          },
+          {
+            "keyVote": "Authorize military aid to Ukraine and conditional sanctions on Russia (H.R. 2913)",
+            "issue": "War and foreign policy",
+            "memberVote": "House vote only: senators do not vote on House roll calls"
+          },
+          {
+            "keyVote": "Limit girls' and women's school sports teams to students born female (H.R. 28 and S. 9)",
+            "issue": "Education and culture",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 100",
+              "date": "2025-03-03",
+              "supportedMeasure": true
+            }
+          },
+          {
+            "keyVote": "Require temporary protected status for Haiti until 2029 (H.R. 1689)",
+            "issue": "Immigration",
+            "memberVote": "House vote only: senators do not vote on House roll calls"
+          },
+          {
+            "keyVote": "Set federal rules for payment stablecoins, a type of digital token (S. 1582)",
+            "issue": "Tech and crypto",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 318",
+              "date": "2025-06-17",
+              "supportedMeasure": true
+            }
+          },
+          {
+            "keyVote": "End the national energy emergency declared in January 2025 (S.J.Res. 10)",
+            "issue": "Climate and energy",
+            "memberVote": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 95",
+              "date": "2025-02-26",
+              "supportedMeasure": false
+            }
+          },
+          {
+            "keyVote": "Cancel about $9 billion already approved for public broadcasting and foreign aid (H.R. 4)",
+            "issue": "Government spending",
+            "memberVote": {
+              "vote": "Yea",
+              "rollCall": "Senate roll call 411",
+              "date": "2025-07-17",
+              "supportedMeasure": true
+            }
+          },
+          {
+            "keyVote": "End the national emergency behind the April 2025 global tariffs (S.J.Res. 88)",
+            "issue": "Trade and tariffs",
+            "memberVote": {
+              "vote": "Nay",
+              "rollCall": "Senate roll call 600",
+              "date": "2025-10-30",
+              "supportedMeasure": false
+            }
+          },
+          {
+            "keyVote": "Bar card networks from using a sales code just for gun sellers (H.R. 1181)",
+            "issue": "Guns",
+            "memberVote": "House vote only: senators do not vote on House roll calls"
+          },
+          {
+            "keyVote": "Set deadlines and a binding panel decision for first union contracts (H.R. 5408)",
+            "issue": "Jobs and labor",
+            "memberVote": "House vote only: senators do not vote on House roll calls"
+          },
+          {
+            "keyVote": "Tie college student aid to not joining commercial boycotts of Israel (H.R. 4795)",
+            "issue": "Education and culture",
+            "memberVote": "House vote only: senators do not vote on House roll calls"
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 625
+}

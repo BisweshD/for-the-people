@@ -1,0 +1,49 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "money-collins",
+  "recordedAt": "2026-09-24T14:44:34.180Z",
+  "question": "How much money has Susan Collins raised?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "No record yet. Campaign finance totals for Susan M. Collins are not loaded yet.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Susan Collins", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "C001035",
+            "name": "Susan M. Collins",
+            "party": "R",
+            "office": "U.S. Senator, Maine",
+            "serving": true
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getMoney",
+      "input": { "personId": "C001035", "cycle": 2026 },
+      "modelOutput": {
+        "person": {
+          "id": "C001035",
+          "name": "Susan M. Collins",
+          "party": "R",
+          "office": "U.S. Senator, Maine",
+          "serving": true
+        },
+        "cycle": 2026,
+        "money": [
+          {
+            "receipts": 16169827.43,
+            "fromIndividuals": 10501136.6,
+            "fromPacs": 1201550,
+            "cashOnHand": 11038115.42,
+            "asOf": "2026-06-30"
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 405
+}

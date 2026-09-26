@@ -1,0 +1,46 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "person-greene-missed",
+  "recordedAt": "2026-09-24T14:44:22.974Z",
+  "question": "How often does Marjorie Taylor Greene miss votes?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "Marjorie Taylor Greene is the U.S. Representative for GA-14. They voted with most of their party on 97% of 227 votes where most Democrats and most Republicans voted opposite ways, and missed 33 of 360 roll calls.",
+  "tools": [
+    {
+      "toolName": "findPeople",
+      "input": { "name": "Marjorie Taylor Greene", "includeFormer": true, "limit": 5 },
+      "modelOutput": {
+        "people": [
+          {
+            "id": "G000596",
+            "name": "Marjorie Taylor Greene",
+            "party": "R",
+            "office": "U.S. Representative, GA-14",
+            "serving": false
+          }
+        ]
+      }
+    },
+    {
+      "toolName": "getPerson",
+      "input": { "personId": "G000596" },
+      "modelOutput": {
+        "person": {
+          "id": "G000596",
+          "name": "Marjorie Taylor Greene",
+          "party": "R",
+          "office": "U.S. Representative, GA-14",
+          "serving": false
+        },
+        "record": {
+          "votedWithMostOfTheirParty": "97%",
+          "partyLineVotesCounted": 227,
+          "missedVotes": 33,
+          "missedShare": "9%",
+          "rollCallsWhileServing": 360
+        }
+      }
+    }
+  ],
+  "latencyMs": 761
+}

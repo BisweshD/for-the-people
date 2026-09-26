@@ -1,0 +1,39 @@
+{
+  "name": "@for-the-people/data",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./read": "./src/read/index.ts",
+    "./read/*": "./src/read/*.ts",
+    "./actions": "./src/actions/index.ts",
+    "./actions/*": "./src/actions/*.ts",
+    "./geocode": "./src/geocode/index.ts",
+    "./geocode/*": "./src/geocode/*.ts",
+    "./runtime/*": "./src/runtime/*.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "db:generate": "drizzle-kit generate",
+    "db:setup": "tsx src/cli/db-setup.ts",
+    "ingest": "tsx src/cli/ingest.ts"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@neondatabase/serverless": "^1.1.0",
+    "@for-the-people/core": "workspace:*",
+    "drizzle-orm": "^0.45.3",
+    "fast-xml-parser": "^5.11.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@jsquash/avif": "^2.1.1",
+    "@jsquash/jpeg": "^1.6.0",
+    "@jsquash/resize": "^2.1.1",
+    "@jsquash/webp": "^1.5.0",
+    "drizzle-kit": "^0.31.11",
+    "fflate": "^0.8.3",
+    "tsx": "^4.23.15"
+  }
+}

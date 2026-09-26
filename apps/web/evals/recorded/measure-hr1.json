@@ -1,0 +1,294 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "measure-hr1",
+  "recordedAt": "2026-09-24T14:44:24.663Z",
+  "question": "What is H.R. 1?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "H.R. 1, One Big Beautiful Bill Act, became law. In House roll call 190 on Jul 3, 2025, the result was passed, 218 Yea to 214 Nay.",
+  "tools": [
+    {
+      "toolName": "getMeasure",
+      "input": { "measure": "What is H.R. 1?" },
+      "modelOutput": {
+        "measures": [
+          {
+            "id": "119-hr-1",
+            "label": "H.R. 1",
+            "title": "One Big Beautiful Bill Act",
+            "becameLaw": true,
+            "latestAction": "Became Public Law No: 119-21.",
+            "latestActionDate": "2025-07-04",
+            "summary": "This bill reduces taxes, reduces or increases spending for various federal programs, increases the statutory debt limit, and otherwise addresses agencies and programs throughout the federal government.\nIt is known as a reconciliation bill and includes legislation submitted by several congressional committees pursuant to provisions in the FY2025 congressional budget resolution (H Con. Res. 14) that directed the committees to submit legislation to the House or Senate Budget Committee that will increase or decrease the deficit and increase the statutory debt limit by specified amounts. (Reconciliation bills are considered by Congress using expedited legislative procedures that prevent a filibus…",
+            "rollCalls": [
+              {
+                "id": "house-119-1-144",
+                "chamber": "House",
+                "number": 144,
+                "date": "2025-05-22",
+                "question": "On Motion to Recommit",
+                "result": "Failed",
+                "yea": 212,
+                "nay": 216,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "house-119-1-145",
+                "chamber": "House",
+                "number": 145,
+                "date": "2025-05-22",
+                "question": "On Passage",
+                "result": "Passed",
+                "yea": 215,
+                "nay": 214,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-329",
+                "chamber": "Senate",
+                "number": 329,
+                "date": "2025-06-28",
+                "question": "On the Motion to Proceed",
+                "result": "Motion to Proceed Agreed to",
+                "yea": 51,
+                "nay": 49,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-331",
+                "chamber": "Senate",
+                "number": 331,
+                "date": "2025-06-30",
+                "question": "On the Decision of the Chair",
+                "result": "Decision of Chair Sustained",
+                "yea": 53,
+                "nay": 47,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-332",
+                "chamber": "Senate",
+                "number": 332,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 47,
+                "nay": 53,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-333",
+                "chamber": "Senate",
+                "number": 333,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 49,
+                "nay": 51,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-334",
+                "chamber": "Senate",
+                "number": 334,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Agreed to",
+                "yea": 51,
+                "nay": 48,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-335",
+                "chamber": "Senate",
+                "number": 335,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 47,
+                "nay": 53,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-336",
+                "chamber": "Senate",
+                "number": 336,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 48,
+                "nay": 52,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-337",
+                "chamber": "Senate",
+                "number": 337,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 49,
+                "nay": 51,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-338",
+                "chamber": "Senate",
+                "number": 338,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 48,
+                "nay": 52,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-340",
+                "chamber": "Senate",
+                "number": 340,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 48,
+                "nay": 52,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-346",
+                "chamber": "Senate",
+                "number": 346,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 47,
+                "nay": 53,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-347",
+                "chamber": "Senate",
+                "number": 347,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 47,
+                "nay": 53,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-348",
+                "chamber": "Senate",
+                "number": 348,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 47,
+                "nay": 53,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-349",
+                "chamber": "Senate",
+                "number": 349,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 48,
+                "nay": 52,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-350",
+                "chamber": "Senate",
+                "number": 350,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 49,
+                "nay": 51,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-351",
+                "chamber": "Senate",
+                "number": 351,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 47,
+                "nay": 53,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-353",
+                "chamber": "Senate",
+                "number": 353,
+                "date": "2025-06-30",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 47,
+                "nay": 53,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-354",
+                "chamber": "Senate",
+                "number": 354,
+                "date": "2025-07-01",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 47,
+                "nay": 53,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-357",
+                "chamber": "Senate",
+                "number": 357,
+                "date": "2025-07-01",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 47,
+                "nay": 53,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-359",
+                "chamber": "Senate",
+                "number": 359,
+                "date": "2025-07-01",
+                "question": "On the Motion",
+                "result": "Motion Rejected",
+                "yea": 48,
+                "nay": 51,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "senate-119-1-372",
+                "chamber": "Senate",
+                "number": 372,
+                "date": "2025-07-01",
+                "question": "On Passage of the Bill",
+                "result": "Bill Passed",
+                "yea": 50,
+                "nay": 50,
+                "measure": "H.R. 1"
+              },
+              {
+                "id": "house-119-1-190",
+                "chamber": "House",
+                "number": 190,
+                "date": "2025-07-03",
+                "question": "On Motion to Concur in the Senate Amendment",
+                "result": "Passed",
+                "yea": 218,
+                "nay": 214,
+                "measure": "H.R. 1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "latencyMs": 396
+}

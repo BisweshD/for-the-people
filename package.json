@@ -1,0 +1,43 @@
+{
+  "name": "for-the-people",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.11.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @for-the-people/web dev",
+    "build": "pnpm --filter @for-the-people/web build",
+    "start": "pnpm --filter @for-the-people/web start",
+    "typecheck": "pnpm -r --parallel typecheck",
+    "lint": "eslint . && node scripts/check-slop.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "verify:fast": "pnpm -s typecheck && pnpm -s lint && pnpm -s test",
+    "verify": "node scripts/verify.mjs",
+    "ingest": "pnpm --filter @for-the-people/data exec tsx src/cli/ingest.ts",
+    "db:snapshot": "pnpm --filter @for-the-people/data exec tsx src/cli/db-snapshot.ts",
+    "db:setup": "pnpm --filter @for-the-people/data exec tsx src/cli/db-setup.ts",
+    "db:generate": "pnpm --filter @for-the-people/data exec drizzle-kit generate",
+    "scan:votes": "pnpm --filter @for-the-people/data exec tsx src/cli/scan-recent-votes.ts",
+    "audit:data": "pnpm --filter @for-the-people/data exec tsx src/cli/audit-data.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@lhci/cli": "0.15.1",
+    "@playwright/test": "1.63.0",
+    "@types/node": "^24",
+    "chrome-launcher": "1.2.1",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "16.3.6",
+    "fast-check": "^4.10.2",
+    "lighthouse": "12.6.1",
+    "prettier": "^3.9.9",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.70.1",
+    "vitest": "^5.0.1"
+  }
+}

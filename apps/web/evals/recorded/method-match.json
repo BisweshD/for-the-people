@@ -1,0 +1,19 @@
+{
+  "label": "MOCK RECORDING: produced by For The People's deterministic demo model (fixed templates over real tool results), not by Claude. Re-record with ANTHROPIC_API_KEY set to evaluate Claude.",
+  "caseId": "method-match",
+  "recordedAt": "2026-09-24T14:44:35.916Z",
+  "question": "How does the match score work?",
+  "modelId": "for-the-people-demo-templates",
+  "text": "How the match score works: compares your Yea or Nay on each key vote with how the member voted on the official roll call. Votes you care more about count more, and scores stay near 50% when you share only a few votes.",
+  "tools": [
+    {
+      "toolName": "explainMethod",
+      "input": { "topic": "match" },
+      "modelOutput": {
+        "title": "How the match score works",
+        "method": "Compares your Yea or Nay on each key vote with how the member voted on the official roll call. Votes you care more about count more, and scores stay near 50% when you share only a few votes."
+      }
+    }
+  ],
+  "latencyMs": 716
+}
