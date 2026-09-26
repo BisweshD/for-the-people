@@ -76,6 +76,40 @@ async function requestJson(url: string): Promise<unknown> {
   return response.json();
 }
 
+const POINT_ENDPOINT = "https://geocoding.geo.census.gov/geocoder/geographies/coordinates";
+
+const pointSchema = z.object({
+  result: z.object({ geographies: z.record(z.string(), z.array(geography)) }),
+});
+
+/**
+ * The 2026 ballot district (120th Congressional Districts) at a coordinate. Used for a ZIP code or city,
+ * with the internal point from our bundled Census file: the Census Bureau sees a coordinate, never what
+ * the voter typed. Throws when the service does not answer.
+ */
+export async function censusBallotDistrictAt(
+  latitude: number,
+  longitude: number,
+): Promise<{ state: StateCode; ballot: number | null } | null> {
+  const { vintage, layer, field } = CENSUS_LAYERS.cd120;
+  const params = new URLSearchParams({
+    x: String(longitude),
+    y: String(latitude),
+    benchmark: "Public_AR_Current",
+    vintage,
+    layers: "all",
+    format: "json",
+  });
+  const parsed = pointSchema.safeParse(await requestJson(`${POINT_ENDPOINT}?${params.toString()}`));
+  if (!parsed.success) return null;
+  const district = parsed.data.result.geographies[layer]?.[0];
+  const fips = typeof district?.STATE === "string" ? district.STATE : null;
+  const state = StateCode.safeParse(fips ? FIPS_TO_STATE[fips] : undefined);
+  if (!district || !state.success) return null;
+  const code = district[field];
+  return { state: state.data, ballot: typeof code === "string" ? districtNumberFromCensus(code) : null };
+}
+
 export class CensusGeocoder implements Geocoder {
   readonly method = "census-geocoder" as const;
 

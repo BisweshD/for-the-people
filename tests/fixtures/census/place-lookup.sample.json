@@ -1,0 +1,73 @@
+{
+ "v": 1,
+ "sources": {
+  "zcta": {
+   "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_zcta_national.zip",
+   "retrievedAt": "2026-09-26T17:56:23.916Z"
+  },
+  "place": {
+   "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+   "retrievedAt": "2026-09-26T17:56:27.448Z"
+  },
+  "zctaCd119": {
+   "url": "https://www2.census.gov/geo/docs/maps-data/data/rel2020/cd-sld/tab20_cd11920_zcta520_natl.txt",
+   "retrievedAt": "2026-09-26T17:56:26.364Z"
+  },
+  "placeCd119": {
+   "url": "https://www2.census.gov/geo/docs/maps-data/data/rel2020/cd-sld/tab20_cd11920_place20_natl.txt",
+   "retrievedAt": "2026-09-26T17:56:27.588Z"
+  }
+ },
+ "zips": {
+  "10001": [
+   "NY",
+   40.7506,
+   -73.9973,
+   [
+    12
+   ]
+  ],
+  "22030": [
+   "VA",
+   38.8372,
+   -77.3405,
+   [
+    10,
+    11
+   ]
+  ],
+  "78701": [
+   "TX",
+   30.2706,
+   -97.7426,
+   [
+    37
+   ]
+  ]
+ },
+ "places": {
+  "VA": {
+   "fairfax": [
+    38.8532,
+    -77.299,
+    [
+     11
+    ]
+   ]
+  },
+  "TX": {
+   "austin": [
+    30.2986,
+    -97.7541,
+    [
+     10,
+     17,
+     21,
+     27,
+     35,
+     37
+    ]
+   ]
+  }
+ }
+}

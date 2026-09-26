@@ -5,6 +5,12 @@ import {
   manualLocation,
   MAX_ADDRESS_LENGTH,
 } from "@for-the-people/data/geocode";
+import { censusBallotDistrictAt } from "@for-the-people/data/geocode/census";
+import {
+  loadPlaceLookup,
+  parseLocationInput,
+  resolvePartial,
+} from "@for-the-people/data/geocode/partial";
 import { geocoderWithinBudget } from "@for-the-people/data/runtime/geocode-budget";
 import { checkRateLimit, rateLimitKey } from "@for-the-people/data/runtime/rate-limit";
 import { z } from "zod";
@@ -13,8 +19,11 @@ import { redistricting } from "@/server/ballot-reference";
 import { clientIp, readBodyText, rejectCrossSite } from "@/server/request";
 
 /**
- * SetLocationFromAddress. The address goes to the geocoder and is then
- * dropped: it is never logged, stored, cached, or echoed back. Only district ids leave this route.
+ * SetLocationFromAddress. A street address goes to the geocoder and is then dropped: it is never
+ * logged, stored, cached, or echoed back. A ZIP code, a city and state, or a state alone is matched
+ * against bundled Census Bureau files instead (only a coordinate from them may reach the Census
+ * Bureau). Only district ids leave this route, or, when the input crosses district lines, the state
+ * and the districts to pick from.
  */
 
 const MAX_BODY_BYTES = 1024;
@@ -24,7 +33,7 @@ const LIMITS = [
 ];
 
 const Body = z.union([
-  z.object({ address: z.string().trim().min(5).max(MAX_ADDRESS_LENGTH) }).strict(),
+  z.object({ address: z.string().trim().min(2).max(MAX_ADDRESS_LENGTH) }).strict(),
   z.object({ state: StateCode, district: z.number().int().min(0).max(60) }).strict(),
 ]);
 
@@ -46,7 +55,8 @@ export async function POST(request: Request) {
     return error(400, "Send an address, or a state and district.");
   }
   const body = Body.safeParse(json);
-  if (!body.success) return error(400, "Enter a street address with a city, state, or ZIP code.");
+  if (!body.success)
+    return error(400, "Enter your street address, a ZIP code, or a city and state.");
 
   const db = await getDb();
   const limited = await checkRateLimit(db, rateLimitKey("location", clientIp(request)), LIMITS);
@@ -58,7 +68,34 @@ export async function POST(request: Request) {
 
   const setAt = new Date().toISOString();
   let location;
-  if ("address" in body.data) {
+  const partial = "address" in body.data ? parseLocationInput(body.data.address) : null;
+  if (partial && partial.kind !== "address") {
+    const result = await resolvePartial(
+      partial,
+      await loadPlaceLookup(),
+      redistricting,
+      setAt,
+      censusBallotDistrictAt,
+    );
+    if (result.kind === "not-found") return error(404, result.message);
+    if (result.kind === "choose") {
+      const inState = (await getBallotDistrictOptions())
+        .filter((option) => option.state === result.state)
+        .map((option) => option.number);
+      const narrowed = result.districts.filter((number) => inState.includes(number));
+      return Response.json(
+        {
+          choose: {
+            state: result.state,
+            districts: narrowed.length > 0 ? narrowed : inState,
+            message: result.message,
+          },
+        },
+        { headers: { "cache-control": "no-store" } },
+      );
+    }
+    location = result.location;
+  } else if ("address" in body.data) {
     const geocoder = await geocoderWithinBudget(db);
     const result = await geocoder.lookup(body.data.address);
     if (!result.ok) {

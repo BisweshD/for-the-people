@@ -23,5 +23,6 @@ contract tests in `packages/data/test`. The legislators samples are subsets (who
 | census/alaska-capitol-current.json | vintage=Current_Current for 120 4th St, Juneau, AK 99801 (at-large seat, code 00) |
 | census/white-house-current.json | vintage=Current_Current for 1600 Pennsylvania Ave NW, Washington, DC 20500 (delegate seat, code 98) |
 | census/no-match-current.json | vintage=Current_Current for the non-address "zzzz nowhere" |
+| census/place-lookup.sample.json | Three ZIP codes (10001, 22030, 78701) and two places (Fairfax, VA; Austin, TX), unedited, from data/place-lookup.json as `packages/data/src/cli/place-lookup.ts` built it on 2026-09-26 from the Census Bureau's 2026 Gazetteer and 119th Congressional District relationship files (URLs in its `sources`) |
 
 The Census fixtures contain only the public buildings named above, never a private address.

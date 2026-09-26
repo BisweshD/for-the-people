@@ -68,7 +68,7 @@ const isLocationValue = shape({
   districts: arrayOf(matches(DISTRICT_ID_PATTERN), 4),
   ballotDistrictConfirmed: (value) => typeof value === "boolean",
   setAt: isDateTime,
-  method: oneOf("census-geocoder", "geocodio", "state-file", "manual"),
+  method: oneOf("census-geocoder", "geocodio", "state-file", "manual", "zip", "city"),
 });
 
 const nonEmpty = (value: unknown) => isString(value) && value.length >= 1;

@@ -2,7 +2,7 @@
 
 import { isLocation, type Location, type StateCode } from "@for-the-people/core/client";
 import { ChevronDown, LockKeyhole } from "lucide-react";
-import { useId, useMemo, useRef, useState } from "react";
+import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { OvalLoader } from "@/components/oval-loader";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -17,7 +17,17 @@ export interface DistrictOption {
 
 type Status = { kind: "idle" } | { kind: "working" } | { kind: "error"; message: string };
 
-type LookupResult = { ok: true; location: Location } | { ok: false; message: string };
+/** A ZIP code, city, or state that did not settle on one district: the state and the districts to pick from. */
+interface Choice {
+  state: StateCode;
+  districts: number[];
+  message: string;
+}
+
+type LookupResult =
+  | { ok: true; location: Location }
+  | { ok: "choose"; choice: Choice }
+  | { ok: false; message: string };
 
 const selectClass = cn(
   "h-12 w-full rounded-control border border-input bg-paper px-3 text-base text-ink",
@@ -45,6 +55,16 @@ async function lookup(body: object): Promise<LookupResult> {
           ? json.error
           : "Something went wrong. Try again.";
       return { ok: false, message };
+    }
+    if (json && typeof json === "object" && "choose" in json) {
+      const choice = json.choose as Partial<Choice> | null;
+      if (
+        typeof choice?.state === "string" &&
+        Array.isArray(choice.districts) &&
+        typeof choice.message === "string"
+      )
+        return { ok: "choose", choice: choice as Choice };
+      return { ok: false, message: "Something went wrong. Try again." };
     }
     const reply = json as Partial<Location> | null;
     const location = {
@@ -76,6 +96,7 @@ export function AddressForm({
   const [address, setAddress] = useState("");
   const [status, setStatus] = useState<Status>({ kind: "idle" });
   const [manual, setManual] = useState(false);
+  const [choice, setChoice] = useState<Choice | null>(null);
   const errorId = useId();
   const working = status.kind === "working";
 
@@ -89,13 +110,18 @@ export function AddressForm({
   const submit = async (event: React.FormEvent) => {
     event.preventDefault();
     if (working) return;
-    if (address.trim().length < 5) {
-      fail("Enter a street address with a city, state, or ZIP code.");
+    if (address.trim().length < 2) {
+      fail("Enter your street address, a ZIP code, or a city and state.");
       return;
     }
     setStatus({ kind: "working" });
     const result = await lookup({ address: address.trim() });
-    if (result.ok) {
+    if (result.ok === "choose") {
+      // Not one district: open the picker at the voter’s state, narrowed to the possible districts.
+      setStatus({ kind: "idle" });
+      setChoice(result.choice);
+      setManual(true);
+    } else if (result.ok) {
       setAddress("");
       setStatus({ kind: "idle" });
       onLocated?.(result.location);
@@ -163,9 +189,10 @@ export function AddressForm({
           <p id="address-privacy" className="flex items-start gap-2 type-meta text-ink-2">
             <LockKeyhole className="mt-0.5 size-4 shrink-0 text-ink-3-graphic" aria-hidden />
             <span>
-              We send your address to the U.S. Census Bureau&apos;s address lookup to find your
-              congressional districts. We keep only the district numbers, on this device. We do not
-              store your address.
+              We send a street address to the U.S. Census Bureau&apos;s address lookup to find your
+              congressional districts. A ZIP code or city is matched with Census Bureau files on our
+              server instead. We keep only the district numbers, on this device. We do not store
+              your address.
             </span>
           </p>
         </form>
@@ -173,7 +200,10 @@ export function AddressForm({
         <div className="mt-4 border-t border-hairline pt-2">
           <button
             type="button"
-            onClick={() => setManual((open) => !open)}
+            onClick={() => {
+              setManual((open) => !open);
+              setChoice(null);
+            }}
             aria-expanded={manual}
             aria-controls="manual-district"
             className="inline-flex min-h-11 items-center gap-1.5 rounded-control text-base font-bold text-ink underline decoration-hairline underline-offset-4 hover:decoration-ink"
@@ -184,7 +214,14 @@ export function AddressForm({
               aria-hidden
             />
           </button>
-          {manual && <ManualPicker options={districtOptions} onLocated={onLocated} />}
+          {manual && (
+            <ManualPicker
+              key={choice ? `${choice.state}:${choice.districts.join(",")}` : "open"}
+              options={districtOptions}
+              choice={choice}
+              onLocated={onLocated}
+            />
+          )}
         </div>
       </div>
     </div>
@@ -193,9 +230,12 @@ export function AddressForm({
 
 function ManualPicker({
   options,
+  choice,
   onLocated,
 }: {
   options: DistrictOption[];
+  /** Set when a ZIP code, city, or state narrowed the choice: the state is chosen, the districts limited. */
+  choice: Choice | null;
   onLocated?: (location: Location) => void;
 }) {
   const states = useMemo(
@@ -205,10 +245,19 @@ function ManualPicker({
       ),
     [options],
   );
-  const [state, setState] = useState<StateCode | "">("");
-  const [district, setDistrict] = useState<string>("");
+  const allowed = (option: DistrictOption) =>
+    !choice || option.state !== choice.state || choice.districts.includes(option.number);
+  const [state, setState] = useState<StateCode | "">(choice?.state ?? "");
+  const [district, setDistrict] = useState<string>(() => {
+    const only = options.filter((option) => option.state === choice?.state && allowed(option));
+    return only.length === 1 ? String(only[0]!.number) : "";
+  });
   const [status, setStatus] = useState<Status>({ kind: "idle" });
-  const districts = options.filter((option) => option.state === state);
+  const districts = options.filter((option) => option.state === state && allowed(option));
+  const districtRef = useRef<HTMLSelectElement>(null);
+  useEffect(() => {
+    if (choice) districtRef.current?.focus();
+  }, [choice]);
   const working = status.kind === "working";
   const ready = state !== "" && district !== "";
   const reasonId = useId();
@@ -218,11 +267,14 @@ function ManualPicker({
     if (!state || district === "" || working) return;
     setStatus({ kind: "working" });
     const result = await lookup({ state, district: Number(district) });
-    if (result.ok) {
+    if (result.ok === true) {
       setStatus({ kind: "idle" });
       onLocated?.(result.location);
     } else {
-      setStatus({ kind: "error", message: result.message });
+      setStatus({
+        kind: "error",
+        message: result.ok === false ? result.message : "Something went wrong. Try again.",
+      });
     }
   };
 
@@ -233,10 +285,16 @@ function ManualPicker({
       className="mt-2 flex flex-col gap-3"
       aria-busy={working || undefined}
     >
-      <p className="type-meta text-ink-2">
-        Know your 2026 district? Choose it here and skip the address. Your state&apos;s election
-        office can tell you which district you vote in.
-      </p>
+      {choice ? (
+        <p role="status" className="text-base font-bold text-ink">
+          {choice.message}
+        </p>
+      ) : (
+        <p className="type-meta text-ink-2">
+          Know your 2026 district? Choose it here and skip the address. Your state&apos;s election
+          office can tell you which district you vote in.
+        </p>
+      )}
       <div className="grid gap-3 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
         <div className="flex flex-col gap-1.5">
           <label htmlFor="manual-state" className="text-sm font-bold text-ink">
@@ -249,7 +307,7 @@ function ManualPicker({
             onChange={(event) => {
               const next = event.target.value as StateCode;
               setState(next);
-              const only = options.filter((option) => option.state === next);
+              const only = options.filter((option) => option.state === next && allowed(option));
               setDistrict(only.length === 1 ? String(only[0]!.number) : "");
             }}
           >
@@ -266,6 +324,7 @@ function ManualPicker({
             District on your 2026 ballot
           </label>
           <select
+            ref={districtRef}
             id="manual-district-number"
             className={selectClass}
             value={district}

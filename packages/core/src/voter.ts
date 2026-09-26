@@ -33,7 +33,7 @@ export const Location = z.object({
   /** False when the state redrew its map and no official 2026 district could be confirmed. */
   ballotDistrictConfirmed: z.boolean(),
   setAt: isoDateTime,
-  method: z.enum(["census-geocoder", "geocodio", "state-file", "manual"]),
+  method: z.enum(["census-geocoder", "geocodio", "state-file", "manual", "zip", "city"]),
 });
 export type Location = z.infer<typeof Location>;
 

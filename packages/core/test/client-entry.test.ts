@@ -113,7 +113,7 @@ const location = fc.record({
   ),
   ballotDistrictConfirmed: fc.boolean(),
   setAt: isoDateTime,
-  method: fc.constantFrom("census-geocoder", "geocodio", "state-file", "manual"),
+  method: fc.constantFrom("census-geocoder", "geocodio", "state-file", "manual", "zip", "city"),
 });
 const ballotPlan = fc.record({
   electionId: fc.constantFrom("2026-11-03-general", "2026-12-12-runoff-LA"),

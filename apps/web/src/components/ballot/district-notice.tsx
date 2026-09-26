@@ -85,9 +85,9 @@ export function DistrictNotice({
           We could not confirm your 2026 district
         </h2>
         <p className="text-base text-ink-2">
-          {stateName} drew new district lines for 2026, and the Census Bureau did not return your
-          new district. Your U.S. Senate races are below. Check your House district with your
-          state&apos;s election office.
+          {location.method === "zip" || location.method === "city"
+            ? `We matched your ${location.method === "zip" ? "ZIP code" : "city"} to a district, not your street address, and ${stateName} drew new district lines for 2026 that may cross it. Your U.S. Senate races are below. Check your House district with your state’s election office, or change your address to a street address for an exact match.`
+            : `${stateName} drew new district lines for 2026, and the Census Bureau did not return your new district. Your U.S. Senate races are below. Check your House district with your state’s election office.`}
         </p>
         {office && <OfficialLink href={office.url}>{stateName} election office</OfficialLink>}
       </section>
