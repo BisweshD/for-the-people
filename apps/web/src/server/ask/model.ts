@@ -83,10 +83,12 @@ export function askProvider(env: Env = process.env): AskProvider {
  * copy in memory, so each would enforce its own cap. A production server therefore needs DATABASE_URL,
  * and an IP_HASH_SALT every instance shares so one visitor has one rate-limit key. Local development
  * (NODE_ENV other than production) may use the paid model with the in-memory database.
+ * ASK_ALLOW_WITHOUT_DATABASE=1 accepts per-process limits for a demo deployment with no Postgres; set a
+ * credit limit on the provider key when using it.
  */
 export function paidModelBlocker(env: Env = process.env): string | null {
   if (env.NODE_ENV !== "production") return null;
-  if (!env.DATABASE_URL)
+  if (!env.DATABASE_URL && env.ASK_ALLOW_WITHOUT_DATABASE !== "1")
     return "DATABASE_URL is not set, so the spend cap and rate limits would be per process";
   if ((env.IP_HASH_SALT ?? "").length < MIN_SALT_LENGTH)
     return `IP_HASH_SALT is missing or shorter than ${MIN_SALT_LENGTH} characters`;

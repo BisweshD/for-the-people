@@ -1,3 +1,4 @@
+import { resolve } from "node:path";
 import type { NextConfig } from "next";
 
 /**
@@ -41,6 +42,18 @@ const nextConfig: NextConfig = {
   transpilePackages: ["@for-the-people/core", "@for-the-people/data"],
   // PGlite ships WASM and data files that must be loaded from node_modules at runtime, not bundled.
   serverExternalPackages: ["@electric-sql/pglite"],
+  // A host such as Vercel runs each server function from a traced copy of the repo. Without DATABASE_URL
+  // the functions read the database tarball (pnpm db:setup), the curated JSON in data/, and the
+  // workspace marker that workspaceRoot() looks for, so ship them with every route.
+  outputFileTracingRoot: resolve(process.cwd(), "../.."),
+  outputFileTracingIncludes: {
+    "/*": ["../../.data/for-the-people.tar.gz", "../../data/*.json", "../../pnpm-workspace.yaml"],
+    "/**/*": [
+      "../../.data/for-the-people.tar.gz",
+      "../../data/*.json",
+      "../../pnpm-workspace.yaml",
+    ],
+  },
   poweredByHeader: false,
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
